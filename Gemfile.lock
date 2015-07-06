@@ -12,9 +12,22 @@ GEM
     coffee-script-source (1.9.1.1)
     colorator (0.1)
     execjs (2.5.2)
+    exifr (1.2.3)
     fast-stemmer (1.0.2)
     ffi (1.9.10)
+    fspath (2.1.1)
     hitimes (1.2.2)
+    image_optim (0.21.0)
+      exifr (~> 1.2, >= 1.2.2)
+      fspath (~> 2.1)
+      image_size (~> 1.3)
+      in_threads (~> 1.3)
+      progress (~> 3.0, >= 3.0.1)
+    image_optim_pack (0.2.1.20150702)
+      fspath (~> 2.1)
+      image_optim (~> 0.19)
+    image_size (1.4.1)
+    in_threads (1.3.1)
     jekyll (2.5.3)
       classifier-reborn (~> 2.0)
       colorator (~> 0.1)
@@ -48,6 +61,7 @@ GEM
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.11)
+    progress (3.1.0)
     pygments.rb (0.6.3)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
@@ -67,4 +81,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  image_optim
+  image_optim_pack
   jekyll
