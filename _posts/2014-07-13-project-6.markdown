@@ -1,15 +1,15 @@
 ---
-title: Round Icons
-subtitle: Graphic Design
+title: 7Mídias Marketing Social
+subtitle: Marketing voltado para redes sociais
 layout: default
 modal-id: 6
-date: 2014-07-15
-img: roundicons.png
-thumbnail: roundicons-thumbnail.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+date: 2010-01-5
+img: 7midias.png
+thumbnail: 7midias-thumb.png
+alt: 7Midias Marketing
+project-date: Janeiro de 2010
+client: Eu
+category: Desenvolvimento Web e Social Media
+description: Startup criada no inicio de 2010 voltada para Marketing em redes sociais. Promovendo eventos físicos e virtual utilizando uma grande base de usuários e suas redes sociais como mecanismo de disseminação viral. O Usuário autenticava com suas redes sociais no sistema da 7Mídias, para cada evento promovido, um algorítimo calculava o nível de penetração, onde eram considerados a quantidade de seguidores, a quantidade de clicks nos links, dentre outros fatores para um calculo de quantos cupons aquele usuário receberia para participação do sorteio oferecido pelo cliente.
 
 ---
