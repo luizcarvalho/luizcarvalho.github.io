@@ -1,0 +1,15 @@
+---
+title: Anexamba
+subtitle: Criação de Logo para Grupo Anexamba
+layout: default
+modal-id: 2
+date: 2012-08-30
+img: anexamba
+link: https://www.facebook.com/grupoanexamba
+alt: image-alt
+project-date: Agosto de 2012
+client: Grupo Anexamba
+category: Design
+description: Criação de logo para grupo de pagode Anexamba.
+
+---

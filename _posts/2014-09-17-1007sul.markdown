@@ -1,0 +1,14 @@
+---
+title: 1007 Sul
+subtitle: Logo e social media para 1007 Sul
+layout: default
+modal-id: 3
+date: 2014-09-17
+img: 1007s
+alt: Associação de moradores
+project-date: Setembro 2014
+client: Quadra 1007 Sul
+category: Design, Marketing
+description: Criação de logo, Facebook e Twitter para Associação de moradores da 1007 Sul.
+
+---
