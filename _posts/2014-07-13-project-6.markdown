@@ -4,8 +4,8 @@ subtitle: Marketing voltado para redes sociais
 layout: default
 modal-id: 6
 date: 2010-01-5
-img: 7midias.png
-thumbnail: 7midias-thumb.png
+img: 7midias
+thumbnail: 7midias-thumb
 alt: 7Midias Marketing
 project-date: Janeiro de 2010
 client: Eu
