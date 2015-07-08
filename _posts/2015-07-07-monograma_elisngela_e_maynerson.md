@@ -1,5 +1,5 @@
 ---
-title: "Monograma Elisângela e Maynerson"
+title: "Elisângela e Maynerson"
 subtitle: "Monograma para casamento"
 layout: default
 modal_id: 9
@@ -8,6 +8,6 @@ img: "casamento_elisangela"
 link: "#"
 project_date: Julho de 2015
 client: Elisângela
-categories : [Design] 
+categories : [Design, Logo] 
 description: Criação de Monograma para personalização de artigos para Casamento
 ---
