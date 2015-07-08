@@ -22,7 +22,7 @@ desc "rake post title=\"A Title\""
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
   title = ENV["title"] || "new-post"
-  slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  slug = title.downcase.strip.gsub(' ', '_').gsub(/[^\w-]/, '')
   post_count =  Dir["#{CONFIG['posts']}/*.md"].size
   date = Time.now.strftime('%Y-%m-%d')
   project_month = Time.now.strftime('%B')
@@ -41,7 +41,7 @@ task :post do
     post.puts "layout: default"
     post.puts "modal_id: #{post_count+1}"
     post.puts "date: #{date}"
-    post.puts "img: \"#{title}\""
+    post.puts "img: \"#{slug}\""
     post.puts "link: "
     post.puts "project_date: #{meses[project_month]} de #{ano}"
     post.puts "client: "
