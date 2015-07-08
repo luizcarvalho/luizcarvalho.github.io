@@ -1,0 +1,8 @@
+tool: https://croppola.com/
+
+big:
+  ratio: 1.33:1
+  size: 600x450
+
+thumb:
+  size: 385x300

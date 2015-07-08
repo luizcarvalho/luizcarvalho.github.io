@@ -8,6 +8,6 @@ img: "cha_bar"
 link: "#"
 project_date: Abril de 2012
 client: Camila Ramos
-category : Design
+categories : [Design]
 description: Criação de convites para Chá Bar e Chá de Panela de Juliano e Camila
 ---

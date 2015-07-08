@@ -3,6 +3,8 @@ require 'rake'
 require 'yaml'
 require 'time'
 require 'pry'
+require './lib/assets'
+include Optimize
 
 SOURCE = "."
 
@@ -45,11 +47,20 @@ task :post do
     post.puts "link: "
     post.puts "project_date: #{meses[project_month]} de #{ano}"
     post.puts "client: "
-    post.puts "category : "
+    post.puts "categories : []"
     post.puts "description: "
     post.puts "---"
   end
 end # task :post
+
+namespace :assets do
+  desc "optimize png"
+  task :optimize do
+    Optimize::optimize
+  end
+end
+  
+
 
 
 #Load custom rake scripts

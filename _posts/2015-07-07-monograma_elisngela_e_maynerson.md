@@ -8,6 +8,6 @@ img: "casamento_elisangela"
 link: "#"
 project_date: Julho de 2015
 client: Elisângela
-category : Design
+categories : [Design] 
 description: Criação de Monograma para personalização de artigos para Casamento
 ---
