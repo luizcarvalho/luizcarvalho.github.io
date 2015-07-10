@@ -10,6 +10,12 @@ body {
     color: #{{ site.color.secondary-dark }};
 }
 
+
+#filter-container .mix{
+    display: none;
+}
+
+
 .text-muted {
     color: #777;
 }

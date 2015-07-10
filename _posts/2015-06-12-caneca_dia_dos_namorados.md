@@ -1,6 +1,6 @@
 ---
 title: "Caneca dia dos Namorados"
-subtitle: Arte para caneca dos dias do Namorados
+subtitle: Arte para dias do Namorados
 layout: default
 modal_id: 8
 date: 2015-06-12

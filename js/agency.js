@@ -35,3 +35,8 @@ $('div.modal').on('show.bs.modal', function() {
 		}
 	}
 });
+
+
+$(function(){
+    $('#filter-container').mixItUp();  
+});
