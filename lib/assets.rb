@@ -6,7 +6,7 @@ require 'mini_magick'
 
 module Optimize
 
-  IMAGE_PATH = "#{Dir.pwd}/img/portfolio/"
+  IMAGE_PATH = "#{Dir.pwd}/assets/images/portfolio/"
   @client = TinyPNG::Client.new('JKBeITI8M4WBmkhBn8ejUgPNRUdGmTTP')
 
 
