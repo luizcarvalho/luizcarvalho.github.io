@@ -11,8 +11,9 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                 {% for category in site.categories_filters %}
-                    <button class="filter" data-filter=".{{ category | downcase }}">{{ category }}</button>
+                    <button class="filter btn btn-primary" data-filter=".{{ category | downcase }}">{{ category }}</button>
                 {% endfor %}
+                <h1></h1>
                 </div>
             </div>
 
