@@ -1,15 +1,12 @@
 
 Design
-Our design philosophy is simple. We always place our client’s customers at the heart of the user experience - resulting in well-designed, user-friendly websites that meets the client’s objectives.
+A filosofia de design daqui é simples, Sempre colocar os clientes como centro da experiência do usuário, resultando em excelentes designs que vão de encontro com os objetivos dos clientes.
 
 
 Mobile App
-We build mobile apps for iOS and Android, using a unique hybrid methodology that integrates web technologies and native app development - combining the best elements of both worlds.
+Desenvolvimento de aplicativo para Android e iOS, utilizando técnicas nativas e híbridas com integração com serviços web, combinando os melhores elementos de cada tecnologia.
 
 
-Front-end Coder
-Websites are nowadays viewed on multiple devices. With our skills in front-end web technologies such as HTML5, CSS3 and Javascript, we can create a flexible, responsive site that looks good on all screen sizes.
+Web
+Criação de soluções que se adaptam a multiplos dispositivos, utilizando ténicas de User Experience e interfaces amigáveis, além de tecnologias modernas e poderosas associando HTML5, CSS3 E Javascript com tecnologias server side como Ruby on Rails com outras tantas tecnologias de ponta, resultando assim em sistemas fexíveis e poderosos.
 
-
-Back-end Coder
-We have vast experience in back-end web technologies such as PHP and MySQL to create multi-functional web portals - from content management systems to full-fledged e-commerce solutions, and beyond.
