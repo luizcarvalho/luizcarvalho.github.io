@@ -54,4 +54,4 @@ address:
 markdown: kramdown
 permalink: pretty
 
-categories_filters: ['Design', 'Mobile', 'Web']
+categories_filters: ['Mobile', 'Web', 'Design']
