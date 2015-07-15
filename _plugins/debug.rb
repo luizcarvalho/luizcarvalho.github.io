@@ -1,3 +1,4 @@
+require 'pry'
 # A simple way to inspect liquid template variables.
 # Usage:
 #  Can be used anywhere liquid syntax is parsed (templates, includes, posts/pages)
@@ -28,6 +29,7 @@ module Jekyll
   module DebugFilter
     
     def debug(obj, stdout=false)
+      binding.pry
       puts obj.pretty_inspect if stdout
       "<pre>#{obj.class}\n#{obj.pretty_inspect}</pre>"
     end
