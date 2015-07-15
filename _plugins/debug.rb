@@ -29,7 +29,6 @@ module Jekyll
   module DebugFilter
     
     def debug(obj, stdout=false)
-      binding.pry
       puts obj.pretty_inspect if stdout
       "<pre>#{obj.class}\n#{obj.pretty_inspect}</pre>"
     end
