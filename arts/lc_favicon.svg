@@ -15,9 +15,9 @@
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="lc_favicon.svg"
-   inkscape:export-filename="/home/desenvolvimento/Dropbox/projetos/luizcarvalho/arts/logo.png"
-   inkscape:export-xdpi="70.387573"
-   inkscape:export-ydpi="70.387573">
+   inkscape:export-filename="/home/desenvolvimento/Dropbox/projetos/luizcarvalho/arts/favicon.png"
+   inkscape:export-xdpi="48.32"
+   inkscape:export-ydpi="48.32">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -76,6 +76,6 @@
          id="tspan2987"
          x="49.636833"
          y="899.29382"
-         style="font-size:323.1885376px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#63c7db;fill-opacity:1;font-family:Kaushan Script;-inkscape-font-specification:Kaushan Script">LC</tspan></text>
+         style="font-size:323.18853760000001785px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#63c7db;fill-opacity:1;font-family:Kaushan Script;-inkscape-font-specification:Kaushan Script Bold">LC</tspan></text>
   </g>
 </svg>
