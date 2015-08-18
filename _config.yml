@@ -31,7 +31,8 @@ people:
       url: https://www.linkedin.com/profile/view?id=49192094
     - title: google-plus
       url: https://plus.google.com/+LuizCarvalhoDev/posts      
-
+    - title: slideshare
+      url: http://www.slideshare.net/LuizCarvalhobr
 
 
 social:
@@ -45,6 +46,8 @@ social:
     url: http://github.com/luizcarvalho
   - title: linkedin
     url: https://www.linkedin.com/profile/view?id=49192094
+  - title: slideshare
+    url: http://www.slideshare.net/LuizCarvalhobr
 
 # Postal address (add as many lines as necessary)
 address:
