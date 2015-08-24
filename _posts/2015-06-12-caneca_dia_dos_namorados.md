@@ -7,6 +7,7 @@ date: 2015-06-12
 img: "caneca_namorada"
 link: "#"
 project_date: Julho de 2015
+prioridade: 1
 client: Cynthia Mariah
 categories : [Design, Outros] 
 description: Arte desenvolvida para personalização de caneca para presente dos dias dos namorados

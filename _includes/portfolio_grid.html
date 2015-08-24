@@ -16,21 +16,21 @@
                 <h1></h1>
                 </div>
             </div>
-
-            {% for post in site.posts %}
-            <div class='mix {{ post.categories | join: ' ' }} col-md-4' >
+            {% assign projetos = site.posts | sort: 'prioridade' %}
+            {% for projeto in projetos   reversed %}
+            <div class='mix {{ projeto.categories | join: ' ' }} col-md-4' >
                 <div class="col-md-12 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal{{ post.modal_id }}" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal{{ projeto.modal_id }}" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/images/portfolio/{{ post.img}}-thumb.png" class="img-responsive" alt="{{ post.title}}">
+                        <img src="assets/images/portfolio/{{ projeto.img}}-thumb.png" class="img-responsive" alt="{{ projeto.title}}">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>{{ post.title }}</h4>
-                        <p class="text-muted">{{ post.subtitle }}</p>
+                        <h4>{{ projeto.title }}</h4>
+                        <p class="text-muted">{{ projeto.subtitle }}</p>
                     </div>
                 </div>
             </div>

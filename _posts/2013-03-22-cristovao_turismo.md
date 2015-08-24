@@ -7,6 +7,7 @@ date: 2013-03-22
 img: "cristur"
 link: https://cristovaoturismo.wordpress.com/
 project_date: Maio de 2013
+prioridade: 1
 client: Cristóvão Carvalho
 categories : [Design, Logo]
 description: Criação de logo para personalizar cartão de visitas e plotagem de van

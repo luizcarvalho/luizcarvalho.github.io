@@ -7,6 +7,7 @@ date: 2013-08-08
 img: "droido_mascote"
 link: https://play.google.com/store/apps/details?id=br.com.redrails.torpedos
 project_date: Agosto de 2013
+prioridade: 2
 client: Projeto Pessoal
 categories : [Design, Mascote] 
 description: Criação de Mascote para utilizações diversas em campanhas de marketing

@@ -7,6 +7,7 @@ date: 2015-03-01
 img: ferpamweb
 link: https://www.facebook.com/pages/Ferpam/307606705972116?fref=ts
 project_date: Março 2015
+prioridade: 6
 client: ferpam
 categories : [Mobile, Web]
 description: Gerenciador WEB para cadastro de dados de profissionais prestadores de serviço dividido por área de atuação e por cidade.

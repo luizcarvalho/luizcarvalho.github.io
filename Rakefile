@@ -46,6 +46,7 @@ task :post do
     post.puts "img: \"#{slug}\""
     post.puts "link: "
     post.puts "project_date: #{meses[project_month]} de #{ano}"
+    post.puts "prioridade: #{meses[project_month]} de #{ano}"
     post.puts "client: "
     post.puts "categories : []"
     post.puts "description: "
