@@ -1,6 +1,6 @@
 
 .answer {
-    background-image: url('/wp-content/uploads/icons/images-how-much-cost.png');
+    background-image: url('/assets/uploads/icons/images-how-much-cost.png');
     background-repeat: no-repeat;
     display: block;
 }
@@ -217,7 +217,7 @@
 }
 
 .icon {
-    background-image: url('/wp-content/uploads/icons/images-how-much-cost-110.png');
+    background-image: url('/assets/uploads/icons/images-how-much-cost-110.png');
     background-repeat: no-repeat;
     display: block;
 }
@@ -435,7 +435,7 @@
 @media (max-width:800px) {
 
     .answer {
-        background-image: url('/wp-content/uploads/icons/images-how-much-cost-110.png');
+        background-image: url('/assets/uploads/icons/images-how-much-cost-110.png');
         background-repeat: no-repeat;
         display: block;
     }
