@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="logo.svg"
-   inkscape:export-filename="/home/desenvolvimento/Dropbox/projetos/luizcarvalho/arts/lc_logo_BIG.png"
+   inkscape:export-filename="/home/desenvolvimento/Dropbox/Design/luizcarvalho/lc_logo_BIG.png"
    inkscape:export-xdpi="264.0235"
    inkscape:export-ydpi="264.0235">
   <defs
@@ -35,7 +35,7 @@
      showgrid="false"
      inkscape:window-width="1871"
      inkscape:window-height="1056"
-     inkscape:window-x="1969"
+     inkscape:window-x="49"
      inkscape:window-y="24"
      inkscape:window-maximized="1" />
   <metadata
@@ -64,27 +64,27 @@
        y="352.36218" />
     <text
        xml:space="preserve"
-       style="font-size:89.65052795px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Standard Symbols L;-inkscape-font-specification:Standard Symbols L"
-       x="67.672264"
-       y="717.96869"
+       style="font-size:43.73649979px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Standard Symbols L;-inkscape-font-specification:Standard Symbols L"
+       x="296.02158"
+       y="695.84015"
        id="text2985"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan2987"
-         x="67.672264"
-         y="717.96869"
-         style="font-size:161.37094116px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#63c7db;fill-opacity:1;font-family:Kaushan Script;-inkscape-font-specification:Kaushan Script">Luiz Carvalho</tspan></text>
+         x="296.02158"
+         y="695.84015"
+         style="font-size:78.72569275px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#63c7db;fill-opacity:1;font-family:Kaushan Script;-inkscape-font-specification:Kaushan Script">Luiz Carvalho</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:75.67407227px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Standard Symbols L;-inkscape-font-specification:Standard Symbols L"
-       x="772.53857"
-       y="780.19897"
+       style="font-size:36.9180069px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Standard Symbols L;-inkscape-font-specification:Standard Symbols L"
+       x="639.89447"
+       y="726.19952"
        id="text3759"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3761"
-         x="772.53857"
-         y="780.19897"
+         x="639.89447"
+         y="726.19952"
          style="fill:#ffffff;fill-opacity:1">.com</tspan></text>
   </g>
 </svg>
