@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Título oficial</title>
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta property="og:url"           content="http://luizcarvalho.com" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Título forçado" />
+    <meta property="og:description"   content="Your description" />
+    <meta property="og:image"         content="http://luizcarvalho.com/assets/images/portfolio/7midias-optimized.png" />
+  </head>
+  <body>
+
+    <div class="fb-share-button" data-href="http://luizcarvalho.com/share.html?pontos=10" data-layout="button"></div>
+
+
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5&appId=108793329145183";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script type="text/javascript">
+
+    // Pega pontos vindo por parametros na URL
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+      var pontos = getParameterByName('pontos');
+
+      // Cria imagem com a pontuação
+      var canvas = document.createElement("canvas");
+      canvas.width = 100;
+      canvas.height = 100;
+      var ctx = canvas.getContext("2d");
+      ctx.fillStyle = "red";
+      ctx.fillRect(0, 0, 100, 100);
+      ctx.fillStyle = 'white';
+      ctx.font = "30px Arial";
+      ctx.textAlign = "center";
+      ctx.fillText(pontos,canvas.width/2, canvas.height/2+10)
+
+
+      var img = document.createElement("img");
+      img.src = canvas.toDataURL("image/png");
+      document.body.appendChild(img);
+    </script>
+
+
+  </body>
+  </html>
