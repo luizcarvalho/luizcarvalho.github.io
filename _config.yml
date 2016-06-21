@@ -1,5 +1,5 @@
 url: https://luizcarvalho.github.io
-baseurl: 
+baseurl:
 
 # Site settings
 title: Luiz Carvalho
@@ -9,7 +9,7 @@ description: "Apaixonado por tecnologia, Desenvolvedor Web (Ruby on Rails, Djang
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary: 008BBA
-  secondary: 63C7DB  
+  secondary: 63C7DB
   secondary-dark: 333
 
 # Team names, titles and social links
@@ -24,13 +24,13 @@ people:
     - title: facebook
       url: http://facebook.com/luizcarvalho.br
     - title: stack-overflow
-      url: http://pt.stackoverflow.com/users/292/luiz-carvalho    
+      url: http://pt.stackoverflow.com/users/292/luiz-carvalho
     - title: github
       url: http://github.com/luizcarvalho
     - title: linkedin
       url: https://www.linkedin.com/in/luizcarvalhodev
     - title: google-plus
-      url: https://plus.google.com/+LuizCarvalhoDev/posts      
+      url: https://plus.google.com/+LuizCarvalhoDev/posts
     - title: slideshare
       url: http://www.slideshare.net/LuizCarvalhobr
 
@@ -41,7 +41,7 @@ social:
   - title: facebook
     url: http://facebook.com/luizcarvalho.br
   - title: stack-overflow
-    url: http://pt.stackoverflow.com/users/292/luiz-carvalho    
+    url: http://pt.stackoverflow.com/users/292/luiz-carvalho
   - title: github
     url: http://github.com/luizcarvalho
   - title: linkedin
@@ -58,3 +58,44 @@ markdown: kramdown
 permalink: pretty
 
 categories_filters: ['Mobile', 'Web', 'Design']
+
+assets:
+  compress:
+    css: true
+    js: true
+
+  #
+
+  autowrite: true
+  # cache: false | directory | default: .asset-cache
+  # cache_type: memory | filesystem | default: filesystem
+  # cdn: https://cdn.example.com
+  # skip_baseurl_with_cdn: false
+  # skip_prefix_with_cdn: false
+  # prefix: "/assets"
+  # digest: true
+
+  # #
+
+  # assets:
+  #   - "*.png"
+  #   - "bundle.css"
+
+  # #
+
+  # sources:
+  #   - _assets/css
+  #   - _assets/images
+  #   - _assets/javascripts
+  #   - _assets/stylesheets
+  #   - _assets/fonts
+  #   - _assets/img
+  #   - _assets/js
+
+  # #
+
+  # features:
+  #   liquid: true | false | default: false
+  #   integrity: true | false | default: false
+  #   automatic_img_size: true | false | n(fixnum): 2,4,6,8 | default: true
+  #   automatic_img_alt : true | false | default: true
