@@ -70,7 +70,10 @@ assets:
     - "*.jpg"
     - "*.mp4"
     - "*.webm"
-    - "bundle.css"
+    - "*.woff"
+    - "*.woff2"
+    - "*.ttf"
+
 
   autowrite: true
   # cache: false | directory | default: .asset-cache
