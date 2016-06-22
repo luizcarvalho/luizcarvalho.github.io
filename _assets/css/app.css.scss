@@ -1,6 +1,12 @@
+@charset "utf-8";
 //= require vendor/bootstrap
 //= require vendor/agency
 //= require vendor/cover
+//= require font-awesome/font-awesome
+
+
+$fa-font-path:        "../fonts/font-awesome";
+
 
 summary{
     padding: 20px;
