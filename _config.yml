@@ -1,16 +1,14 @@
 url: https://luizcarvalho.github.io
 baseurl:
 
+gems:
+  - jekyll-assets
+
+
 # Site settings
 title: Luiz Carvalho
 email: luizcarvalho@redrails.com.br
 description: "Apaixonado por tecnologia, Desenvolvedor Web (Ruby on Rails, Django) e Mobile (Android, iOS)"
-
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: 008BBA
-  secondary: 63C7DB
-  secondary-dark: 333
 
 # Team names, titles and social links
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
@@ -59,12 +57,20 @@ permalink: pretty
 
 categories_filters: ['Mobile', 'Web', 'Design']
 
+sass:
+    sass_dir: _sass
+
 assets:
   compress:
-    css: true
-    js: true
+    css: sass
+    js:  uglifier
 
-  #
+  assets:
+    - "*.png"
+    - "*.jpg"
+    - "*.mp4"
+    - "*.webm"
+    - "bundle.css"
 
   autowrite: true
   # cache: false | directory | default: .asset-cache
@@ -72,30 +78,12 @@ assets:
   # cdn: https://cdn.example.com
   # skip_baseurl_with_cdn: false
   # skip_prefix_with_cdn: false
-  # prefix: "/assets"
-  # digest: true
+  digest: true
 
-  # #
+  sources:
+    - _assets/css
+    - _assets/js
+    - _assets/images
+    - _assets/fonts
+    - _assets/videos
 
-  # assets:
-  #   - "*.png"
-  #   - "bundle.css"
-
-  # #
-
-  # sources:
-  #   - _assets/css
-  #   - _assets/images
-  #   - _assets/javascripts
-  #   - _assets/stylesheets
-  #   - _assets/fonts
-  #   - _assets/img
-  #   - _assets/js
-
-  # #
-
-  # features:
-  #   liquid: true | false | default: false
-  #   integrity: true | false | default: false
-  #   automatic_img_size: true | false | n(fixnum): 2,4,6,8 | default: true
-  #   automatic_img_alt : true | false | default: true

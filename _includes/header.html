@@ -67,11 +67,11 @@
         <div class="video-container">
 
             <video autoplay loop class="fillWidth">
-                <source src="{{ site.baseurl }}/assets/videos/coding.mp4" type="video/mp4" />Seu navegador não suporta a reprodução desse vídeo, sugerimos que você o atualize.
-                <source src="{{ site.baseurl }}/assets/videos/coding.webm" type="video/webm" />Seu navegador não suporta a reprodução desse vídeo, sugerimos que você o atualize.
+                <source src="{{ 'coding.mp4' | asset_path }}" type="video/mp4" />Seu navegador não suporta a reprodução desse vídeo, sugerimos que você o atualize.
+                <source src="{{ 'coding.webm' | asset_path }}" type="video/webm" />Seu navegador não suporta a reprodução desse vídeo, sugerimos que você o atualize.
             </video>
             <div class="poster hidden">
-                <img src="{{  site.baseurl }}/assets/videos/coding.jpg" alt="">
+                <img src="{{  'coding.jpg' | asset_path }}" alt="">
             </div>
 
 

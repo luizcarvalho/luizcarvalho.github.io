@@ -1,40 +1,41 @@
 <!-- Portfolio Grid Section -->
 <section id="portfolio" class="bg-light-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Portfólio</h2>
-                <h3 class="section-subheading text-muted">Alguns dos trabalhos que já desenvolvi.</h3>
-            </div>
-        </div>
-        <div class="row" id="filter-container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                {% for category in site.categories_filters %}
-                    <button class="filter btn btn-primary" data-filter=".{{ category | downcase }}">{{ category }}</button>
-                {% endfor %}
-                <h1></h1>
-                </div>
-            </div>
-            {% assign projetos = site.posts | sort: 'prioridade' %}
-            {% for projeto in projetos   reversed %}
-            <div class='mix {{ projeto.categories | join: ' ' }} col-md-4' >
-                <div class="col-md-12 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal{{ projeto.modal_id }}" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="assets/images/portfolio/{{ projeto.img}}-thumb.png" class="img-responsive" alt="{{ projeto.title}}">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>{{ projeto.title }}</h4>
-                        <p class="text-muted">{{ projeto.subtitle }}</p>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Portfólio</h2>
+        <h3 class="section-subheading text-muted">Alguns dos trabalhos que já desenvolvi.</h3>
+      </div>
     </div>
+    <div class="row" id="filter-container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          {% for category in site.categories_filters %}
+          <button class="filter btn btn-primary" data-filter=".{{ category | downcase }}">{{ category }}</button>
+          {% endfor %}
+          <h1></h1>
+        </div>
+      </div>
+
+      {% for projeto in projetos   reversed %}
+      <div class='mix {{ projeto.categories | join: ' ' }} col-md-4' >
+        <div class="col-md-12 col-sm-6 portfolio-item">
+          <a href="#portfolioModal{{ projeto.modal_id }}" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            {% assign image = "portfolio/" | append: post.img | append: '-thumb.png' %}
+            <img src="{{ image | asset_path }}" class="img-responsive" alt="{{ projeto.title}}">
+          </a>
+          <div class="portfolio-caption">
+            <h4>{{ projeto.title }}</h4>
+            <p class="text-muted">{{ projeto.subtitle }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>
