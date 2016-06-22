@@ -16,7 +16,7 @@
           <h1></h1>
         </div>
       </div>
-
+      {% assign projetos = site.posts | sort: 'prioridade' %}
       {% for projeto in projetos   reversed %}
       <div class='mix {{ projeto.categories | join: ' ' }} col-md-4' >
         <div class="col-md-12 col-sm-6 portfolio-item">
@@ -26,7 +26,7 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            {% assign image = "portfolio/" | append: post.img | append: '-thumb.png' %}
+            {% assign image = "portfolio/" | append: projeto.img | append: '-thumb.png' %}
             <img src="{{ image | asset_path }}" class="img-responsive" alt="{{ projeto.title}}">
           </a>
           <div class="portfolio-caption">
