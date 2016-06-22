@@ -661,7 +661,7 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url(../assets/images/map-image.png);
+    background-image: url(asset_path("map-image.png"));
     background-position: center;
     background-repeat: no-repeat;
 }
