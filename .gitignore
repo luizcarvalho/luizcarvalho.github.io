@@ -1,4 +1,5 @@
-.sass-cache
+.asset-cache/**/*
+.sass-cache/**/*
 .env
 
 # Windows image file caches
