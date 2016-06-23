@@ -3,8 +3,11 @@ require 'rake'
 require 'yaml'
 require 'time'
 require 'pry'
+require 'dotenv'
+require 'dotenv/tasks'
 require './lib/assets'
 include Optimize
+Dotenv.load
 
 SOURCE = '.'.freeze
 
@@ -34,6 +37,7 @@ task :post do
 
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
+    binding.pry
     post.puts '---'
     post.puts "title: \"#{title}\""
     post.puts 'subtitle: '
@@ -41,7 +45,6 @@ task :post do
     post.puts "modal_id: #{post_count + 1}"
     post.puts "date: #{date}"
     post.puts "img: \"#{slug}\""
-    post.puts "img-thumb: \"#{slug}\"-thumb.png"
     post.puts 'link: '
     post.puts "project_date: #{meses[project_month]} de #{ano}"
     post.puts "prioridade: #{meses[project_month]} de #{ano}"
