@@ -92,3 +92,7 @@ assets:
 
 exclude:
   - deploy
+
+firebase:
+  storage_url: "https://firebasestorage.googleapis.com/v0/b/luizcarvalho-9a6c1.appspot.com/o/"
+  token: "?alt=media&token=c773be8d-84db-4801-a469-bfee9ed49319"

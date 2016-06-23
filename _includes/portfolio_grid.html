@@ -26,8 +26,8 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            {% assign image = "portfolio/" | append: projeto.img | append: '-thumb.png' %}
-            <img src="{{ image | asset_path }}" class="img-responsive" alt="{{ projeto.title}}">
+            {% assign image = site.firebase.storage_url | append: "portfolio%2F" | append: projeto.img | append: '-thumb.png' | append: site.firebase.token %}
+            <img src="https://firebasestorage.googleapis.com/v0/b/luizcarvalho-9a6c1.appspot.com/o/portfolio%2F1007s-thumb.png?alt=media&token=0803626a-ea1b-4a5b-b594-01297fdd60bc" class="img-responsive" alt="{{ projeto.title}}">
           </a>
           <div class="portfolio-caption">
             <h4>{{ projeto.title }}</h4>
