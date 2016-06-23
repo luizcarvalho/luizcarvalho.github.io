@@ -9,6 +9,19 @@ module Asset
   IMAGE_PATH = "#{Dir.pwd}/_assets/images/portfolio".freeze
   @client = TinyPNG::Client.new(ENV['TINYPNG_KEY'])
 
+  AUTH = {
+    cloud_name:ENV['CLOUD_NAME'],
+    api_key:   ENV['API_KEY'],
+    api_secret:ENV['API_SECRET']
+  }
+
+  def process_upload_cdn(name)
+    processed = Asset.process(name)
+    thumb = Cloudinary::Uploader.upload(processed[:thumb], AUTH)
+    optimized = Cloudinary::Uploader.upload(processed[:optimized], AUTH)
+    { thumb_url: thumb['url'], optimized_url: optimized['url'] }
+  end
+
   def process(image, path = IMAGE_PATH)
     image_path = "#{path}/#{image}.png"
     image_resized = resize_image(image_path, '600x450')

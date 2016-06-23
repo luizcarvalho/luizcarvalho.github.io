@@ -4,6 +4,7 @@ require 'yaml'
 require 'time'
 require 'pry'
 require './lib/asset'
+require 'cloudinary'
 include Asset
 
 SOURCE = '.'.freeze
@@ -32,6 +33,8 @@ task :post do
   filename = File.join(CONFIG['posts'], "#{date}-#{slug}.#{CONFIG['post_ext']}")
   abort("post já existe!!") if File.exist?(filename)
 
+  cdn_data = process_upload_cdn(title)
+
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
     post.puts '---'
@@ -41,20 +44,17 @@ task :post do
     post.puts "modal_id: #{post_count + 1}"
     post.puts "date: #{date}"
     post.puts "img: \"#{slug}\""
+    post.puts "thumb_url: \"#{cdn_data[:thumb_url]}\""
+    post.puts "optimized_url: \"#{cdn_data[:optimized_url]}\""
     post.puts 'link: '
     post.puts "project_date: #{meses[project_month]} de #{ano}"
-    post.puts "prioridade: #{meses[project_month]} de #{ano}"
+    post.puts "prioridade: 0"
     post.puts 'client: '
     post.puts 'categories : []'
     post.puts 'description: '
     post.puts '---'
   end
 end # task :post
-
-desc 'Task description'
-task :process do
-  Asset.process('teste')
-end
 
 namespace :assets do
   desc 'optimize png'
