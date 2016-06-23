@@ -27,7 +27,7 @@
               </div>
             </div>
             {% assign image = "portfolio/" | append: projeto.img | append: '-thumb.png'  %}
-            <img src="{{ image }}" class="img-responsive" alt="{{ projeto.title}}">
+            <img src="{{ image | asset_path }}" class="img-responsive" alt="{{ projeto.title}}">
           </a>
           <div class="portfolio-caption">
             <h4>{{ projeto.title }}</h4>

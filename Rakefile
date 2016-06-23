@@ -3,8 +3,8 @@ require 'rake'
 require 'yaml'
 require 'time'
 require 'pry'
-require './lib/assets'
-include Optimize
+require './lib/asset'
+include Asset
 
 SOURCE = '.'.freeze
 
@@ -41,7 +41,6 @@ task :post do
     post.puts "modal_id: #{post_count + 1}"
     post.puts "date: #{date}"
     post.puts "img: \"#{slug}\""
-    post.puts "img-thumb: \"#{slug}\"-thumb.png"
     post.puts 'link: '
     post.puts "project_date: #{meses[project_month]} de #{ano}"
     post.puts "prioridade: #{meses[project_month]} de #{ano}"
@@ -52,10 +51,15 @@ task :post do
   end
 end # task :post
 
+desc 'Task description'
+task :process do
+  Asset.process('teste')
+end
+
 namespace :assets do
   desc 'optimize png'
   task :optimize do
-    Optimize.optimize
+    Asset.optimize
   end
 end
 

@@ -61,9 +61,9 @@ sass:
     sass_dir: _sass
 
 assets:
-  # compress:
-  #   css: sass
-  #   js:  uglifier
+  compress:
+    css: sass
+    js:  uglifier
 
   assets:
     - "*.png"

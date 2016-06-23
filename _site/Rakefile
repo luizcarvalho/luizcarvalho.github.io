@@ -3,11 +3,8 @@ require 'rake'
 require 'yaml'
 require 'time'
 require 'pry'
-require 'dotenv'
-require 'dotenv/tasks'
-require './lib/assets'
-include Optimize
-Dotenv.load
+require './lib/asset'
+include Asset
 
 SOURCE = '.'.freeze
 
@@ -37,7 +34,6 @@ task :post do
 
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
-    binding.pry
     post.puts '---'
     post.puts "title: \"#{title}\""
     post.puts 'subtitle: '
@@ -55,10 +51,15 @@ task :post do
   end
 end # task :post
 
+desc 'Task description'
+task :process do
+  Asset.process('teste')
+end
+
 namespace :assets do
   desc 'optimize png'
   task :optimize do
-    Optimize.optimize
+    Asset.optimize
   end
 end
 
