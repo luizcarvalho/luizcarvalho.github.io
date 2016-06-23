@@ -90,3 +90,5 @@ assets:
     - _assets/fonts
     - _assets/videos
 
+exclude:
+  - deploy
