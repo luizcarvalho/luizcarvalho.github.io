@@ -5,6 +5,8 @@ layout: default
 modal_id: 14
 date: 2015-04-28
 img: "sebrae_mei"
+thumb_url: http://res.cloudinary.com/drlko5ghb/image/upload/v1466793195/czgbl9yjroc1juzfkyvn.png
+optimized_url: http://res.cloudinary.com/drlko5ghb/image/upload/v1466793198/yg3qwyivxwibzbhyfasl.png
 link: https://www.youtube.com/watch?v=usTAizogT1E
 project_date: Julho de 2015
 prioridade: 7

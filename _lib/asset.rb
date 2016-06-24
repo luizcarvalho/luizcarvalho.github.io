@@ -15,10 +15,19 @@ module Asset
     api_secret:ENV['API_SECRET']
   }
 
+  def full_path(name, posfix=nil)
+    "#{IMAGE_PATH}/#{name}#{'-' if posfix}#{posfix}.png"
+  end
+
+  def upload(image_path)
+    puts ">> Upload #{image_path}"
+    Cloudinary::Uploader.upload(image_path, AUTH)
+  end
+
   def process_upload_cdn(name)
     processed = Asset.process(name)
-    thumb = Cloudinary::Uploader.upload(processed[:thumb], AUTH)
-    optimized = Cloudinary::Uploader.upload(processed[:optimized], AUTH)
+    thumb = upload(processed[:thumb])
+    optimized = upload(processed[:optimized])
     { thumb_url: thumb['url'], optimized_url: optimized['url'] }
   end
 

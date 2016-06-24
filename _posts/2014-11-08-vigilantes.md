@@ -5,6 +5,8 @@ layout: default
 modal_id: 15
 date: 2014-11-08
 img: "vigilantes"
+thumb_url: http://res.cloudinary.com/drlko5ghb/image/upload/v1466793635/gqbnhmsu3hb5fh65d3me.png
+optimized_url: http://res.cloudinary.com/drlko5ghb/image/upload/v1466793638/v0cm9osanakjbsitsirs.png
 link: http://vigilantesapp.com/
 project_date: Novembro de 2014
 prioridade: 7
