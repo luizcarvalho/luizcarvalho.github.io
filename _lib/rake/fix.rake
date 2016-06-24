@@ -1,5 +1,6 @@
 IMAGES = %W(
-  lolitaface  clinica_sorriso
+  droido 7midias vigilantes sebrae_mei dpe_saed websat ferpamweb dpe_chronus dpe_plantao
+  promocast lolita_moda_feminina dpe_intranet cha_bar clinica_sorriso droido_mascote bom_sabor
 )
 
 namespace :fix do
