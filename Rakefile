@@ -3,7 +3,7 @@ require 'rake'
 require 'yaml'
 require 'time'
 require 'pry'
-require './lib/asset'
+require './_lib/asset'
 require 'cloudinary'
 include Asset
 
@@ -64,4 +64,4 @@ namespace :assets do
 end
 
 # Load custom rake scripts
-Dir['_rake/*.rake'].each { |r| load r }
+Dir['./_lib/rake/*.rake'].each { |r| load r }
