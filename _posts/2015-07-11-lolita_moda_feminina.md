@@ -5,8 +5,8 @@ layout: default
 modal_id: 20
 date: 2014-11-11
 img: "lolitaface"
-thumb_url: http://res.cloudinary.com/drlko5ghb/image/upload/v1466794230/p5xdiq7emyfvd0zbhgnc.png
-optimized_url: http://res.cloudinary.com/drlko5ghb/image/upload/v1466794233/pjjzeavwff4wnu2kr0lu.png
+thumb_url: http://res.cloudinary.com/drlko5ghb/image/upload/v1466794962/kosnvws6imp3wkr87jds.png
+optimized_url: http://res.cloudinary.com/drlko5ghb/image/upload/v1466794966/iudvgld66mcnqqafaz6g.png
 link: https://www.facebook.com/lolitamodaf
 project_date: Novembro de 2014
 prioridade: 5

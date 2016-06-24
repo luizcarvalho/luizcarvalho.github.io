@@ -5,12 +5,12 @@ layout: default
 modal_id: 14
 date: 2015-04-28
 img: "sebrae_mei"
-thumb_url: http://res.cloudinary.com/drlko5ghb/image/upload/v1466793195/czgbl9yjroc1juzfkyvn.png
-optimized_url: http://res.cloudinary.com/drlko5ghb/image/upload/v1466793198/yg3qwyivxwibzbhyfasl.png
+thumb_url: http://res.cloudinary.com/drlko5ghb/image/upload/v1466794912/lloys9hqulsuibbtjwjl.png
+optimized_url: http://res.cloudinary.com/drlko5ghb/image/upload/v1466794913/poqd8pyfhiqwv34bngz5.png
 link: https://www.youtube.com/watch?v=usTAizogT1E
 project_date: Julho de 2015
 prioridade: 7
 client: Sebrae Tocantins
-categories : [Mobile, App] 
+categories : [Mobile, App]
 description: Projeto de aplicativo desenvolvido juntamente com Charles Rockenbach para submissão para concurso realizado pelo Sebrae, o projeto incluía estudo de casos para formulação de uma solução voltada ao auxílio dos MEI's assistidos pelo SEBRAE. Incluído criação de vídeo promocional, projeção de telas e documentação escrita.
 ---
