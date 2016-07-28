@@ -1,30 +1,6 @@
-Agency Jekyll theme
-====================
-
-Agency theme based on [Agency bootstrap theme ](http://startbootstrap.com/templates/agency/)
-
-# How to use
-
-###Portfolio 
-
-Portfolio projects are in '/_posts'
-
-Images are in '/assets/images/portfolio'
-
-###About
-
-Images are in '/assets/images/about/'
-
-###Team
-
-Team members and info are in '_config.yml'
-
-Images are in '/assets/images/team/'
-
-
-# Demo
-
-View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
-
-=========
-For more details, read [documentation](http://jekyllrb.com/)
+- 2005 Desenvolvimento de sites em PHP
+- 2009 Desenvolvimento de Sistema em Rails (Redesat)
+- 2010 Desenvolvimento primeira Startup Voltada para Marketing Digital
+- 2010 Analista em Redes Sociais e eventos
+- 2011 Desenvolvimento Android (Droido com mais de 250 mil download)
+- 2013 Desenvolvimento Django e Rails (Defensoria Pública do Estado do Tocantins)
