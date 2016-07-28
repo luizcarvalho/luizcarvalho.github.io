@@ -2,11 +2,12 @@
 git push origin `git subtree split --prefix _site code 2> /dev/null`:master --force
 
 
-# if [ DEPLOYING != 1 ]; then
+# echo $DEPLOYING
+# if [ $DEPLOYING != 'yes' ]; then
 #   echo 'Deploying site...'
-#   export DEPLOYING = 1
+#   export DEPLOYING='yes'
 #   git push origin `git subtree split --prefix _site code 2> /dev/null`:master --force
-#   export DEPLOYING = 0
+#   export DEPLOYING='no'
 #   echo 'done!'
 # fi
 # exit 0
