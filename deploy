@@ -3,11 +3,11 @@ git push origin `git subtree split --prefix _site code 2> /dev/null`:master --fo
 
 
 # echo $DEPLOYING
-# if [ $DEPLOYING != 'yes' ]; then
+# if [ -z "$DEPLOYING" ]; then
 #   echo 'Deploying site...'
 #   export DEPLOYING='yes'
 #   git push origin `git subtree split --prefix _site code 2> /dev/null`:master --force
-#   export DEPLOYING='no'
+#   unset -v DEPLOYING
 #   echo 'done!'
 # fi
 # exit 0
