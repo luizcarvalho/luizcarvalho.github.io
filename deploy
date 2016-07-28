@@ -2,7 +2,7 @@
 git push origin `git subtree split --prefix _site code 2> /dev/null`:master --force
 
 
-# if [ $1 == 'origin' ]; then
+# if [ $1 = 'origin' ]; then
 #   echo 'Deploying site...'
 #   git push origin `git subtree split --prefix _site code 2> /dev/null`:master --force
 #   echo 'done!'
