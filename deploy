@@ -2,9 +2,11 @@
 git push origin `git subtree split --prefix _site code 2> /dev/null`:master --force
 
 
-# if [ $0 = '.git/hooks/pre-push' ]; then
+# if [ DEPLOYING != 1 ]; then
 #   echo 'Deploying site...'
+#   export DEPLOYING = 1
 #   git push origin `git subtree split --prefix _site code 2> /dev/null`:master --force
+#   export DEPLOYING = 0
 #   echo 'done!'
 # fi
 # exit 0
