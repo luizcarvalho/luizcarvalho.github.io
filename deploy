@@ -2,14 +2,14 @@
 git push origin `git subtree split --prefix _site code 2> /dev/null`:master --force
 
 
-# pre-push HOOK
 # hook_branch='code'
 
 # current_branch=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
 
-# if [[ $current_branch = $hook_branch ]]; then
-#   echo "Deploying site..."
+# if [ $current_branch = $hook_branch ]; then
+#   echo 'Deploying site...'
 #   git push origin `git subtree split --prefix _site code 2> /dev/null`:master --force
 #   echo 'done!'
 # fi
 # exit 0
+
