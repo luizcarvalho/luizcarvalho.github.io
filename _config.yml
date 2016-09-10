@@ -1,0 +1,92 @@
+url: https://luizcarvalho.github.io
+baseurl:
+
+gems:
+  - jekyll-assets
+
+
+# Site settings
+title: Luiz Carvalho
+email: luizcarvalho@redrails.com.br
+description: "Apaixonado por tecnologia, Desenvolvedor Web (Ruby on Rails, Django) e Mobile (Android, iOS)"
+
+# Team names, titles and social links
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+people:
+- name: Luiz Carvalho
+  pic: 1
+  position: Desenvolvedor, Marketing, Designer
+  social:
+    - title: twitter
+      url: http://twitter.com/LuizCarvalho
+    - title: facebook
+      url: http://facebook.com/luizcarvalho.br
+    - title: stack-overflow
+      url: http://pt.stackoverflow.com/users/292/luiz-carvalho
+    - title: github
+      url: http://github.com/luizcarvalho
+    - title: linkedin
+      url: https://www.linkedin.com/in/luizcarvalhodev
+    - title: google-plus
+      url: https://plus.google.com/+LuizCarvalhoDev/posts
+    - title: slideshare
+      url: http://www.slideshare.net/LuizCarvalhobr
+
+
+social:
+  - title: twitter
+    url: http://twitter.com/LuizCarvalho
+  - title: facebook
+    url: http://facebook.com/luizcarvalho.br
+  - title: stack-overflow
+    url: http://pt.stackoverflow.com/users/292/luiz-carvalho
+  - title: github
+    url: http://github.com/luizcarvalho
+  - title: linkedin
+    url: https://www.linkedin.com/profile/view?id=49192094
+  - title: slideshare
+    url: http://www.slideshare.net/LuizCarvalhobr
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: Palmas, Tocantins, Brasil
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+categories_filters: ['Mobile', 'Web', 'Design']
+
+sass:
+    sass_dir: _sass
+
+assets:
+  # compress:
+  #   css: sass
+  #   js:  uglifier
+
+  assets:
+    - "*.png"
+    - "*.jpg"
+    - "*.mp4"
+    - "*.webm"
+    - "*.woff"
+    - "*.woff2"
+    - "*.ttf"
+
+
+  autowrite: true
+  # cache: false | directory | default: .asset-cache
+  # cache_type: memory | filesystem | default: filesystem
+  # cdn: https://cdn.example.com
+  # skip_baseurl_with_cdn: false
+  # skip_prefix_with_cdn: false
+  digest: true
+
+  sources:
+    - _assets/css
+    - _assets/js
+    - _assets/images
+    - _assets/fonts
+    - _assets/videos
+

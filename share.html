@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cubo Zero</title>
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <script type='text/javascript' src='http://code.jquery.com/jquery-1.8.2.js'></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+    <meta property="og:type"          content="website" />
+    <meta property="og:description"   content="Cubo Zero Desafie-se!" />
+    <meta property="og:image"         content="https://image.freepik.com/free-vector/puzzle-cube-logo_23-2147501142.jpg" />
+     <meta property="og:url"           content="http://cobozero.neocities.org/index.html?pontos=10" />
+     <meta property="og:title"         content="Consegui zerar meu cubo em X movimentos, consegue fazer em menos?" />
+   
+  </head>
+  <body>
+  
+
+    <div class="fb-share-button" data-href="http://cobozero.neocities.org/index.html" data-layout="button"></div>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5&appId=531147260297203";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script type="text/javascript">
+
+    // Pega pontos vindo por parametros na URL
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+      var pontos = getParameterByName('pontos');
+    </script>
+
+
+  </body>
+  </html>

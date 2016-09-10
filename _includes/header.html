@@ -1,0 +1,94 @@
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Alternar Navegação</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#services">Serviços</a>
+                </li>
+                <li>
+                    <a href="http://www.redrails.com.br" target="_blank">Blog</a>
+                </li>
+
+                <li>
+                    <a class="page-scroll" href="#portfolio">Portfólio</a>
+                </li>
+                <!--
+                <li>
+                    <a class="page-scroll" href="#about">Imprensa</a>
+                </li>
+                -->
+                <li>
+                    <a href="http://www.slideshare.net/LuizCarvalhobr" target="_blank">Apresentações</a>
+                </li>
+
+                <li>
+                    <a class="page-scroll" href="#team">Sobre</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contatos</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header>
+
+
+    <div class="homepage-hero-module">
+
+            <div class="info">
+                <div class="intro-text">
+                    <div class="intro-lead-in">Meu nome é</div>
+                    <div class="intro-heading">Luiz Carvalho</div>
+                    <div class="intro-lead-in">Meu desafio é criar coisas incríveis</div>
+                    <a href="#services" class="page-scroll btn btn-xl">  Saiba mais </a>
+                </div>
+            </div>
+        <div class="video-container">
+
+            <video autoplay loop class="fillWidth">
+                <source src="{{ 'coding.mp4' | asset_path }}" type="video/mp4" />Seu navegador não suporta a reprodução desse vídeo, sugerimos que você o atualize.
+                <source src="{{ 'coding.webm' | asset_path }}" type="video/webm" />Seu navegador não suporta a reprodução desse vídeo, sugerimos que você o atualize.
+            </video>
+            <div class="poster hidden">
+                <img src="{{  'coding.jpg' | asset_path }}" alt="">
+            </div>
+
+
+
+        </div>
+        <div class="container">
+
+        </div>
+    </div>
+
+
+
+
+</header>
+<!--
+        {% for page in site.pages %}
+          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+        {% endfor %}
+    -->
+
