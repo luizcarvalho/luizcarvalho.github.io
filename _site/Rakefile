@@ -42,9 +42,9 @@ task :post do
     post.puts "thumb_url: \"#{cdn_data[:thumb_url]}\""
     post.puts "optimized_url: \"#{cdn_data[:optimized_url]}\""
     post.puts "modal_id: #{post_count + 1}\n"
+    post.puts "date: #{date}"
     post.puts "title: \"#{title}\""
     post.puts 'subtitle: '
-    post.puts "date: #{date}"
     post.puts "img: \"#{slug}\""
     post.puts 'link: '
     post.puts "project_date: #{meses[project_month]} de #{ano}"

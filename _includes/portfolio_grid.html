@@ -24,7 +24,7 @@
         <div class="row">
       {% endif %}
 
-      <div class='mix {{ projeto.categories | join: ' ' }} col-md-4' >
+      <div class='mix {{ projeto.categories | join: ' ' | downcase }} col-md-4' >
         <div class="col-md-12 col-sm-6 portfolio-item">
           <a href="#portfolioModal{{ projeto.modal_id }}" class="portfolio-link" data-toggle="modal">
             <div class="portfolio-hover">

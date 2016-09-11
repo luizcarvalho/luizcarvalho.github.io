@@ -55,7 +55,7 @@ address:
 markdown: kramdown
 permalink: pretty
 
-categories_filters: ['Mobile', 'Web', 'Design']
+categories_filters: ['Mobile', 'Web', 'Design', 'Cursos']
 
 sass:
     sass_dir: _sass
