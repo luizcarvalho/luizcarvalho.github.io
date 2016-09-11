@@ -1,0 +1,137 @@
+title: Cláudia Lelis
+subtitle: Site para canditata a prefeita
+img: claudia
+project_date: Setembro de 2016
+prioridade: 4
+client: Arena Publicidade e Propaganda
+link: http://claudia43.com.br
+categories : [Web]
+
+description: "Site para Candidata a prefeita de Palmas Cláudia Lelis em 2016. Criado em parceria com Tiago Almeida.
+Projeto extremamente otimizado com ranking do Google Page speed 98/100 tanto Mobile quanto Desktop. 
+Site conta com Autenticação, Agenda, Redes Sociais, Galeria, Slider, Vídeos, Notícias, Contatos, Cadastro;
+Design moderno com uso de Parallax;
+Otimização de imagens por CDN;
+Otimização de SEO;
+Otimização para Mobile e muito mais.
+ATENÇÃO: Não temos nenhum vínculo político."
+
+===================================================================
+
+title: Melck Aquino
+subtitle: Site para o canditaro a vereador
+img: melck
+project_date: Setembro de 2016
+prioridade: 4
+client: Arena Publicidade e Propaganda
+link: http://melck.com.br
+categories : [Web]
+
+description: "Site para Candidato a vereador de Palmas Melck Aquino 2016. Criado em parceria com Tiago Almeida.
+Projeto de Site em Ruby on Rails criado do zero, exceto a parte de notícias que foi utilizando a Gem Blogo.
+Site conta com Autenticação, Agenda, Redes Sociais, Galeria, Slider, Vídeos, Notícias, Cadastro, Mapa;
+Otimização de imagens por CDN;
+Otimização de SEO;
+Otimização para Mobile e muito mais.
+ATENÇÃO: Não temos nenhum vínculo político."
+
+===================================================================
+
+title: Carreata do Melck
+subtitle: Carreata virtual em Realtime
+img: melck-carreata
+project_date: Setembro de 2016
+prioridade: 3
+client: Arena Publicidade e Propaganda
+link: http://carreata.melck.com.br
+categories : [Web]
+
+description: "Site para Candidato a vereador de Palmas Melck Aquino 2016. Criado em parceria com Tiago Almeida.
+Projeto de sistema em Django onde apoiadores podem logar com sua conta do Facebook e participar de uma carreata virtual, podendo escolher o veículo onde irá participar. 
+
+Todos os outros participantes da carreata verão novos participantes entrar em tempo real utilizando socket do NodeJS.
+
+Otimização de imagens por CDN;
+Animações em CSS3;
+Otimização para Mobile e muito mais.
+ATENÇÃO: Não temos nenhum vínculo político."
+
+--- 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XqDAbStmw-I" frameborder="0" allowfullscreen></iframe>
+
+
+=======================================================================
+
+
+title: Movimento Startup Tocantins
+subtitle: Palestra para III JTGTI-IFTO
+img: startup-tocantins
+project_date: Março de 2016
+prioridade: 8
+client: IFTO - Paraíso do Tocantins - TO
+link: http://pt.slideshare.net/LuizCarvalhobr/movimento-startup-tocantins-ifto-paraso-tocantins
+categories : [Cursos]
+
+description: "Palestra sobre O Movimento Startup Tocantins na III Jornada Tocantinense de Gestão da Tecnologia da Informação do Instituto Federal de Ciência e Tecnologia do Estado do Tocantins, Campus Paraíso do Tocantins "
+
+
+=========================================================================
+
+title: Minicurso Ruby on Rails 
+subtitle: Ruby on Rails na velocidade da Luz
+img: v-sa-unitins-rails
+project_date: Outubro de 2015
+prioridade: 8
+client: Universidade do Tocantins (UNITINS)
+link: http://pt.slideshare.net/LuizCarvalhobr/minicurso-desenvolvimento-na-velocidade-da-luz-com-ruby-on-rails
+categories : [Cursos]
+
+description: "Minicurso apresentado na V Semana Acadêmica na Universidade do Tocantins (UNITINS) do Câmpus Palmas. 
+
+Seguem as informações quanto à palestra: 
+· Data: 22/10/2015 
+· Horário: 19h às 22h40 
+· Título: Desenvolvimento na velocidade da luz com Ruby on Rails.. 
+· Local: Câmpus Palmas, 1102 Sul, AV. Teotônio Segurado, Lotes 1/2, Plano Diretor Sul Palmas – TO."
+
+=========================================================================
+
+title:  Ruby on Rails para Startup
+subtitle: Palestra sobre Rails para Startups
+img: fortes-2015-rails-startup
+project_date: Outubro de 2015
+prioridade: 8
+client: Tribunal Regional Eleitorial do Tocantins
+link: http://pt.slideshare.net/LuizCarvalhobr/ruby-on-rails-por-que-sua-startup-deve-usar
+categories : [Cursos]
+
+description: "Apresentação realizada durante o FORTES 2015 no dia 18/10/2015 em Palmas-TO no Auditório do Tribunal de Justiça do Tocantins."
+
+
+=========================================================================
+
+title: Startup Talk
+subtitle: Evento semanal sobre Startups
+img: startup-talk
+project_date: Setembro de 2015
+prioridade: 8
+client: Movimento Startup Tocantins
+link: http://pt.slideshare.net/LuizCarvalhobr/minicurso-desenvolvimento-na-velocidade-da-luz-com-ruby-on-rails
+categories : [Cursos]
+
+description: "Sou um dos idealizadores e organizadores do Startup Talk, um encontro semanal que tem como objetivo discutir sobre aspectos do mundo das startups. Esse evento, que acontece em Palmas, capital do Tocantins, ocorre toda segunda nem algum ponto da cidade."
+
+=========================================================================
+
+title: Startup Base
+subtitle: Reune as Startup Tocantineses
+img: startupbase
+project_date: Marçp de 2016
+prioridade: 4
+client: Movimento Startup Tocantins
+link: http://startupbase.info
+categories : [Cursos]
+
+description: "Startupbase é um site open source feito com Jekyll que reune as principais startups tocantineses. Reunimos informações sobre o movimento e links úteis ao ecosistema"
+
+
