@@ -127,7 +127,7 @@ title: Startup Base
 subtitle: Reune as Startup Tocantineses
 img: startupbase
 project_date: Marçp de 2016
-prioridade: 4
+prioridade: 7
 client: Movimento Startup Tocantins
 link: http://startupbase.info
 categories : [Cursos]

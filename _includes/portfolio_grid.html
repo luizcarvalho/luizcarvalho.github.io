@@ -18,6 +18,12 @@
       </div>
       {% assign projetos = site.posts | sort: 'prioridade' %}
       {% for projeto in projetos   reversed %}
+
+      {% assign modulo = forloop.index0 | modulo: 3 %}
+      {% if modulo == 0 or forloop.first %}
+        <div class="row">
+      {% endif %}
+
       <div class='mix {{ projeto.categories | join: ' ' }} col-md-4' >
         <div class="col-md-12 col-sm-6 portfolio-item">
           <a href="#portfolioModal{{ projeto.modal_id }}" class="portfolio-link" data-toggle="modal">
@@ -34,7 +40,12 @@
           </div>
         </div>
       </div>
+      {% if modulo == 2 or forloop.last %}
+        </div>
+      {% endif %}
+
       {% endfor %}
+
     </div>
   </div>
 </section>

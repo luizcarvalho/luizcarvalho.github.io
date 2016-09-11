@@ -20,7 +20,7 @@ module Asset
   end
 
   def upload(image_path)
-    puts ">> Upload #{image_path}"
+    puts ">> Upload to CDN #{image_path}"
     Cloudinary::Uploader.upload(image_path, AUTH)
   end
 

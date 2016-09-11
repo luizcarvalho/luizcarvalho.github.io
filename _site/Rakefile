@@ -38,14 +38,14 @@ task :post do
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
     post.puts '---'
-    post.puts "title: \"#{title}\""
-    post.puts 'subtitle: '
     post.puts 'layout: default'
-    post.puts "modal_id: #{post_count + 1}"
-    post.puts "date: #{date}"
-    post.puts "img: \"#{slug}\""
     post.puts "thumb_url: \"#{cdn_data[:thumb_url]}\""
     post.puts "optimized_url: \"#{cdn_data[:optimized_url]}\""
+    post.puts "modal_id: #{post_count + 1}\n"
+    post.puts "title: \"#{title}\""
+    post.puts 'subtitle: '
+    post.puts "date: #{date}"
+    post.puts "img: \"#{slug}\""
     post.puts 'link: '
     post.puts "project_date: #{meses[project_month]} de #{ano}"
     post.puts "prioridade: 0"
