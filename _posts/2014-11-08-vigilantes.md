@@ -2,7 +2,7 @@
 title: "Vigilantes App"
 subtitle: Projeto de Aplicativo para Segurança
 layout: default
-modal_id: 15
+modal_id: 23
 date: 2014-11-08
 img: "vigilantes"
 thumb_url: http://res.cloudinary.com/drlko5ghb/image/upload/v1466794939/a9acei2mzujudzzknowv.png

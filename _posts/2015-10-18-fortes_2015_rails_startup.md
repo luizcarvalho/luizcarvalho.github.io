@@ -2,7 +2,7 @@
 layout: default
 thumb_url: "http://res.cloudinary.com/drlko5ghb/image/upload/v1473634327/jqbolwwy0u1lhaxah6hu.png"
 optimized_url: "http://res.cloudinary.com/drlko5ghb/image/upload/v1473634330/jq4wn5azawpy3htgmpns.png"
-modal_id: 21
+modal_id: 11
 date: 2015-10-18
 title:  Ruby on Rails para Startup
 subtitle: Palestra sobre Rails para Startups

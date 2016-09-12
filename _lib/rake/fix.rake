@@ -36,6 +36,7 @@ end
 def rewrite_file(post_path, attibute, value)
   text = File.read(post_path)
   new_content = text.gsub(/#{attibute}: \d+/, "#{attibute}: #{value}")
+  puts "rewrite #{post_path}"
   File.open(post_path, "w") {|file| file.puts new_content }
 end
 

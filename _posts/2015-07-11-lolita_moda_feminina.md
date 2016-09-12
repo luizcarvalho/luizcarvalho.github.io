@@ -2,7 +2,7 @@
 title: "Lolita Moda feminina"
 subtitle: "Social Media"
 layout: default
-modal_id: 20
+modal_id: 12
 date: 2014-11-11
 img: "lolitaface"
 thumb_url: http://res.cloudinary.com/drlko5ghb/image/upload/v1466794962/kosnvws6imp3wkr87jds.png

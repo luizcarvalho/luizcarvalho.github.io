@@ -2,7 +2,7 @@
 layout: default
 thumb_url: "http://res.cloudinary.com/drlko5ghb/image/upload/v1473634263/r5kcn4bypmnmdmv5p8dw.png"
 optimized_url: "http://res.cloudinary.com/drlko5ghb/image/upload/v1473634266/ovx2gzjlhddd3b3cisw5.png"
-modal_id: 18
+modal_id: 10
 date: 2015-03-10
 title: Startup Talk
 subtitle: Evento semanal sobre Startups

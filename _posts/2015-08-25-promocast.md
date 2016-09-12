@@ -2,7 +2,7 @@
 title: "Promocast"
 subtitle: Sistema para gerência de Rádios
 layout: default
-modal_id: 22
+modal_id: 21
 date: 2010-01-13
 img: "promocast"
 thumb_url: http://res.cloudinary.com/drlko5ghb/image/upload/v1466794908/jttcawku2vwnhbpuqy0p.png

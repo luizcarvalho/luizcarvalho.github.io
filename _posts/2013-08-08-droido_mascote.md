@@ -2,7 +2,7 @@
 title: "Droido Mascote"
 subtitle: Criação de Mascote
 layout: default
-modal_id: 13
+modal_id: 2
 date: 2013-08-08
 img: "droido_mascote"
 thumb_url: http://res.cloudinary.com/drlko5ghb/image/upload/v1466794934/xj57migoehyz9hvxoegi.png

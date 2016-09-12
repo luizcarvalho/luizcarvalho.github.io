@@ -2,7 +2,7 @@
 layout: default
 thumb_url: "http://res.cloudinary.com/drlko5ghb/image/upload/v1473634358/ahrawudkbv70bfel3lxm.png"
 optimized_url: "http://res.cloudinary.com/drlko5ghb/image/upload/v1473634360/kxzi9moreo3jqemquewa.png"
-modal_id: 23
+modal_id: 20
 date: 2014-04-11
 title: Introdução ao Android
 subtitle: Minicurso pra Católica TO

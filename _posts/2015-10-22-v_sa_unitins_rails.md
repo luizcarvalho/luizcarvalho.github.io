@@ -2,7 +2,7 @@
 layout: default
 thumb_url: "http://res.cloudinary.com/drlko5ghb/image/upload/v1473634304/h3tv2s29cpt5e1kcwbmf.png"
 optimized_url: "http://res.cloudinary.com/drlko5ghb/image/upload/v1473634306/zugbdzwmszxssqxtjkhd.png"
-modal_id: 20
+modal_id: 9
 date: 2015-11-22
 title: Minicurso Ruby on Rails 
 subtitle: Ruby on Rails na velocidade da Luz

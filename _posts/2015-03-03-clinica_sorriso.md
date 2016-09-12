@@ -2,7 +2,7 @@
 title: "Clinica do Sorriso"
 subtitle: Identidade visual - Logo
 layout: default
-modal_id: 11
+modal_id: 7
 date: 2015-03-03
 img: "clinica_sorriso"
 thumb_url: http://res.cloudinary.com/drlko5ghb/image/upload/v1466794891/bobcwuxscbuichthdtzp.png
