@@ -14,22 +14,39 @@ namespace :fix do
       puts "+ Fixing #{title} with image #{IMAGES[image_index]}"
       thumb = Asset.upload(Asset.full_path(IMAGES[image_index], 'thumb'))
       optimized = upload(Asset.full_path(IMAGES[image_index], 'optimized'))
-      rewrite_file(post_path, thumb['url'], optimized['url'])
+      fix_images(post_path, thumb['url'], optimized['url'])
     else
       puts "- Skiping #{title}"
     end
    end
-
  end
 
+
+  desc 'Reseta todos os contadores de modais'
+  task :modals do
+   Dir["_posts/*.md"].each_with_index do |post_path, index|
+      rewrite_file(post_path, 'modal_id', index)
+   end
+ end
+
+
 end
+
+
+def rewrite_file(post_path, attibute, value)
+  text = File.read(post_path)
+  new_content = text.gsub(/#{attibute}: \d+/, "#{attibute}: #{value}")
+  File.open(post_path, "w") {|file| file.puts new_content }
+end
+
+
 
 
 def get_title(file_name)
   file_name.match(/(\w+)\.md/)[1]
 end
 
-def rewrite_file(post_path, thumb_url, optimized_url)
+def fix_images(post_path, thumb_url, optimized_url)
   text = File.read(post_path)
   cdn_info = "thumb_url: #{thumb_url}\noptimized_url: #{optimized_url}\nlink:"
   new_contents = text.gsub('link:', cdn_info)
