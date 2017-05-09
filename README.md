@@ -7,4 +7,6 @@
 
 
 DEPLOY:
-run bundle exec jekyll server to generate _site
+- run bundle exec jekyll server to generate _site
+- git add . /commit etc...
+- ./deploy
