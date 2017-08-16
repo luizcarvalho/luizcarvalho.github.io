@@ -8,14 +8,14 @@ gems:
 # Site settings
 title: Luiz Carvalho
 email: luizcarvalho@redrails.com.br
-description: "Apaixonado por tecnologia, Desenvolvedor Web (Ruby on Rails, Django) e Mobile (Android, iOS)"
+description: "Desenvolvimento de Sites, Sistemas Web, Chatbots e Aplicativos móveis"
 
 # Team names, titles and social links
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 people:
 - name: Luiz Carvalho
   pic: 1
-  position: Desenvolvedor, Marketing, Designer
+  position: Desenvolvimento, Palestras
   social:
     - title: twitter
       url: http://twitter.com/LuizCarvalho
