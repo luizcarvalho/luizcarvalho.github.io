@@ -1,38 +1,16 @@
-{% javascript app %}
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 
-<!-- BEGIN ANALYTICS -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<script async defer>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!-- Plugin JavaScript -->
+<script src="{{ "/assets/js/vendor/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/vendor/classie.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/vendor/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/vendor/jquery.mixitup.min.js" | prepend: site.baseurl }}"></script>
 
-  ga('create', 'UA-4882704-8', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-<!-- Posicione esta tag no cabeçalho ou imediatamente antes da tag de fechamento do corpo. -->
-<script src="https://apis.google.com/js/platform.js" async defer>
-  {lang: 'pt-BR'}
-</script>
-
-<script type="text/javascript" async defer
-  src="https://apis.google.com/js/platform.js?publisherid=101456346694407663804">
-</script>
-
-
-<!-- END ANALYTICS -->
-
-<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCu_-EFVC1nPWcWkoyLHArZDFkU2V5qKb0",
-    authDomain: "luizcarvalho-9a6c1.firebaseapp.com",
-    databaseURL: "https://luizcarvalho-9a6c1.firebaseio.com",
-    storageBucket: "luizcarvalho-9a6c1.appspot.com",
-  };
-  firebase.initializeApp(config);
-</script>
+<!-- Custom Theme JavaScript -->
+<script src="{{ "/assets/js/vendor/agency.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/vendor/cover.js" | prepend: site.baseurl }}"></script>

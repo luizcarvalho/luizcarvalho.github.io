@@ -1,0 +1,4 @@
+{% include assets/css/theme.css %}
+{% include assets/css/cover.css %}
+{% include assets/css/style.css %}
+{{ content }}
