@@ -47,8 +47,6 @@ social:
 address:
   - line: Palmas, Tocantins, Brasil
 
-asset_path: '/assets/'
-
 # Build settings
 markdown: kramdown
 permalink: pretty
