@@ -18,6 +18,8 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+_site/**/*
+
 # =========================
 # Operating System Files
 # =========================
