@@ -1,7 +1,7 @@
 ---
 layout: default
-thumb_url: "http://res.cloudinary.com/drlko5ghb/image/upload/v1473634385/pajjpjmwkiardu1wt2mb.png"
-optimized_url: "http://res.cloudinary.com/drlko5ghb/image/upload/v1473634388/dd8qlmowvtnf1iihtuif.png"
+thumb_url: "http://res.cloudinary.com/drlko5ghb/image/upload/c_scale,w_385/v1492558081/EventoChatbot/agrotins_logo.jpg"
+optimized_url: "http://res.cloudinary.com/drlko5ghb/image/upload/c_scale,w_600/v1492558081/EventoChatbot/agrotins_logo.jpg"
 modal_id: 25
 date: 2017-05-08
 title: Chatbot para a Agrotins
