@@ -51,7 +51,7 @@ address:
 markdown: kramdown
 permalink: pretty
 
-categories_filters: ['Mobile', 'Web', 'Design', 'Cursos', 'Chatbots']
+categories_filters: ['Mobile', 'Web', 'Design', 'Chatbots']
 
 
 firebase:
