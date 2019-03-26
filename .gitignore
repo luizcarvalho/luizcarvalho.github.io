@@ -1,5 +1,6 @@
 .asset-cache/**/*
 .sass-cache/**/*
+_site/**/*
 .env
 
 # Windows image file caches
