@@ -31,6 +31,8 @@ people:
       url: http:/m.me/luizcarvalhobr
     - title: whatsapp
       url: http://bit.ly/2WGofF7
+    - title: instagram
+      url: http:/instagram.com/luizcarvalhobr
 
 social:
   - title: twitter
@@ -42,9 +44,17 @@ social:
   - title: github
     url: http://github.com/luizcarvalho
   - title: linkedin
-    url: https://www.linkedin.com/in/luizcarvalhodev/
+    url: https://www.linkedin.com/in/luizcarvalhodev
+  - title: google-plus
+    url: https://plus.google.com/+LuizCarvalhoDev/posts
   - title: slideshare
     url: http://www.slideshare.net/LuizCarvalhobr
+  - title: messenger
+    url: http:/m.me/luizcarvalhobr
+  - title: whatsapp
+    url: http://bit.ly/2WGofF7
+  - title: instagram
+    url: http:/instagram.com/luizcarvalhobr
 
 # Postal address (add as many lines as necessary)
 address:
