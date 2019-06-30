@@ -10,11 +10,11 @@ preview_image: https://res.cloudinary.com/drlko5ghb/image/upload/v1561903743/sit
 
 # Team names, titles and social links
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-people:
-- name: Luiz Carvalho
+my:
+  name: Luiz Carvalho
   pic: 1
   position: Desenvolvimento, Palestras
-  social:
+  social_networks:
     - title: instagram
       url: http:/instagram.com/luizcarvalhobr
     - title: twitter
@@ -51,7 +51,7 @@ social:
     url: https://plus.google.com/+LuizCarvalhoDev/posts
   - title: slideshare
     url: http://www.slideshare.net/LuizCarvalhobr
-  - title: messenger
+  - title: facebook-messenger
     url: http:/m.me/luizcarvalhobr
   - title: whatsapp
     url: http://bit.ly/2WGofF7

@@ -284,6 +284,7 @@ GEM
       unf_ext
     unf_ext (0.0.7.6)
     unicode-display_width (1.6.0)
+    wdm (0.1.1)
 
 PLATFORMS
   ruby
@@ -298,6 +299,7 @@ DEPENDENCIES
   rake
   redcarpet
   tinypng!
+  wdm (>= 0.1.0)
 
 RUBY VERSION
    ruby 2.6.3p62
