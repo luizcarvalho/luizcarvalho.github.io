@@ -2,9 +2,10 @@ url: https://luizcarvalho.github.io
 baseurl:
 
 # Site settings
-title: Luiz Carvalho
+title: Luiz Carvalho.com
 email: contato@luizcarvalho.com
-description: "Desenvolvimento de Sites, Sistemas Web, Chatbots e Aplicativos móveis"
+description: Desenvolvimento de Sites, Sistemas Web, Chatbots, palestras e mentorias
+metatitle: Luiz Carvalho.com | Desenvolvimento de Sites, Sistemas Web, Chatbots, palestras e mentorias
 
 # Team names, titles and social links
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
