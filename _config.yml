@@ -4,8 +4,9 @@ baseurl:
 # Site settings
 title: Luiz Carvalho.com
 email: contato@luizcarvalho.com
-description: Desenvolvimento de Sites, Sistemas Web, Chatbots, palestras e mentorias
-metatitle: Luiz Carvalho.com | Desenvolvimento de Sites, Sistemas Web, Chatbots, palestras e mentorias
+description: Desenvolvimento de Sites, Apps, Chatbots, Palestras e Mentorias.
+metatitle: Luiz Carvalho.com | Desenvolvimento de Sites, Apps, Chatbots, Palestras e Mentorias.
+preview_image: https://res.cloudinary.com/drlko5ghb/image/upload/v1561903743/site_static/site_preview-optimized.jpg
 
 # Team names, titles and social links
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
@@ -14,6 +15,8 @@ people:
   pic: 1
   position: Desenvolvimento, Palestras
   social:
+    - title: instagram
+      url: http:/instagram.com/luizcarvalhobr
     - title: twitter
       url: http://twitter.com/LuizCarvalho
     - title: facebook
@@ -32,8 +35,6 @@ people:
       url: http:/m.me/luizcarvalhobr
     - title: whatsapp
       url: http://bit.ly/2WGofF7
-    - title: instagram
-      url: http:/instagram.com/luizcarvalhobr
 
 social:
   - title: twitter
@@ -65,7 +66,7 @@ address:
 markdown: kramdown
 permalink: pretty
 
-categories_filters: ['Mobile', 'Web', 'Design', 'Chatbots']
+categories_filters: ['Mobile', 'Web', 'Design', 'Chatbots', 'Palestras']
 
 
 firebase:
