@@ -11,3 +11,5 @@ gem 'pry'
 gem 'dotenv'
 gem 'cloudinary'
 gem 'redcarpet'
+
+gem "webrick", "~> 1.7"
