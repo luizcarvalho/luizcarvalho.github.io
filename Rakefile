@@ -15,8 +15,10 @@ CONFIG = {
 }.freeze
 
 meses = {
-  'January' => 'Janeiro', 'February' => 'Fevereiro', 'March' => 'Março', 'April' => 'Abril', 'May' => 'Maio', 'June' => 'Junho',
-  'July' => 'Julho', 'August' => 'Agosto', 'September' => 'Setembro', 'October' => 'Outubro', 'November' => 'Novembro', 'December' => 'Dezembro'
+  'January' => 'Janeiro', 'February' => 'Fevereiro', 'March' => 'Março',
+  'April' => 'Abril', 'May' => 'Maio', 'June' => 'Junho',
+  'July' => 'Julho', 'August' => 'Agosto', 'September' => 'Setembro',
+  'October' => 'Outubro', 'November' => 'Novembro', 'December' => 'Dezembro'
 }
 
 # Usage: rake post title="A Title" [date="2012-02-09"] [tags=[tag1,tag2]] [category="category"]
@@ -31,7 +33,7 @@ task :post do
   ano = Time.now.strftime('%Y')
 
   filename = File.join(CONFIG['posts'], "#{date}-#{slug}.#{CONFIG['post_ext']}")
-  abort("post já existe!!") if File.exist?(filename)
+  abort('post já existe!!') if File.exist?(filename)
 
   cdn_data = process_upload_cdn(title)
 
@@ -48,7 +50,7 @@ task :post do
     post.puts "img: \"#{slug}\""
     post.puts 'link: '
     post.puts "project_date: #{meses[project_month]} de #{ano}"
-    post.puts "prioridade: 0"
+    post.puts 'prioridade: 0'
     post.puts 'client: '
     post.puts 'categories : []'
     post.puts 'description: '

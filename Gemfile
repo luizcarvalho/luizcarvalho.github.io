@@ -1,18 +1,16 @@
 source 'https://rubygems.org'
 
-
 gem 'github-pages', group: :jekyll_plugins
 
 gem 'jekyll'
 
-
 group :develpment do
-  gem 'rake'
-  gem 'tinypng' , :git => 'https://github.com/thomas07vt/tinypng.git'
+  gem 'cloudinary'
   gem 'dotenv'
   gem 'pry'
-  gem 'cloudinary'
+  gem 'rake'
   gem 'redcarpet'
-  gem "webrick"
-  gem 'robocop'
+  gem 'rubocop', '~> 1.66'
+  gem 'tinypng', git: 'https://github.com/thomas07vt/tinypng.git'
+  gem 'webrick'
 end
