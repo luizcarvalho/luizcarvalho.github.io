@@ -2,10 +2,10 @@ url: https://luizcarvalho.github.io
 baseurl: ''
 
 # Site settings
-title: Luiz Carvalho.com | Inteligência Artificial, Desenvolvimento de Sites, Apps, Chatbots, Palestras e Mentorias.
+title: Luiz Carvalho.com
 email: contato@luizcarvalho.com
-description: Desenvolvimento de Sites, Apps, Chatbots, Palestras e Mentorias.
-metatitle: Luiz Carvalho.com | Desenvolvimento de Sites, Apps, Chatbots, Palestras e Mentorias.
+description: Inteligência Artificial, Desenvolvimento de Sites, Apps, Chatbots, Palestras e Mentorias.
+metatitle: Luiz Carvalho.com | Inteligência Artificial, Desenvolvimento de Sites, Apps, Chatbots, Palestras e Mentorias.
 preview_image: https://res.cloudinary.com/drlko5ghb/image/upload/v1683120015/site_static/thumb.jpg
 
 # Team names, titles and social links
