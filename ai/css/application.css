@@ -1,0 +1,368 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gradient-cta {
+  background: linear-gradient(8deg, rgba(146, 48, 248, 1) 0%, rgba(247, 114, 134, 1) 100%)!important;
+}
+
+.out {
+  background: linear-gradient(#08070D, #08070D) padding-box, linear-gradient(to right, #9230F8, #F77286) border-box!important;
+  border: 1px solid transparent!important;
+  transition: 0.3s;
+}
+
+#lp-pom-button-7253 {
+  transition: 0.3s;
+}
+/**#lp-pom-button-7253:hover{
+ 
+  background: linear-gradient(#08070D, #08070D) padding-box,
+  linear-gradient(to right, #9230F8, #F77286) border-box!important;
+  transform:scale(1.03);
+
+}**/
+
+.gradient-txt {
+  background: #9230F8;
+  background: linear-gradient(to right, #9B0FBE 0%, #B12A00 100%);
+  -webkit-background-clip: text!important;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-txt2 {
+  background: #9230F8;
+  background: linear-gradient(to right, #9B0FBE 0%, #B12A00 100%)!important;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass {
+  backdrop-filter: blur(5px);
+}
+
+.luz {
+  filter: blur(125px);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+:root {
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgba(247, 152, 176, 1);
+  --c2: rgba(251, 134, 236, 0.1);
+}
+
+.box {
+  border: 0.35rem solid;
+  padding: 3vw;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+  animation: borderRotate var(--d) linear infinite forwards;
+  background-color: rgb(8 7 14 / 1%)!important;
+}
+
+.box:nth-child(2) {
+  border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+  animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+  100% {
+    --angle: 420deg;
+  }
+}
+
+@keyframes borderRadial {
+  20% {
+    --gradX: 100%;
+    --gradY: 50%;
+  }
+  40% {
+    --gradX: 100%;
+    --gradY: 100%;
+  }
+  60% {
+    --gradX: 50%;
+    --gradY: 100%;
+  }
+  80% {
+    --gradX: 0%;
+    --gradY: 50%;
+  }
+  100% {
+    --gradX: 50%;
+    --gradY: 0%;
+  }
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, -25px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+
+.accordion {
+  position: relative;
+}
+
+.contentcheckbox {
+  font-family: 'montserrat';
+  color: #ffffff;
+}
+
+hr.barVertical {
+  height: 12px;
+  width: 1px;
+  border-width: 0;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.contentcheckbox {
+  width: auto;
+  padding: 0;
+  margin: 0 auto;
+}
+/*faq*/
+
+.faq {
+  position: relative;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0;
+  padding: 20px 10px 20px 10px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: solid #ffffff;
+  border-width: 0px 0px 1px 0px;
+  font-size: 18px;
+  background-color: #ffffff;
+}
+
+.faq hr {
+  margin-top: 13px;
+}
+/*Answer*/
+
+.answers {
+  text-align: center;
+  padding: 0px;
+  margin: 1px 0;
+  width: 100%!important;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.pergunta {
+  max-width: 80%;
+  line-height: 24px;
+}
+
+.answers p {
+  text-align: left;
+  margin: 24px 24px;
+}
+
+.faqs:checked ~ .answers {
+  height: auto;
+  opacity: 1;
+  margin: 0;
+}
+/*FAQ Toggle*/
+
+.seta {
+  color: #111318;
+  position: absolute;
+  right: 35px;
+  top: 10px;
+  margin-left: 10px;
+  z-index: 5;
+  font-size: 2em;
+  line-height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.faqs:checked ~ .faq .seta {
+  /* color:#fffffa; */
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* text-ident */
+
+.indent {
+  margin-left: 2em
+}
+
+.faqs {
+  display: none;
+}
+
+.accordion {
+  position: relative;
+}
+
+.contentcheckbox {
+  font-family: 'montserrat';
+  color: #ffffff;
+}
+
+hr.barVertical {
+  height: 12px;
+  width: 1px;
+  border-width: 0;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.contentcheckbox {
+  width: auto;
+  padding: 0;
+  margin: 0 auto;
+}
+/*faq*/
+
+.faq {
+  position: relative;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0;
+  padding: 20px 10px 20px 10px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: solid #ffffff;
+  border-width: 0px 0px 1px 0px;
+  font-size: 18px;
+  background-color: #ffffff;
+}
+
+.faq hr {
+  margin-top: 13px;
+}
+/*Answer*/
+
+.answers {
+  text-align: center;
+  padding: 0px;
+  margin: 1px 0;
+  width: 100%!important;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.pergunta {
+  max-width: 80%;
+  line-height: 24px;
+}
+
+.answers p {
+  text-align: left;
+  margin: 24px 24px;
+}
+
+.faqs:checked ~ .answers {
+  height: auto;
+  opacity: 1;
+  margin: 0;
+}
+/*FAQ Toggle*/
+
+.seta {
+  color: #111318;
+  position: absolute;
+  right: 35px;
+  top: 10px;
+  margin-left: 10px;
+  z-index: 5;
+  font-size: 2em;
+  line-height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.faqs:checked ~ .faq .seta {
+  /* color:#fffffa; */
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* text-ident */
+
+.indent {
+  margin-left: 2em
+}
+
+.faqs {
+  display: none;
+}

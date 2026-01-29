@@ -3,41 +3,53 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ site.description }}">
-    <link href="https://luizcarvalho.com/#team" rel="publisher" />
-    <meta name="alexaVerifyID" content="wjpQ_iH5Rrmg4q4f-8qTGIh8WSs" />
-    <meta http-equiv="last-modified" content="{{ site.time | date: '%a, %-d %b %Y %H:%M:%S'  }} GMT " />
-
-    <meta http-equiv="cache-control" content="Private" />
-    <meta http-equiv="Expires" content="600" />
-
-    <link rel="icon" type="image/x-icon" href="{{ " assets/images/favicon.ico " | asset_path }}" />
-
+    <meta name="keywords" content="Inovação, Empreendedorismo, Startups, {{ site.title }}, Palmas, Tocantins">
+    <meta name="author" content="Luiz Carvalho">
+    
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-    <!-- meta infos -->
+    
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.metatitle }}{% endif %}</title>
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:locale" content="pt_BR">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %} {{ site.metatitle }}{% endif %}">
     <meta property="og:description" content="{{ site.description }}">
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <meta property="og:site_name" content="Luiz Carvalho.com">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:site_name" content="Luiz Carvalho">
+    <meta property="og:image" content="{{ site.preview_image }}">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ site.title }}">
     <meta name="twitter:description" content="{{ site.description }}">
-    <meta name="twitter:title" content="{{ site.metatitle }}">
+    <meta name="twitter:image" content="{{ site.preview_image }}">
     <meta name="twitter:site" content="@luizcarvalho">
     <meta name="twitter:creator" content="@luizcarvalho">
-    <meta property="og:image" content="{{ site.preview_image }}" />
-
-
-    <!-- VENDOR -->
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-
+    
+    <!-- Google Verification -->
+    <meta name="google-site-verification" content="GOOGLE_VERIFICATION_CODE">
+    <meta name="alexaVerifyID" content="wjpQ_iH5Rrmg4q4f-8qTGIh8WSs" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta http-equiv="last-modified" content="{{ site.time | date: '%a, %-d %b %Y %H:%M:%S' }} GMT">
+    
+    <!-- Performance & Caching -->
+    <meta http-equiv="cache-control" content="private, max-age=600">
+    <meta http-equiv="expires" content="600">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ "assets/images/favicon.ico" | asset_path }}">
+    
+    <!-- Fonts & Styles -->
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/752f215bb5.js"></script>
-
-
     <link rel="stylesheet" href="{{ " /assets/css/application.css " | prepend: site.baseurl }}">
+    
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/752f215bb5.js" crossorigin="anonymous"></script>
 </head>
