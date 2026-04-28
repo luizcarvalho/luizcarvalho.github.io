@@ -94,7 +94,7 @@ function initScrollAnimations() {
 // ==========================================
 // Usando rss2json API que já resolve CORS
 const RSS2JSON_API = 'https://api.rss2json.com/v1/api.json?rss_url=';
-const MEDIUM_FEED_URL = 'https://medium.com/feed/luizcarvalho-com/tagged/Palestra';
+const MEDIUM_FEED_URL = 'https://medium.com/feed/luizcarvalho-com/tagged/palestra';
 
 let allArticles = [];
 let displayedArticles = 0;

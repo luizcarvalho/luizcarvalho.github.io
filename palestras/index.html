@@ -91,48 +91,54 @@
         </div>
     </section>
 
-    <section class="section conteudo" id="palestras">
+
+    <section class="section casos" id="casos">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Temas Mais Contratados</span>
-                <h2 class="section-title">Um portfólio para plateias que precisam <span class="highlight">entender, decidir e aplicar</span></h2>
-                <p class="section-subtitle">Palestras ajustadas ao nível do público, ao objetivo do evento e ao contexto da organização.</p>
+                <span class="section-tag">Registro e Repertório</span>
+                <h2 class="section-title">Artigos e bastidores de <span class="highlight">palestras</span></h2>
+                <p class="section-subtitle">Publicações que documentam eventos, aprendizados e aplicações de IA no mundo real.</p>
             </div>
 
-            <div class="conteudo-grid">
-                <article class="conteudo-card glass-card">
-                    <span class="card-number">01</span>
-                    <h3>Inteligência Artificial sem hype</h3>
-                    <p>O que muda agora, o que ainda é exagero e como líderes podem separar oportunidade real de ruído tecnológico.</p>
-                </article>
-                <article class="conteudo-card glass-card">
-                    <span class="card-number">02</span>
-                    <h3>ChatGPT e produtividade prática</h3>
-                    <p>Casos de uso, engenharia de prompt, rotinas de trabalho e limites éticos para equipes que querem ganhar velocidade com qualidade.</p>
-                </article>
-                <article class="conteudo-card glass-card">
-                    <span class="card-number">03</span>
-                    <h3>Agentes inteligentes e automação</h3>
-                    <p>Como agentes de IA executam tarefas, conectam ferramentas e abrem novas possibilidades para empresas e setor público.</p>
-                </article>
-                <article class="conteudo-card glass-card">
-                    <span class="card-number">04</span>
-                    <h3>IA no serviço público</h3>
-                    <p>Experiência aplicada com DefGPT, eficiência institucional, inovação responsável e transformação de serviços para o cidadão.</p>
-                </article>
-                <article class="conteudo-card glass-card">
-                    <span class="card-number">05</span>
-                    <h3>Inovação, startups e carreira</h3>
-                    <p>Repertório para ecossistemas de inovação, hackathons, comunidades, educação empreendedora e profissionais em transição.</p>
-                </article>
-                <article class="conteudo-card glass-card">
-                    <span class="card-number">06</span>
-                    <h3>O futuro do trabalho com IA</h3>
-                    <p>Competências, riscos, novas funções e decisões que profissionais e empresas precisam tomar antes da mudança virar urgência.</p>
-                </article>
+            <div class="casos-grid" id="casos-grid">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Carregando artigos...</p>
+                </div>
+            </div>
+
+            <div class="load-more-container" id="load-more-casos" style="display: none;">
+                <button class="btn btn-secondary" id="btn-load-casos">
+                    <span>Carregar mais artigos</span>
+                </button>
             </div>
         </div>
     </section>
+
+    <section class="section videos" id="videos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfólio em Vídeo</span>
+                <h2 class="section-title">Assista palestras, entrevistas e <span class="highlight">demonstrações</span></h2>
+                <p class="section-subtitle">Uma amostra do estilo de comunicação, dos temas abordados e da presença em eventos.</p>
+            </div>
+
+            <div class="videos-grid" id="videos-grid">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Carregando vídeos...</p>
+                </div>
+            </div>
+
+            <div class="load-more-container" id="load-more-videos" style="display: none;">
+                <button class="btn btn-secondary" id="btn-load-videos">
+                    <span>Carregar mais vídeos</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
 
     <section class="section sobre" id="provas">
         <div class="container">
@@ -180,6 +186,51 @@
         </div>
     </section>
 
+    <section class="section conteudo" id="palestras">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Temas Mais Contratados</span>
+                <h2 class="section-title">Um portfólio para plateias que precisam <span class="highlight">entender, decidir e aplicar</span></h2>
+                <p class="section-subtitle">Palestras ajustadas ao nível do público, ao objetivo do evento e ao contexto da organização.</p>
+            </div>
+
+            <div class="conteudo-grid">
+                <article class="conteudo-card glass-card">
+                    <span class="card-number">01</span>
+                    <h3>Inteligência Artificial sem hype</h3>
+                    <p>O que muda agora, o que ainda é exagero e como líderes podem separar oportunidade real de ruído tecnológico.</p>
+                </article>
+                <article class="conteudo-card glass-card">
+                    <span class="card-number">02</span>
+                    <h3>ChatGPT e produtividade prática</h3>
+                    <p>Casos de uso, engenharia de prompt, rotinas de trabalho e limites éticos para equipes que querem ganhar velocidade com qualidade.</p>
+                </article>
+                <article class="conteudo-card glass-card">
+                    <span class="card-number">03</span>
+                    <h3>Agentes inteligentes e automação</h3>
+                    <p>Como agentes de IA executam tarefas, conectam ferramentas e abrem novas possibilidades para empresas e setor público.</p>
+                </article>
+                <article class="conteudo-card glass-card">
+                    <span class="card-number">04</span>
+                    <h3>IA no serviço público</h3>
+                    <p>Experiência aplicada com DefGPT, eficiência institucional, inovação responsável e transformação de serviços para o cidadão.</p>
+                </article>
+                <article class="conteudo-card glass-card">
+                    <span class="card-number">05</span>
+                    <h3>Inovação, startups e carreira</h3>
+                    <p>Repertório para ecossistemas de inovação, hackathons, comunidades, educação empreendedora e profissionais em transição.</p>
+                </article>
+                <article class="conteudo-card glass-card">
+                    <span class="card-number">06</span>
+                    <h3>O futuro do trabalho com IA</h3>
+                    <p>Competências, riscos, novas funções e decisões que profissionais e empresas precisam tomar antes da mudança virar urgência.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+
     <section class="section formato" id="formatos">
         <div class="container">
             <div class="section-header">
@@ -223,52 +274,6 @@
                         <li>Plano de próximos passos</li>
                     </ul>
                 </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="section videos" id="videos">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Portfólio em Vídeo</span>
-                <h2 class="section-title">Assista palestras, entrevistas e <span class="highlight">demonstrações</span></h2>
-                <p class="section-subtitle">Uma amostra do estilo de comunicação, dos temas abordados e da presença em eventos.</p>
-            </div>
-
-            <div class="videos-grid" id="videos-grid">
-                <div class="loading-spinner">
-                    <div class="spinner"></div>
-                    <p>Carregando vídeos...</p>
-                </div>
-            </div>
-
-            <div class="load-more-container" id="load-more-videos" style="display: none;">
-                <button class="btn btn-secondary" id="btn-load-videos">
-                    <span>Carregar mais vídeos</span>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <section class="section casos" id="casos">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Registro e Repertório</span>
-                <h2 class="section-title">Artigos e bastidores de <span class="highlight">palestras</span></h2>
-                <p class="section-subtitle">Publicações que documentam eventos, aprendizados e aplicações de IA no mundo real.</p>
-            </div>
-
-            <div class="casos-grid" id="casos-grid">
-                <div class="loading-spinner">
-                    <div class="spinner"></div>
-                    <p>Carregando artigos...</p>
-                </div>
-            </div>
-
-            <div class="load-more-container" id="load-more-casos" style="display: none;">
-                <button class="btn btn-secondary" id="btn-load-casos">
-                    <span>Carregar mais artigos</span>
-                </button>
             </div>
         </div>
     </section>
