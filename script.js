@@ -80,9 +80,7 @@ function initSmoothScroll() {
 // SCROLL ANIMATIONS
 // ==========================================
 function initScrollAnimations() {
-  const revealElements = document.querySelectorAll(
-    '.sobre-card, .conteudo-card, .publico-card, .formato-card, .achievement-item'
-  );
+  const revealElements = document.querySelectorAll('.reveal-on-scroll');
 
   revealElements.forEach(el => el.classList.add('reveal'));
 
@@ -161,7 +159,7 @@ async function loadMediumArticles() {
     console.error('Erro ao carregar artigos:', error);
     grid.innerHTML = `
             <div class="loading-spinner">
-                <p>Não foi possível carregar os artigos. Visite o <a href="https://medium.com/luizcarvalho-com/tagged/palestra" target="_blank" style="color: var(--accent-tertiary);">Medium</a> diretamente.</p>
+                <p>Não foi possível carregar os artigos. Visite o <a href="https://medium.com/luizcarvalho-com/tagged/palestra" target="_blank" rel="noopener" style="color: var(--clay); font-weight: 600;">Medium</a> diretamente.</p>
             </div>
         `;
   }
@@ -198,10 +196,11 @@ function createArticleCard(article) {
   card.className = 'caso-card';
 
   const date = article.pubDate ? formatDate(article.pubDate) : '';
-  const imageUrl = article.image || 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200"><rect fill="%231a1a25" width="400" height="200"/><text x="50%" y="50%" fill="%236366f1" text-anchor="middle" dy=".3em" font-size="48">LC</text></svg>';
+  const placeholder = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225"><rect fill="%23ece7df" width="400" height="225"/><text x="50%" y="50%" fill="%23c2502e" text-anchor="middle" dy=".35em" font-family="sans-serif" font-weight="700" font-size="56">LC</text></svg>';
+  const imageUrl = article.image || placeholder;
 
   card.innerHTML = `
-        <img src="${imageUrl}" alt="${article.title}" class="caso-image" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a25%22 width=%22400%22 height=%22200%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%236366f1%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2248%22>LC</text></svg>'">
+        <img src="${imageUrl}" alt="${escapeHtml(article.title)}" class="caso-image" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 225%22><rect fill=%22%23ece7df%22 width=%22400%22 height=%22225%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%23c2502e%22 text-anchor=%22middle%22 dy=%22.35em%22 font-family=%22sans-serif%22 font-weight=%22700%22 font-size=%2256%22>LC</text></svg>'">
         <div class="caso-content">
             <span class="caso-date">${date}</span>
             <h3 class="caso-title">${escapeHtml(article.title)}</h3>
