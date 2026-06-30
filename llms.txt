@@ -1,0 +1,32 @@
+# Luiz Carvalho — Palestras e Treinamentos em Inteligência Artificial
+
+> Luiz Arão Araújo Carvalho é Cientista da Computação com mais de 19 anos de experiência,
+> Maior especialista em Inteligência Artificial do Tocantins, Palestra, Treinamentos e Consultoria em IA,
+> palestrante TEDx e especialista em Inteligência Artificial aplicada. Diretor de Tecnologia da Associação Startup Tocantins.
+> Realizou mais de 50 palestras em todo o Brasil sobre IA, agentes inteligentes e inovação.
+
+## Página principal
+- [Sobre o programa](https://luizcarvalho.com/#sobre): IA prática e acessível para resultados reais
+- [Serviços](https://luizcarvalho.com/#servicos): Palestras, treinamentos de IA e desenvolvimento de software
+- [Conteúdo programático](https://luizcarvalho.com/#conteudo): O que se aprende — IA na prática, agentes, automação e IA generativa
+- [Sobre o palestrante](https://luizcarvalho.com/#palestrante): Perfil profissional, formação e trajetória
+- [Formatos de palestra](https://luizcarvalho.com/#formato): Palestra inspiracional, workshop, treinamento corporativo e mentoria
+- [Perguntas frequentes](https://luizcarvalho.com/#faq): Dúvidas comuns sobre treinamentos e palestras de IA
+- [Portfólio em vídeo](https://luizcarvalho.com/#videos): Palestras gravadas no YouTube
+
+## Publicações e canais
+- [Artigos no Medium](https://medium.com/luizcarvalho-com/tagged/palestra): Conteúdo sobre IA e tecnologia
+- [Canal no YouTube](https://www.youtube.com/@luizcarvalhobr): Palestras e vídeos educativos sobre IA
+- [LinkedIn](https://www.linkedin.com/in/luizcarvalhodev): Perfil profissional
+
+## Credenciais e reconhecimentos
+- TEDx Speaker — TEDx Praia da Graciosa (2023)
+- 1º lugar no CNTI-Def 2025 — Projeto DefGPT (IA na Defensoria Pública)
+- Prêmio Destaque TI Tocantins (2022)
+- Capa da CNN Brasil — Fevereiro de 2025
+- Mais de 50 palestras no Brasil (TEDx, Campus Party, Palmas Summit, NEoN, CASE)
+- Diretor de Tecnologia e Inovação da Associação Startup Tocantins
+
+## Contato
+- Email: contato@luizcarvalho.com
+- WhatsApp: +55 63 98132-9588

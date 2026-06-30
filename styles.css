@@ -1561,3 +1561,112 @@ strong {
         transform: none;
     }
 }
+/* ==========================================
+   GEO ADDITIONS: answer block, fallbacks, FAQ
+   ========================================== */
+
+/* Self-contained answer block (citability) */
+.answer-block {
+    margin-top: clamp(3rem, 6vw, 5rem);
+    max-width: 68ch;
+    margin-inline: auto;
+    padding: clamp(1.5rem, 4vw, 2.25rem);
+    background: var(--paper-2);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--clay);
+    border-radius: var(--r);
+    box-shadow: var(--shadow-sm);
+}
+
+.answer-block h3 {
+    font-family: var(--display);
+    font-size: clamp(1.25rem, 2.5vw, 1.55rem);
+    line-height: 1.2;
+    color: var(--ink);
+    margin: 0 0 0.85rem;
+}
+
+.answer-block p {
+    color: var(--ink-2);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Static fallbacks (crawler / no-JS) */
+.video-fallback,
+.feed-fallback ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.65rem;
+}
+
+.video-fallback {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.feed-fallback {
+    max-width: 68ch;
+    margin-inline: auto;
+    text-align: center;
+    color: var(--ink-2);
+    line-height: 1.7;
+}
+
+.feed-fallback ul {
+    margin-top: 1rem;
+    text-align: left;
+    display: inline-grid;
+}
+
+.video-fallback a,
+.feed-fallback a {
+    color: var(--clay-deep);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--clay-line);
+    transition: color var(--t-fast);
+}
+
+.video-fallback a:hover,
+.feed-fallback a:hover {
+    color: var(--clay);
+}
+
+.video-fallback li {
+    padding: 0.9rem 1rem;
+    background: var(--paper-2);
+    border: 1px solid var(--line);
+    border-radius: var(--r-sm);
+}
+
+/* FAQ */
+.faq-list {
+    max-width: 72ch;
+    margin: clamp(2rem, 4vw, 3rem) auto 0;
+    display: grid;
+    gap: 0.85rem;
+}
+
+.faq-item {
+    padding: clamp(1.15rem, 3vw, 1.65rem);
+    background: var(--paper-2);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    box-shadow: var(--shadow-sm);
+}
+
+.faq-item dt {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(1.05rem, 2vw, 1.2rem);
+    color: var(--ink);
+    margin-bottom: 0.55rem;
+}
+
+.faq-item dd {
+    margin: 0;
+    color: var(--ink-2);
+    line-height: 1.65;
+}

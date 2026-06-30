@@ -42,6 +42,121 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://luizcarvalho.com/#person",
+          "name": "Luiz Arão Araújo Carvalho",
+          "alternateName": "Luiz Carvalho",
+          "jobTitle": "Palestrante em Inteligência Artificial",
+          "description": "Cientista da Computação e palestrante TEDx especializado em Inteligência Artificial aplicada, com mais de 19 anos de experiência e mais de 50 palestras no Brasil.",
+          "url": "https://luizcarvalho.com",
+          "image": "https://res.cloudinary.com/drlko5ghb/image/upload/v1769712600/luizcarvalhocom/fotos/perfil.png",
+          "email": "contato@luizcarvalho.com",
+          "telephone": "+5563981329588",
+          "nationality": "Brazilian",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Defensoria Pública do Estado do Tocantins"
+          },
+          "knowsAbout": [
+            "Inteligência Artificial",
+            "Machine Learning",
+            "Agentes Inteligentes",
+            "IA Generativa",
+            "ChatGPT",
+            "Engenharia de Prompt",
+            "Automação de Processos",
+            "Desenvolvimento de Software"
+          ],
+          "knowsLanguage": ["pt-BR"],
+          "award": [
+            "1º Lugar CNTI-Def 2025 — Projeto DefGPT",
+            "Prêmio Destaque TI Tocantins 2022"
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/in/luizcarvalhodev",
+            "https://www.youtube.com/@luizcarvalhobr",
+            "https://luizcarvalho.medium.com/",
+            "https://instagram.com/luizcarvalhobr",
+            "https://instagram.com/luizcarvalhocom",
+            "https://github.com/luizcarvalho"
+          ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://luizcarvalho.com/#service",
+          "name": "Luiz Carvalho — Palestras e Treinamentos em IA",
+          "provider": { "@id": "https://luizcarvalho.com/#person" },
+          "serviceType": "Palestra e Treinamento em Inteligência Artificial",
+          "areaServed": "Brasil",
+          "url": "https://luizcarvalho.com",
+          "telephone": "+5563981329588",
+          "email": "contato@luizcarvalho.com",
+          "image": "https://res.cloudinary.com/drlko5ghb/image/upload/v1769712600/luizcarvalhocom/fotos/perfil.png"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://luizcarvalho.com/#website",
+          "url": "https://luizcarvalho.com",
+          "name": "Luiz Carvalho",
+          "inLanguage": "pt-BR",
+          "publisher": { "@id": "https://luizcarvalho.com/#person" }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://luizcarvalho.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "O que é um treinamento de IA para empresas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Um treinamento de IA para empresas é um programa prático que ensina equipes a usar ferramentas como ChatGPT, agentes inteligentes e automação para resolver problemas reais do negócio. Não exige conhecimento técnico avançado — qualquer profissional pode aprender e aplicar no dia a dia."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quais formatos de palestra sobre IA estão disponíveis?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Estão disponíveis quatro formatos: palestra inspiracional (45 a 60 minutos) para eventos e congressos; workshop prático (2 a 4 horas) com hands-on em ferramentas de IA; treinamento corporativo (8 a 16 horas) customizado; e mentoria especializada sob demanda para startups e equipes de inovação."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O treinamento pode ser personalizado para a minha área?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim. O conteúdo é adaptado para o setor público, privado, jurídico, educacional ou para startups, com exemplos e exercícios do universo específico da sua organização."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "É necessário ter conhecimento técnico para participar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. Os programas são desenvolvidos em linguagem acessível para que qualquer profissional, independente da área ou nível técnico, possa aprender e aplicar Inteligência Artificial no dia a dia."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Em quais eventos Luiz Carvalho já palestrou?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Luiz Carvalho já realizou mais de 50 palestras no Brasil, incluindo TEDx Praia da Graciosa, Campus Party Brasil, Palmas Summit, NEoN e CASE."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4882704-8"></script>
     <script>
@@ -158,6 +273,11 @@
                 <blockquote>A IA não vai substituir seu emprego. Quem sabe usar IA vai substituir quem não sabe.</blockquote>
                 <cite>Luiz Carvalho</cite>
             </figure>
+
+            <div class="answer-block">
+                <h3>O que é Inteligência Artificial aplicada?</h3>
+                <p>Inteligência Artificial aplicada é o uso prático de tecnologias como ChatGPT, modelos preditivos e agentes autônomos para resolver problemas reais em empresas e órgãos públicos — sem exigir que os profissionais sejam especialistas em tecnologia. Luiz Carvalho é Cientista da Computação com mais de 19 anos de experiência e mais de 50 palestras realizadas em todo o Brasil. Conduziu o projeto DefGPT, plataforma de IA da Defensoria Pública do Tocantins, vencedor do 1º lugar no Congresso Nacional de Tecnologia e Inovação das Defensorias Públicas (CNTI-Def 2025). É palestrante TEDx, foi capa da CNN Brasil em fevereiro de 2025 e Diretor de Tecnologia da Associação Startup Tocantins. Seus treinamentos cobrem IA generativa, agentes inteligentes, automação de processos e engenharia de prompt, com foco em resultados práticos para equipes sem formação técnica avançada.</p>
+            </div>
         </div>
     </section>
 
@@ -259,9 +379,13 @@
             </div>
 
             <div class="feed-grid" id="casos-grid">
-                <div class="loading-spinner">
-                    <div class="spinner"></div>
-                    <p>Carregando artigos...</p>
+                <!-- Static fallback for crawlers / no-JS. JavaScript replaces this with the live Medium feed. -->
+                <div class="feed-fallback">
+                    <p>Luiz Carvalho publica artigos sobre Inteligência Artificial, palestras e inovação no Medium. Leia o conteúdo completo na <a href="https://medium.com/luizcarvalho-com/tagged/palestra" target="_blank" rel="noopener">publicação no Medium</a> ou acompanhe os destaques abaixo.</p>
+                    <ul>
+                        <li><a href="https://medium.com/luizcarvalho-com/tagged/palestra" target="_blank" rel="noopener">Artigos sobre palestras e treinamentos em IA — Medium</a></li>
+                        <li><a href="https://luizcarvalho.medium.com/" target="_blank" rel="noopener">Perfil de Luiz Carvalho no Medium</a></li>
+                    </ul>
                 </div>
             </div>
 
@@ -281,10 +405,21 @@
             </div>
 
             <div class="video-grid" id="videos-grid">
-                <div class="loading-spinner">
-                    <div class="spinner"></div>
-                    <p>Carregando vídeos...</p>
-                </div>
+                <!-- Static fallback for crawlers / no-JS. JavaScript replaces this with interactive thumbnails. -->
+                <ul class="video-fallback">
+                    <li><a href="https://www.youtube.com/watch?v=VLVoUs1F5yg" target="_blank" rel="noopener">Case: DefGPT – Plataforma Inteligente para Eficiência na Defensoria</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=9Yj4mqsBt6E" target="_blank" rel="noopener">Agentes IA: A Nova Revolução da Inteligência Artificial — Palmas Summit</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=4bgoxDx0VbI" target="_blank" rel="noopener">Como criar seu próprio ChatGPT — Palmas Summit</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Cqivy1GoQW8" target="_blank" rel="noopener">Inteligência Artificial: Como usar ChatGPT e Engenharia de Prompt</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=ZCZVaDy7uXM" target="_blank" rel="noopener">Como o Metaverso Pode Destruir o Mundo | Campus Party 14</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=R3FPEUGfrUA" target="_blank" rel="noopener">Palestra: Agentes Inteligentes, a atual era da I.A. — Araguaína</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=5k-hyrpsZ84" target="_blank" rel="noopener">Como Criar um Pitch Matador para Seus Projetos (Sebrae)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=NJUqWZhTtUM" target="_blank" rel="noopener">Como Fazer um Pitch Matador | Feira Época — Araguaína</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=4l68HiMFFCk" target="_blank" rel="noopener">Palestra: Chatbots e a nova era das aplicações móveis — Congresso CIT</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=OcDpKtsHpAY" target="_blank" rel="noopener">DefGPT — A Inteligência Artificial da Defensoria Pública — IV Workshop DevColab</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=_XiJXZFB8O4" target="_blank" rel="noopener">DefGPT — Plataforma de IA da Defensoria Pública — ENASTIC + CNTI 2025</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=zJz9vzG8K8s" target="_blank" rel="noopener">Sua empresa não precisa de IA — Especialista em Inteligência Artificial</a></li>
+                </ul>
             </div>
 
             <div class="load-more-container" id="load-more-videos" style="display: none;">
@@ -454,6 +589,40 @@
         </div>
     </section>
 
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+        <div class="shell">
+            <div class="section-head">
+                <span class="kicker">Dúvidas frequentes</span>
+                <h2 class="title">Perguntas <span class="accent">frequentes</span></h2>
+                <p class="lead">Respostas rápidas para as principais dúvidas sobre palestras e treinamentos em Inteligência Artificial.</p>
+            </div>
+
+            <dl class="faq-list">
+                <div class="faq-item reveal-on-scroll">
+                    <dt>O que é um treinamento de IA para empresas?</dt>
+                    <dd>Um treinamento de IA para empresas é um programa prático que ensina equipes a usar ferramentas como ChatGPT, agentes inteligentes e automação para resolver problemas reais do negócio. Não exige conhecimento técnico avançado — qualquer profissional pode aprender e aplicar no dia a dia.</dd>
+                </div>
+                <div class="faq-item reveal-on-scroll">
+                    <dt>Quais formatos de palestra sobre IA estão disponíveis?</dt>
+                    <dd>Estão disponíveis quatro formatos: palestra inspiracional (45 a 60 minutos), workshop prático (2 a 4 horas) com hands-on em ferramentas de IA, treinamento corporativo (8 a 16 horas) customizado e mentoria especializada sob demanda para startups e equipes de inovação.</dd>
+                </div>
+                <div class="faq-item reveal-on-scroll">
+                    <dt>O treinamento pode ser personalizado para a minha área?</dt>
+                    <dd>Sim. O conteúdo é adaptado para o setor público, privado, jurídico, educacional ou para startups, com exemplos e exercícios do universo específico da sua organização.</dd>
+                </div>
+                <div class="faq-item reveal-on-scroll">
+                    <dt>É necessário ter conhecimento técnico para participar?</dt>
+                    <dd>Não. Os programas são desenvolvidos em linguagem acessível para que qualquer profissional, independente da área ou nível técnico, possa aprender e aplicar Inteligência Artificial no dia a dia.</dd>
+                </div>
+                <div class="faq-item reveal-on-scroll">
+                    <dt>Em quais eventos Luiz Carvalho já palestrou?</dt>
+                    <dd>Luiz Carvalho já realizou mais de 50 palestras no Brasil, incluindo TEDx Praia da Graciosa, Campus Party Brasil, Palmas Summit, NEoN e CASE.</dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+
     <!-- CTA Final -->
     <section class="section cta-section" id="contato">
         <div class="shell">
@@ -503,6 +672,7 @@
                         <li><a href="#servicos">Serviços</a></li>
                         <li><a href="#casos">Artigos</a></li>
                         <li><a href="#videos">Vídeos</a></li>
+                        <li><a href="#faq">Perguntas frequentes</a></li>
                         <li><a href="#contato">Contato</a></li>
                         <li><a href="privacidade.html">Privacidade</a></li>
                     </ul>

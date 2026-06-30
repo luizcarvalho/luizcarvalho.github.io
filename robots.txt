@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+
+# AI search crawlers — explicitly allowed for AI visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Training-only crawler — blocked
+User-agent: CCBot
+Disallow: /
+
+Sitemap: https://luizcarvalho.com/sitemap.xml
