@@ -1,35 +1,50 @@
-- 2005 Desenvolvimento de sites em PHP
-- 2009 Desenvolvimento de Sistema em Rails (Redesat)
-- 2010 Desenvolvimento primeira Startup Voltada para Marketing Digital
-- 2010 Analista em Redes Sociais e eventos
-- 2011 Desenvolvimento Android (Droido com mais de 250 mil download)
-- 2013 Desenvolvimento Django e Rails (Defensoria Pública do Estado do Tocantins)
+# luizcarvalho.com
 
+Site pessoal de **Luiz Carvalho** — Palestras e Treinamentos em Inteligência Artificial.
 
-# Curriculo Startup
+Site estático (HTML + CSS + JavaScript puro, **sem Jekyll**), hospedado no GitHub Pages
+no domínio [luizcarvalho.com](https://luizcarvalho.com).
 
-### Mini-bio
-  Desenvolvedor há 12 anos, Apaixonado por inovação e tecnologia e Startups
+## Estrutura
 
-  - Co-fundador do Movimento Startup Tocantins e a 2 anos a frente das ações do movimento
-  - Startup Weekends
-  - Já fiz parte de 4 Startups
-    - 2010: 7Midias: Minha primeira Startup (naquela época nem se chamava assim), uma plataforma de automatização voltada para marketing digital focada em ganho de audiência por realização de sorteios nas principais redes sociais
-    - 2011: Droido Mensagens, aplicativo com o objetivo de aproximar as pessoas utilizando de contato recorrente baseado em mensagens (na época o que fazia sucesso era SMS), app continhha centenas de mensagens selecionadas e categorizadas. Atingiu a marca de 270+ mil downloads na Google Play Store.
-    - 2014: Vigilantes App (https://www.facebook.com/pg/VigilantesApp/posts/)
-    - 2017: Parlo (https://www.facebook.com/pg/parlochat/posts/)
-    - 2018: InvestFranquias (http://investfranquias.com.br)
+```
+.
+├── index.html        # Página única (landing page) com todas as seções
+├── styles.css        # Estilos (dark mode, glassmorphism)
+├── script.js         # Navegação, animações e conteúdo dinâmico
+├── privacidade.html  # Política de privacidade
+├── assets/images/    # Favicon
+├── _arts/            # Fontes de arte/logos (design source, não publicado)
+├── CNAME             # Domínio customizado (luizcarvalho.com)
+└── .nojekyll         # Desativa o processamento Jekyll no GitHub Pages
+```
 
-  - Palestras
-  - Eventos
-    - CASE
-    - Campus Party
-  - Coordenador de Startups da Ajee Tocantins
-  - Co-fundador DEV-Tocantins
-  - Fundador Cripto Club Tocantins
+## Conteúdo dinâmico
 
- desenvolveu o aplicativo Droido Mensagens, por hobby, alcançando a marca de 270 mil downloads na Google Play. Já fez parte de 4 startups, atualmente co-fundador do Parlo e especialista em Chatbots. Coordenador de Startups da Ajee Tocantins, Co-Fundador e um dos loucos a frente do Movimento Startup Tocantins, seu 5º Startup Weekend e Desenvolvedor Ruby on Rails na Defensoria Pública do Estado do Tocantins.
+O `script.js` carrega informações em tempo real, sem necessidade de build:
 
-# DESIGN
-- https://codepen.io/savalazic/pen/QKwERN?limit=all&page=2&q=timeline
-- https://codepen.io/brady_wright/pen/NNOvrW
+- **Artigos (Cases de Sucesso):** consumidos do feed RSS do Medium
+  (`medium.com/feed/luizcarvalho-com/tagged/Palestra`) via API `rss2json`.
+- **Vídeos:** lista de palestras gravadas no YouTube, com thumbnails e player embutido.
+- **Ano do rodapé:** atualizado automaticamente.
+
+## Seções da página
+
+Hero (com foto de capa), Sobre o Programa, Serviços, Conteúdo Programático,
+Cases de Sucesso (RSS), Vídeos (YouTube), Sobre o Palestrante, Público-Alvo,
+Formatos, CTA de contato e rodapé.
+
+## Desenvolvimento
+
+Por ser um site estático, basta abrir o `index.html` no navegador ou servir a pasta:
+
+```bash
+python3 -m http.server 8000
+# acesse http://localhost:8000
+```
+
+## Deploy
+
+GitHub Pages publica diretamente a partir da raiz do repositório (branch configurada
+nas opções do repositório). O arquivo `.nojekyll` garante que os arquivos sejam
+servidos como estáticos, sem a etapa de build do Jekyll.
