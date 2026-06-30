@@ -10,7 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   loadMediumArticles();
   loadYouTubeVideos();
+  initFooterYear();
 });
+
+// ==========================================
+// FOOTER YEAR
+// ==========================================
+function initFooterYear() {
+  const yearEl = document.getElementById('footer-year');
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+}
 
 // ==========================================
 // NAVBAR
