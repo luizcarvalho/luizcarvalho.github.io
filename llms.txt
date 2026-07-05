@@ -6,6 +6,7 @@
 > Realizou mais de 50 palestras em todo o Brasil sobre IA, agentes inteligentes e inovação.
 
 ## Página principal
+- [Confiam em meu trabalho](https://luizcarvalho.com/#confianca): Organizações que já receberam palestras, treinamentos ou projetos — NASA, TEDx, Campus Party, Techstars, Sebrae, Senac, ABDI, Defensoria Pública do Tocantins, TJTO, TRE-TO, Prefeitura de Palmas, Prefeitura de Gurupi, FIETO, UFT, Unitins, IFTO, IFSP, UniCatólica, Anhanguera, Startup Tocantins, entre outras
 - [Sobre o programa](https://luizcarvalho.com/#sobre): IA prática e acessível para resultados reais
 - [Serviços](https://luizcarvalho.com/#servicos): Palestras, treinamentos de IA e desenvolvimento de software
 - [Conteúdo programático](https://luizcarvalho.com/#conteudo): O que se aprende — IA na prática, agentes, automação e IA generativa

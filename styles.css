@@ -567,6 +567,59 @@ strong {
 }
 
 /* ==========================================================================
+   TRUST — logos de quem confia, silhueta em tom único → cor real no hover
+   ========================================================================== */
+.trust {
+    padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+
+.trust-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35rem 1.5rem;
+    margin-bottom: clamp(1.5rem, 3vw, 2.4rem);
+}
+
+.trust-title {
+    font-size: clamp(1.4rem, 2.6vw, 1.95rem);
+    letter-spacing: -0.015em;
+    line-height: 1.1;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+    gap: 0.6rem;
+}
+
+.trust-tile {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 16 / 9;
+    padding: 1rem 1.2rem;
+    background: var(--paper-2);
+    border-radius: var(--r-sm);
+}
+
+.trust-tile img {
+    max-width: 100%;
+    max-height: 52px;
+    width: auto;
+    height: auto;
+    /* tom único: silhueta de tinta; a cor real entra em fade no hover */
+    filter: brightness(0) saturate(0);
+    opacity: 0.48;
+    transition: filter 0.55s var(--ease), opacity 0.55s var(--ease);
+}
+
+.trust-tile:hover img,
+.trust-tile:active img {
+    filter: brightness(1) saturate(1);
+    opacity: 1;
+}
+
+/* ==========================================================================
    SOBRE — benefits as numbered editorial entries (not cards)
    ========================================================================== */
 .benefits {
@@ -1480,6 +1533,20 @@ strong {
 @media (max-width: 720px) {
     .nav-toggle {
         display: flex;
+    }
+
+    .trust-grid {
+        grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+        gap: 0.5rem;
+    }
+
+    .trust-tile {
+        aspect-ratio: 8 / 5;
+        padding: 0.8rem 0.9rem;
+    }
+
+    .trust-tile img {
+        max-height: 40px;
     }
 
     .nav-menu {
