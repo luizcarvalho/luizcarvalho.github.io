@@ -1,5 +1,7 @@
 # luizcarvalho.com
 
+https://darryllstinson.com/
+
 Site pessoal de **Luiz Carvalho** — Palestras e Treinamentos em Inteligência Artificial.
 
 Site estático (HTML + CSS + JavaScript puro, **sem Jekyll**), hospedado no GitHub Pages
