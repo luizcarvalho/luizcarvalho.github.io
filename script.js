@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadMediumArticles();
   loadYouTubeVideos();
   initFooterYear();
+  initAnosTecnologia();
 });
 
 // ==========================================
@@ -21,6 +22,19 @@ function initFooterYear() {
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+}
+
+// ==========================================
+// ANOS EM TECNOLOGIA (contador dinâmico)
+// ==========================================
+function initAnosTecnologia() {
+  const el = document.getElementById('anos-tecnologia');
+  if (!el) return;
+  const anoBase = parseInt(el.dataset.anoBase, 10);
+  const anosBase = parseInt(el.dataset.anosBase, 10);
+  if (isNaN(anoBase) || isNaN(anosBase)) return;
+  const anos = anosBase + (new Date().getFullYear() - anoBase);
+  el.textContent = `${anos}+`;
 }
 
 // ==========================================
