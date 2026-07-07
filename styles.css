@@ -1065,50 +1065,41 @@ strong {
     color: var(--ink);
 }
 
-.achievements {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0;
+.awards {
     border-top: 1px solid var(--line);
+    padding-top: 1.5rem;
 }
 
-.achievement {
-    display: flex;
-    gap: 0.9rem;
-    align-items: flex-start;
-    padding: 1.25rem 1rem 1.25rem 0;
-    border-bottom: 1px solid var(--line);
-}
-
-.achievement:nth-child(odd) {
-    padding-right: 1.5rem;
-    border-right: 1px solid var(--line);
-    padding-left: 0;
-}
-
-.achievement:nth-child(even) {
-    padding-left: 1.5rem;
-}
-
-.achievement-icon {
-    flex-shrink: 0;
-    color: var(--clay);
-}
-
-.achievement-icon svg {
-    width: 1.55rem;
-    height: 1.55rem;
-}
-
-.achievement strong {
-    display: block;
+.awards-title {
     font-family: var(--display);
     font-size: 1.02rem;
+    margin-bottom: 1.25rem;
 }
 
-.achievement span {
-    color: var(--ink-2);
-    font-size: 0.92rem;
+.awards-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+    gap: 1.25rem 1rem;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.awards-grid li {
+    display: flex;
+    justify-content: center;
+}
+
+.awards-grid img {
+    max-width: 110px;
+    width: 100%;
+    height: auto;
+    transition: transform var(--t-fast);
+}
+
+.awards-grid li:hover img {
+    transform: scale(1.5);
 }
 
 /* ==========================================================================
@@ -1589,17 +1580,8 @@ strong {
         gap: 0.75rem;
     }
 
-    .achievements {
-        grid-template-columns: 1fr;
-    }
-
-    .achievement:nth-child(odd) {
-        border-right: none;
-        padding-right: 0;
-    }
-
-    .achievement:nth-child(even) {
-        padding-left: 0;
+    .awards-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .audience-grid {
@@ -1628,6 +1610,7 @@ strong {
         transform: none;
     }
 }
+
 /* ==========================================
    GEO ADDITIONS: answer block, fallbacks, FAQ
    ========================================== */

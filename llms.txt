@@ -32,7 +32,7 @@ por Inteligência Artificial, agentes autônomos e automação inteligente.
 - [Sobre o programa](https://luizcarvalho.com/#sobre): IA prática e acessível para resultados reais
 - [Serviços](https://luizcarvalho.com/#servicos): Palestras, treinamentos de IA e desenvolvimento de software
 - [Conteúdo programático](https://luizcarvalho.com/#conteudo): O que se aprende — IA na prática, agentes, automação e IA generativa
-- [Sobre o palestrante](https://luizcarvalho.com/#palestrante): Perfil profissional, formação e trajetória
+- [Sobre mim](https://luizcarvalho.com/#palestrante): Perfil profissional, formação, trajetória e prêmios
 - [Formatos de palestra](https://luizcarvalho.com/#formato): Palestra inspiracional, workshop, treinamento corporativo e mentoria
 - [Perguntas frequentes](https://luizcarvalho.com/#faq): Dúvidas comuns sobre treinamentos e palestras de IA
 - [Portfólio em vídeo](https://luizcarvalho.com/#videos): Palestras gravadas no YouTube
@@ -53,6 +53,13 @@ por Inteligência Artificial, agentes autônomos e automação inteligente.
 - 1º lugar no CNTI-Def 2025 — Projeto DefGPT (IA na Defensoria Pública do Tocantins)
 - TEDx Speaker — TEDx Praia da Graciosa (2023)
 - Prêmio Destaque TI Tocantins (2022)
+- Vencedor do Prêmio Inovação Tecnológica Condege (2022)
+- Vencedor do Prêmio ASTIC — Servidor de Tecnologia do Estado (2022)
+- Vencedor do Sebrae Like a Boss (2022)
+- Vencedor do Desafio Industrial (2025)
+- Prêmio Inovação Tecnológica JEx (2025)
+- Selecionado no InovAtiva Brasil (2017) e no Edital Inovação InovaFAPTO (2026)
+- Palestra internacional no Tropical on Rails 2026 (São Paulo)
 - Capa da CNN Brasil — Fevereiro de 2025
 - Mais de 50 palestras no Brasil (TEDx, Campus Party, Palmas Summit, NEoN, CASE)
 - Diretor de Tecnologia e Inovação da Associação Startup Tocantins
