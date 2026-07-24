@@ -1,0 +1,379 @@
+/* ==========================================================================
+   CALCULADORA — "Quanto custa criar um aplicativo?"
+   Complementa styles.css. Todos os valores vêm dos tokens em :root.
+   ========================================================================== */
+
+.calc-page {
+    /* A navbar é fixa: abre espaço abaixo dela. */
+    padding-top: clamp(6rem, 12vw, 8.5rem);
+    padding-bottom: clamp(3rem, 8vw, 6rem);
+}
+
+/* Impede que o scrollIntoView jogue o topo das seções sob a navbar fixa. */
+.calc-intro,
+.calc-quiz,
+.calc-result {
+    scroll-margin-top: clamp(5.5rem, 11vw, 7.5rem);
+}
+
+/* ---------- Intro ---------- */
+.calc-intro {
+    max-width: 46ch;
+    padding-block: clamp(1rem, 4vw, 3rem);
+}
+
+.calc-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6em;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--clay);
+}
+
+.calc-eyebrow::before {
+    content: "";
+    width: 1.75rem;
+    height: 1px;
+    background: var(--clay-line);
+}
+
+.calc-title {
+    font-size: clamp(2.1rem, 5.4vw, 3.6rem);
+    margin-top: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.calc-lead {
+    margin-top: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--ink-2);
+    font-size: 1.125rem;
+    max-width: 52ch;
+}
+
+.calc-disclaimer {
+    margin-top: 1.1rem;
+    font-size: 0.9375rem;
+    color: var(--ink-3);
+    max-width: 48ch;
+}
+
+/* ---------- Quiz ---------- */
+.calc-quiz {
+    max-width: 780px;
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    background: var(--paper-2);
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    box-shadow: var(--shadow);
+}
+
+.calc-progress {
+    height: 4px;
+    border-radius: 999px;
+    background: var(--paper-3);
+    overflow: hidden;
+}
+
+.calc-progress-bar {
+    height: 100%;
+    width: 0;
+    border-radius: inherit;
+    background: var(--clay);
+    transition: width var(--t);
+}
+
+.calc-quiz-head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 1.4rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+}
+
+.calc-running strong {
+    color: var(--clay);
+    font-variant-numeric: tabular-nums;
+}
+
+.calc-question {
+    margin-top: 0.9rem;
+    font-size: clamp(1.5rem, 3.4vw, 2.1rem);
+    letter-spacing: -0.015em;
+}
+
+.calc-question:focus {
+    outline: none;
+}
+
+.calc-hint {
+    margin-top: 0.7rem;
+    color: var(--ink-3);
+    font-size: 0.9375rem;
+}
+
+/* ---------- Opções ---------- */
+.calc-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1.75rem;
+}
+
+.calc-option {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.25rem 0.85rem;
+    padding: 1.05rem 1.15rem;
+    text-align: left;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    cursor: pointer;
+    transition: border-color var(--t-fast), background var(--t-fast),
+        transform var(--t-fast), box-shadow var(--t-fast);
+}
+
+.calc-option:hover {
+    border-color: var(--clay-line);
+    background: var(--clay-tint);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+.calc-option:active {
+    transform: translateY(0);
+}
+
+.calc-option.is-selected {
+    border-color: var(--clay);
+    background: var(--clay-tint);
+}
+
+.calc-option-key {
+    display: grid;
+    place-items: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background: var(--paper-3);
+    color: var(--ink-2);
+    font-size: 0.78rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    transition: background var(--t-fast), color var(--t-fast);
+}
+
+.calc-option:hover .calc-option-key,
+.calc-option.is-selected .calc-option-key {
+    background: var(--clay);
+    color: var(--paper);
+}
+
+.calc-option-label {
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.calc-option-note {
+    grid-column: 2;
+    color: var(--ink-3);
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+/* ---------- Voltar / refazer ---------- */
+.calc-back {
+    margin-top: 1.75rem;
+    padding: 0.4em 0;
+    font-family: inherit;
+    font-size: 0.9375rem;
+    color: var(--ink-3);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color var(--t-fast);
+}
+
+.calc-back:hover {
+    color: var(--clay);
+}
+
+/* ---------- Resultado ---------- */
+.calc-result {
+    max-width: 780px;
+}
+
+.calc-price-card {
+    padding: clamp(1.75rem, 5vw, 3rem);
+    text-align: center;
+    color: var(--on-stage);
+    background: var(--stage);
+    border-radius: var(--r-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.calc-price-label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--on-stage-2);
+}
+
+.calc-price {
+    margin-top: 0.5rem;
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(2.6rem, 8vw, 4.4rem);
+    line-height: 1.04;
+    letter-spacing: -0.03em;
+    font-variant-numeric: tabular-nums;
+}
+
+.calc-price-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 2rem;
+    margin-top: 1.4rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--stage-line);
+    color: var(--on-stage-2);
+    font-size: 0.9375rem;
+}
+
+.calc-price-meta strong {
+    color: var(--on-stage);
+    font-variant-numeric: tabular-nums;
+}
+
+.calc-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-top: 1.75rem;
+}
+
+.calc-subtitle {
+    margin-top: 3rem;
+    margin-bottom: 1.1rem;
+    font-size: clamp(1.2rem, 2.4vw, 1.5rem);
+}
+
+/* ---------- Resumo das respostas ---------- */
+.calc-summary {
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    overflow: hidden;
+}
+
+.calc-summary-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.15rem 1rem;
+    padding: 0.9rem 1.15rem;
+    background: var(--paper-2);
+}
+
+.calc-summary-row + .calc-summary-row {
+    border-top: 1px solid var(--line-soft);
+}
+
+.calc-summary-q {
+    grid-column: 1;
+    color: var(--ink-3);
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.calc-summary-a {
+    grid-column: 1;
+    font-weight: 600;
+}
+
+.calc-summary-w {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+    color: var(--clay);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+/* ---------- Metodologia + FAQ ---------- */
+.calc-method p,
+.calc-faq p {
+    max-width: var(--measure);
+    color: var(--ink-2);
+}
+
+.calc-method p + p,
+.calc-faq p {
+    margin-top: 0.9rem;
+}
+
+.calc-method a,
+.calc-faq a {
+    color: var(--clay);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.calc-faq {
+    max-width: 780px;
+    margin-top: clamp(3rem, 8vw, 5rem);
+    padding-top: clamp(2rem, 5vw, 3rem);
+    border-top: 1px solid var(--line);
+}
+
+.calc-faq h3 {
+    margin-top: 2rem;
+    font-size: 1.0625rem;
+}
+
+.calc-faq-list {
+    margin-top: 0.9rem;
+    color: var(--ink-2);
+}
+
+.calc-faq-list li {
+    padding-left: 1.1rem;
+    position: relative;
+}
+
+.calc-faq-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.72em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--clay-line);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .calc-option,
+    .calc-progress-bar {
+        transition: none;
+    }
+
+    .calc-option:hover {
+        transform: none;
+    }
+}

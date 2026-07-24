@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Calcule quanto custa criar um aplicativo de forma simples e rápida. Responda 10 perguntas e receba uma estimativa do custo do seu app para celular, em reais.">
+    <meta name="keywords"
+        content="quanto custa um aplicativo, calculadora de preço de aplicativo, custo de desenvolvimento de app, orçamento aplicativo, preço app Android iPhone">
+    <meta name="author" content="Luiz Arão Araújo Carvalho">
+    <meta name="robots" content="index, follow">
+
+    <title>Quanto custa criar um aplicativo? | Calculadora de preços</title>
+
+    <link rel="canonical" href="https://luizcarvalho.com/calculadora/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Quanto custa criar um aplicativo? | Calculadora de preços">
+    <meta property="og:description"
+        content="Responda 10 perguntas e receba uma estimativa do custo do seu aplicativo para celular, em reais.">
+    <meta property="og:url" content="https://luizcarvalho.com/calculadora/">
+    <meta property="og:site_name" content="Luiz Carvalho">
+    <meta property="og:image"
+        content="https://res.cloudinary.com/drlko5ghb/image/upload/v1769712600/luizcarvalhocom/fotos/perfil.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Quanto custa criar um aplicativo? | Calculadora de preços">
+    <meta name="twitter:description"
+        content="Responda 10 perguntas e receba uma estimativa do custo do seu aplicativo para celular, em reais.">
+    <meta name="twitter:image"
+        content="https://res.cloudinary.com/drlko5ghb/image/upload/v1769712600/luizcarvalhocom/fotos/perfil.png">
+    <meta name="twitter:site" content="@luizcarvalho">
+    <meta name="twitter:creator" content="@luizcarvalho">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:ital,wght@0,400..800;1,400..600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="calculadora.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://luizcarvalho.com/calculadora/#app",
+          "name": "Calculadora: quanto custa criar um aplicativo?",
+          "url": "https://luizcarvalho.com/calculadora/",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "inLanguage": "pt-BR",
+          "description": "Calculadora que estima o custo de desenvolvimento de um aplicativo móvel em reais, a partir de 10 perguntas sobre plataforma, design, login, integrações e idiomas.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "BRL"
+          },
+          "author": {
+            "@type": "Person",
+            "@id": "https://luizcarvalho.com/#person",
+            "name": "Luiz Arão Araújo Carvalho"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://luizcarvalho.com/calculadora/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Quanto custa criar um aplicativo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O custo de um aplicativo depende de quantas horas de desenvolvimento ele exige e do valor/hora da equipe. Um app simples, de uma única plataforma e com interface padrão, costuma partir de cerca de 100 horas. Um aplicativo com design próprio, login, painel administrativo e integração com site pode passar de 400 horas. Multiplicando as horas pelo valor/hora (de R$ 68 a R$ 204 nesta calculadora), a faixa típica vai de poucos milhares até dezenas de milhares de reais."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como esta calculadora estima o preço do aplicativo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A primeira pergunta define o valor/hora conforme o nível de qualidade desejado. As demais somam horas de desenvolvimento de acordo com plataforma, design, monetização, login, integração com website, perfis de usuário, painel administrativo e número de idiomas. A estimativa final é o total de horas multiplicado pelo valor/hora."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O valor calculado é um orçamento oficial?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. O resultado é uma estimativa aproximada, útil para ter uma ordem de grandeza antes de conversar com um desenvolvedor. Um orçamento real depende do escopo detalhado, das regras de negócio, das integrações necessárias e do prazo."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Fazer um app para Android e iPhone custa o dobro?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. Nesta calculadora, uma única plataforma soma 60 horas e as duas juntas somam 100 horas, porque boa parte do trabalho (design, regras de negócio e backend) é compartilhada entre elas."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://luizcarvalho.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Calculadora de preço de aplicativos",
+              "item": "https://luizcarvalho.com/calculadora/"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4882704-8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-4882704-8');
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <span class="logo-text">LC</span>
+                <span class="logo-name">Luiz Carvalho</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="/#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="/#casos" class="nav-link">Artigos</a></li>
+                <li><a href="/#videos" class="nav-link">Vídeos</a></li>
+                <li><a href="/#palestrante" class="nav-link">Sobre mim</a></li>
+                <li><a href="/#contato" class="nav-link cta-btn">Contratar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="calc-page">
+        <div class="shell">
+
+            <!-- Intro -->
+            <section class="calc-intro" id="calc-intro" aria-labelledby="calc-title">
+                <p class="calc-eyebrow">Calculadora gratuita</p>
+                <h1 class="calc-title" id="calc-title">Quanto custa criar um aplicativo?</h1>
+                <p class="calc-lead">
+                    São 10 perguntas rápidas sobre plataforma, design e funcionalidades.
+                    No fim, você recebe uma estimativa em reais — baseada nas horas de desenvolvimento
+                    que o projeto exige e no valor/hora da equipe.
+                </p>
+                <button type="button" class="btn btn-primary btn-lg" id="calc-begin">
+                    Começar estimativa
+                </button>
+                <p class="calc-disclaimer">
+                    Leva menos de um minuto. Nada é enviado para nenhum servidor — o cálculo acontece no seu
+                    navegador.
+                </p>
+            </section>
+
+            <!-- Quiz -->
+            <!-- O foco é movido para a pergunta a cada passo, então não usamos aria-live aqui
+                 (a região inteira é reconstruída e seria anunciada duas vezes). -->
+            <section class="calc-quiz" id="calc-quiz" hidden>
+                <div class="calc-progress" role="presentation">
+                    <div class="calc-progress-bar" id="calc-progress-bar"></div>
+                </div>
+
+                <div class="calc-quiz-head">
+                    <span class="calc-step" id="calc-step">Pergunta 1 de 10</span>
+                    <span class="calc-running" id="calc-running" hidden>
+                        Estimativa parcial: <strong id="calc-running-value">R$ 0</strong>
+                    </span>
+                </div>
+
+                <h2 class="calc-question" id="calc-question" tabindex="-1">&nbsp;</h2>
+                <p class="calc-hint" id="calc-hint" hidden></p>
+
+                <div class="calc-options" id="calc-options"></div>
+
+                <button type="button" class="calc-back" id="calc-back" hidden>
+                    &larr; Voltar
+                </button>
+            </section>
+
+            <!-- Resultado -->
+            <section class="calc-result" id="calc-result" hidden aria-labelledby="calc-result-title">
+                <div class="calc-price-card">
+                    <p class="calc-price-label" id="calc-result-title">Custo estimado</p>
+                    <p class="calc-price" id="calc-price">R$ 0</p>
+                    <div class="calc-price-meta">
+                        <span><strong id="calc-hours">0 h</strong> de desenvolvimento</span>
+                        <span><strong id="calc-rate">R$ 0/h</strong> de valor/hora</span>
+                    </div>
+                </div>
+
+                <div class="calc-actions">
+                    <a class="btn btn-primary btn-lg" id="calc-whatsapp" href="https://wa.me/5563981329588"
+                        target="_blank" rel="noopener">
+                        Conversar sobre meu projeto
+                    </a>
+                    <a class="btn btn-secondary btn-lg" href="mailto:contato@luizcarvalho.com">
+                        Enviar por e-mail
+                    </a>
+                </div>
+
+                <h3 class="calc-subtitle">Suas respostas</h3>
+                <div class="calc-summary" id="calc-summary"></div>
+
+                <button type="button" class="calc-back" id="calc-reset">
+                    &circlearrowleft; Refazer a estimativa
+                </button>
+
+                <div class="calc-method">
+                    <h3 class="calc-subtitle">Como estimamos os custos?</h3>
+                    <p>
+                        O preço que você vê é apenas uma estimativa, baseada no número de horas necessárias para
+                        desenvolver o projeto e na taxa horária correspondente à qualidade desejada. A primeira
+                        pergunta define o valor/hora; as demais somam horas de desenvolvimento.
+                    </p>
+                    <p>
+                        Um orçamento real depende do escopo detalhado, das regras de negócio, das integrações
+                        necessárias e do prazo. Para conversar sobre o seu projeto, escreva para
+                        <a href="mailto:contato@luizcarvalho.com">contato@luizcarvalho.com</a>.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Conteúdo estático para crawlers e IA (a calculadora é renderizada via JS) -->
+            <section class="calc-faq" aria-labelledby="calc-faq-title">
+                <h2 class="calc-subtitle" id="calc-faq-title">Perguntas frequentes</h2>
+
+                <h3>Quanto custa criar um aplicativo?</h3>
+                <p>
+                    O custo de um aplicativo depende de quantas horas de desenvolvimento ele exige e do valor/hora
+                    da equipe. Um app simples, de uma única plataforma e com interface padrão, costuma partir de
+                    cerca de 100 horas. Um aplicativo com design próprio, login, painel administrativo e integração
+                    com site pode passar de 400 horas. Multiplicando as horas pelo valor/hora (de R$ 68 a R$ 204
+                    nesta calculadora), a faixa típica vai de poucos milhares até dezenas de milhares de reais.
+                </p>
+
+                <h3>Como esta calculadora estima o preço do aplicativo?</h3>
+                <p>
+                    A primeira pergunta define o valor/hora conforme o nível de qualidade desejado. As demais somam
+                    horas de desenvolvimento de acordo com plataforma, design, monetização, login, integração com
+                    website, perfis de usuário, painel administrativo e número de idiomas. A estimativa final é o
+                    total de horas multiplicado pelo valor/hora.
+                </p>
+
+                <h3>O valor calculado é um orçamento oficial?</h3>
+                <p>
+                    Não. O resultado é uma estimativa aproximada, útil para ter uma ordem de grandeza antes de
+                    conversar com um desenvolvedor. Um orçamento real depende do escopo detalhado, das regras de
+                    negócio, das integrações necessárias e do prazo.
+                </p>
+
+                <h3>Fazer um app para Android e iPhone custa o dobro?</h3>
+                <p>
+                    Não. Nesta calculadora, uma única plataforma soma 60 horas e as duas juntas somam 100 horas,
+                    porque boa parte do trabalho (design, regras de negócio e backend) é compartilhada entre elas.
+                </p>
+
+                <h3>Quais perguntas a calculadora faz?</h3>
+                <ul class="calc-faq-list">
+                    <li>Que nível de qualidade você está procurando?</li>
+                    <li>Qual tipo de aplicativo você precisa?</li>
+                    <li>Qual design você deseja que o seu aplicativo tenha?</li>
+                    <li>Qual retorno financeiro você deseja ter?</li>
+                    <li>O seu aplicativo precisa de um sistema de login?</li>
+                    <li>Seu aplicativo deve ser integrado a um website?</li>
+                    <li>Os usuários devem ter seu perfil próprio?</li>
+                    <li>Seu aplicativo necessita de um painel administrativo?</li>
+                    <li>Quantas línguas você deseja que seu aplicativo tenha?</li>
+                    <li>Em que estágio se encontra o seu projeto?</li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="shell">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">LC</span>
+                    <p>Traduzindo Inteligência Artificial para o mundo real.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="/#sobre">Sobre</a></li>
+                        <li><a href="/#servicos">Serviços</a></li>
+                        <li><a href="/#casos">Artigos</a></li>
+                        <li><a href="/#videos">Vídeos</a></li>
+                        <li><a href="/#faq">Perguntas frequentes</a></li>
+                        <li><a href="/#contato">Contato</a></li>
+                        <li><a href="/privacidade.html">Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Redes sociais</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/luizcarvalhocom" target="_blank" rel="noopener"
+                            aria-label="Instagram Profissional">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="https://luizcarvalho.medium.com/" target="_blank" rel="noopener" aria-label="Medium">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@luizcarvalhobr" target="_blank" rel="noopener"
+                            aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/luizcarvalhodev" target="_blank" rel="noopener"
+                            aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/luizcarvalho" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.5 11.5 0 013.003-.404c1.018.005 2.045.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="footer-year">2026</span> Luiz Carvalho. Todos os direitos reservados.</p>
+                <p class="footer-tagline">Traduzindo Inteligência Artificial para o mundo real.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="calculadora.js"></script>
+</body>
+
+</html>
