@@ -13,6 +13,13 @@
 
     <link rel="canonical" href="https://luizcarvalho.com/">
 
+    <!-- Freshness signals (GEO) -->
+    <meta name="date" content="2026-07-27">
+    <meta name="last-modified" content="2026-07-27">
+    <meta property="article:published_time" content="2026-06-30T09:00:00-03:00">
+    <meta property="article:modified_time" content="2026-07-27T09:00:00-03:00">
+    <meta property="article:author" content="Luiz Arão Araújo Carvalho">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:locale" content="pt_BR">
     <meta property="og:type" content="website">
@@ -74,6 +81,42 @@
             "Desenvolvimento de Software"
           ],
           "knowsLanguage": ["pt-BR"],
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Universidade Federal do Tocantins (UFT)"
+          },
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "degree",
+              "name": "Bacharelado em Ciência da Computação",
+              "recognizedBy": {
+                "@type": "CollegeOrUniversity",
+                "name": "Universidade Federal do Tocantins (UFT)"
+              }
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Palestrante TEDx",
+              "name": "TEDx Speaker — TEDx Praia da Graciosa (2023)"
+            }
+          ],
+          "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Palestrante e instrutor em Inteligência Artificial",
+            "occupationLocation": {
+              "@type": "City",
+              "name": "Palmas, Tocantins, Brasil"
+            },
+            "experienceRequirements": "Mais de 19 anos de experiência em tecnologia e desenvolvimento de software"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Palmas",
+            "addressRegion": "TO",
+            "addressCountry": "BR"
+          },
+          "mainEntityOfPage": { "@id": "https://luizcarvalho.com/#webpage" },
           "award": [
             "1º Lugar CNTI-Def 2025 - Projeto DefGPT",
             "Prêmio Destaque TI Tocantins 2022",
@@ -113,15 +156,65 @@
           "publisher": { "@id": "https://luizcarvalho.com/#person" }
         },
         {
+          "@type": "WebPage",
+          "@id": "https://luizcarvalho.com/#webpage",
+          "url": "https://luizcarvalho.com/",
+          "name": "Luiz Carvalho | Palestras e Treinamentos em IA",
+          "description": "Palestras, workshops e treinamentos corporativos em Inteligência Artificial aplicada, conduzidos por Luiz Carvalho — Cientista da Computação, palestrante TEDx e responsável pelo projeto DefGPT.",
+          "inLanguage": "pt-BR",
+          "isPartOf": { "@id": "https://luizcarvalho.com/#website" },
+          "about": { "@id": "https://luizcarvalho.com/#person" },
+          "author": { "@id": "https://luizcarvalho.com/#person" },
+          "creator": { "@id": "https://luizcarvalho.com/#person" },
+          "publisher": { "@id": "https://luizcarvalho.com/#person" },
+          "datePublished": "2026-06-30T09:00:00-03:00",
+          "dateModified": "2026-07-27T09:00:00-03:00",
+          "primaryImageOfPage": "https://res.cloudinary.com/drlko5ghb/image/upload/v1769712600/luizcarvalhocom/fotos/perfil.png",
+          "breadcrumb": { "@id": "https://luizcarvalho.com/#breadcrumb" },
+          "mentions": [
+            { "@type": "Thing", "name": "IA generativa" },
+            { "@type": "Thing", "name": "Agentes inteligentes" },
+            { "@type": "Thing", "name": "Engenharia de prompt" },
+            { "@type": "Thing", "name": "Automação de processos" },
+            { "@type": "Thing", "name": "DefGPT" }
+          ],
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".answer-block"]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://luizcarvalho.com/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://luizcarvalho.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Palestras e treinamentos em Inteligência Artificial",
+              "item": "https://luizcarvalho.com/#servicos"
+            }
+          ]
+        },
+        {
           "@type": "FAQPage",
           "@id": "https://luizcarvalho.com/#faq",
+          "inLanguage": "pt-BR",
+          "isPartOf": { "@id": "https://luizcarvalho.com/#webpage" },
+          "datePublished": "2026-06-30T09:00:00-03:00",
+          "dateModified": "2026-07-27T09:00:00-03:00",
           "mainEntity": [
             {
               "@type": "Question",
               "name": "O que é um treinamento de IA para empresas?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Um treinamento de IA para empresas é um programa prático que ensina equipes a usar ferramentas como ChatGPT, agentes inteligentes e automação para resolver problemas reais do negócio. Não exige conhecimento técnico avançado, qualquer profissional pode aprender e aplicar no dia a dia."
+                "text": "Um treinamento de IA para empresas é um programa prático. Ele ensina equipes a usar ferramentas como ChatGPT, agentes inteligentes e automação. O objetivo é resolver problemas reais do negócio. Além disso, não exige conhecimento técnico avançado: qualquer profissional pode aprender e aplicar no dia a dia."
               }
             },
             {
@@ -129,7 +222,7 @@
               "name": "Quais formatos de palestra sobre IA estão disponíveis?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Estão disponíveis quatro formatos: palestra inspiracional (45 a 60 minutos) para eventos e congressos; workshop prático (2 a 4 horas) com hands-on em ferramentas de IA; treinamento corporativo (8 a 16 horas) customizado; e mentoria especializada sob demanda para startups e equipes de inovação."
+                "text": "Estão disponíveis quatro formatos. A palestra inspiracional dura de 45 a 60 minutos. O workshop prático leva de 2 a 4 horas, com hands-on em ferramentas de IA. O treinamento corporativo ocupa de 8 a 16 horas e é customizado. Por fim, a mentoria especializada atende startups e equipes de inovação sob demanda."
               }
             },
             {
@@ -137,7 +230,7 @@
               "name": "O treinamento pode ser personalizado para a minha área?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sim. O conteúdo é adaptado para o setor público, privado, jurídico, educacional ou para startups, com exemplos e exercícios do universo específico da sua organização."
+                "text": "Sim. O conteúdo é adaptado para o setor público, privado, jurídico, educacional ou para startups. Por exemplo, os exercícios usam casos do universo específico da sua organização."
               }
             },
             {
@@ -145,7 +238,7 @@
               "name": "É necessário ter conhecimento técnico para participar?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Não. Os programas são desenvolvidos em linguagem acessível para que qualquer profissional, independente da área ou nível técnico, possa aprender e aplicar Inteligência Artificial no dia a dia."
+                "text": "Não. Os programas usam linguagem acessível do início ao fim. Assim, qualquer profissional pode aprender e aplicar Inteligência Artificial no dia a dia, independentemente da área ou do nível técnico."
               }
             },
             {
@@ -153,7 +246,47 @@
               "name": "Em quais eventos Luiz Carvalho já palestrou?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Luiz Carvalho já realizou mais de 50 palestras no Brasil, incluindo TEDx Praia da Graciosa, Campus Party Brasil, Palmas Summit, NEoN e CASE."
+                "text": "Luiz Carvalho já realizou mais de 50 palestras no Brasil. Entre elas estão TEDx Praia da Graciosa, Campus Party Brasil, Palmas Summit, NEoN e CASE."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quais temas de Inteligência Artificial são abordados nas palestras?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Os temas centrais são oito. Os quatro primeiros são: introdução à IA na prática, ferramentas de IA para o dia a dia, automação de tarefas repetitivas e agentes inteligentes. Os demais são: IA generativa, identificação de oportunidades, automação de processos e aplicações reais. Além disso, os exemplos mudam conforme o público. Uma turma jurídica, por exemplo, trabalha análise de documentos, enquanto uma equipe pública foca o atendimento ao cidadão."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Em quais cidades e estados Luiz Carvalho realiza palestras sobre IA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A base de atuação é Palmas, no Tocantins. No entanto, o atendimento é nacional: já houve palestras em Araguaína, Gurupi, Porto Nacional e São Paulo, entre outras cidades. Para eventos fora do Tocantins, o deslocamento é combinado junto com a proposta."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como contratar uma palestra ou treinamento de Inteligência Artificial?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O primeiro passo é o contato pelo WhatsApp (+55 63 98132-9588) ou pelo e-mail contato@luizcarvalho.com. Em seguida, informe a data, a cidade, o formato desejado e o perfil do público. Por fim, você recebe uma proposta com o conteúdo já adaptado ao seu setor."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quanto custa uma palestra ou treinamento sobre Inteligência Artificial?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O investimento depende de quatro fatores: o formato escolhido, a duração, o tamanho do público e a necessidade de deslocamento. Portanto, o valor é sempre definido caso a caso. Para receber um orçamento, envie a data, a cidade, o formato e o número de participantes pelo WhatsApp ou por e-mail."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O que é o DefGPT?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O DefGPT é a plataforma de Inteligência Artificial da Defensoria Pública do Estado do Tocantins, coordenada por Luiz Carvalho. Ela aplica IA generativa ao trabalho do órgão. Como resultado, o projeto conquistou o 1º lugar no Congresso Nacional de Tecnologia e Inovação das Defensorias Públicas (CNTI-Def 2025)."
               }
             }
           ]
@@ -297,17 +430,17 @@
                 <article class="benefit reveal-on-scroll">
                     <span class="benefit-num">02</span>
                     <h3>Foco em resultados</h3>
-                    <p>O objetivo é resolver problemas reais. Você sai da palestra sabendo exatamente o que fazer.</p>
+                    <p>O objetivo é resolver problemas reais. Assim, você sai da palestra sabendo exatamente o que fazer.</p>
                 </article>
                 <article class="benefit reveal-on-scroll">
                     <span class="benefit-num">03</span>
                     <h3>Linguagem simples</h3>
-                    <p>Tecnologia complexa traduzida em conceitos que todos entendem e podem colocar em prática.</p>
+                    <p>Primeiro, a tecnologia complexa vira conceito simples. Depois, todo mundo consegue colocar em prática.</p>
                 </article>
                 <article class="benefit reveal-on-scroll">
                     <span class="benefit-num">04</span>
                     <h3>Casos reais</h3>
-                    <p>Experiências reais de implementação de IA no serviço público e em empresas privadas.</p>
+                    <p>São experiências reais de implementação de IA. Por exemplo, projetos no serviço público e em empresas privadas.</p>
                 </article>
             </div>
 
@@ -318,7 +451,17 @@
 
             <div class="answer-block">
                 <h3>O que é Inteligência Artificial aplicada?</h3>
-                <p>Inteligência Artificial aplicada é o uso prático de tecnologias como ChatGPT, modelos preditivos e agentes autônomos para resolver problemas reais em empresas e órgãos públicos — sem exigir que os profissionais sejam especialistas em tecnologia. Luiz Carvalho é Cientista da Computação com mais de 19 anos de experiência e mais de 50 palestras realizadas em todo o Brasil. Conduziu o projeto DefGPT, plataforma de IA da Defensoria Pública do Tocantins, vencedor do 1º lugar no Congresso Nacional de Tecnologia e Inovação das Defensorias Públicas (CNTI-Def 2025). É palestrante TEDx, foi capa da CNN Brasil em fevereiro de 2025 e Diretor de Tecnologia da Associação Startup Tocantins. Seus treinamentos cobrem IA generativa, agentes inteligentes, automação de processos e engenharia de prompt, com foco em resultados práticos para equipes sem formação técnica avançada.</p>
+                <p>Inteligência Artificial aplicada é o uso prático de ferramentas como ChatGPT, modelos preditivos e agentes autônomos para resolver problemas reais. Ou seja, o foco está no resultado, não na tecnologia em si. Empresas e órgãos públicos adotam essas ferramentas sem precisar de especialistas em tecnologia na equipe. Na prática, isso significa reduzir tarefas repetitivas, acelerar análises e liberar o tempo das pessoas. Por exemplo, um setor jurídico usa IA para resumir documentos longos. Da mesma forma, uma equipe de atendimento automatiza as respostas mais frequentes. Portanto, o primeiro passo não é escolher uma ferramenta. O primeiro passo é identificar onde o trabalho trava hoje. Só depois vem a decisão técnica. Além disso, a adoção não exige um projeto grande nem orçamento alto. Um piloto pequeno, em uma única equipe, já mostra o ganho em poucas semanas. Esse é exatamente o percurso do <a href="#conteudo">conteúdo programático destes treinamentos</a>.</p>
+            </div>
+
+            <div class="answer-block">
+                <h3>Quem é Luiz Carvalho?</h3>
+                <p>Luiz Carvalho é Cientista da Computação, palestrante TEDx e especialista em Inteligência Artificial aplicada. Ele soma mais de 19 anos de experiência em tecnologia. Além disso, já realizou mais de 50 palestras em todo o Brasil. Atualmente é Analista de TI na Defensoria Pública do Tocantins. Nesse cargo, conduziu o DefGPT, plataforma de IA do órgão. O projeto venceu o 1º lugar no Congresso Nacional de Tecnologia e Inovação das Defensorias Públicas (CNTI-Def 2025). Também é Diretor de Tecnologia e Inovação da Associação Startup Tocantins. Em fevereiro de 2025, foi capa da CNN Brasil. Seus treinamentos cobrem IA generativa, agentes inteligentes, automação de processos e engenharia de prompt. O público-alvo, por sua vez, são equipes sem formação técnica avançada. Antes da carreira em IA, participou da criação de cinco startups. Também já mentorou em mais de 20 Startup Weekends e hackathons. Conheça a trajetória completa na <a href="about.html">página sobre o autor</a>.</p>
+            </div>
+
+            <div class="answer-block">
+                <h3>Como funciona uma palestra ou treinamento de IA na prática?</h3>
+                <p>Uma palestra ou treinamento de IA começa com o diagnóstico do público. Antes do evento, são mapeados o setor, o nível técnico e as tarefas do dia a dia da equipe. Em seguida, o conteúdo é montado com exemplos daquele universo específico. Existem quatro formatos disponíveis. A palestra inspiracional dura de 45 a 60 minutos e serve a eventos e congressos. O workshop prático leva de 2 a 4 horas, com exercícios em ferramentas reais. O treinamento corporativo ocupa de 8 a 16 horas e é totalmente customizado. Por fim, a mentoria especializada atende startups e equipes de inovação sob demanda. Durante a atividade, os participantes aplicam o que aprendem em casos próprios. Assim, cada pessoa sai com prompts, fluxos e automações prontos para usar. Veja os <a href="#formato">formatos em detalhe</a> ou <a href="#contato">peça uma proposta</a>.</p>
             </div>
         </div>
     </section>
@@ -337,21 +480,21 @@
                     <span class="service-num">01</span>
                     <div class="service-body">
                         <h3>Palestras</h3>
-                        <p>Prepare seu público para o futuro com palestras impactantes e personalizadas sobre tecnologia, inovação e inteligência artificial. Temas como Agentes Inteligentes, o poder do ChatGPT (e como criar o seu!), Negócios, Inovação e Pitch Perfeito, com conteúdo atualizado, linguagem acessível e exemplos reais.</p>
+                        <p>Prepare seu público para o futuro com palestras personalizadas sobre tecnologia, inovação e inteligência artificial. Entre os temas estão Agentes Inteligentes, o poder do ChatGPT e como criar o seu, além de Negócios, Inovação e Pitch Perfeito. Além disso, o conteúdo é sempre atualizado, em linguagem acessível e com exemplos reais. Veja o <a href="#conteudo">conteúdo programático completo</a>.</p>
                     </div>
                 </article>
                 <article class="service-row reveal-on-scroll">
                     <span class="service-num">02</span>
                     <div class="service-body">
                         <h3>Inteligência Artificial</h3>
-                        <p>Soluções de IA personalizadas: da implementação de chatbots inteligentes a modelos preditivos avançados, otimizando processos, aumentando a eficiência e promovendo decisões mais estratégicas com IA generativa integrada ao seu fluxo de trabalho.</p>
+                        <p>Soluções de IA personalizadas, de chatbots inteligentes a modelos preditivos avançados. O objetivo é otimizar processos e aumentar a eficiência da equipe. Como resultado, as decisões ficam mais estratégicas, com IA generativa integrada ao seu fluxo de trabalho. O <a href="#faq">DefGPT é um exemplo real</a> desse tipo de projeto.</p>
                     </div>
                 </article>
                 <article class="service-row reveal-on-scroll">
                     <span class="service-num">03</span>
                     <div class="service-body">
                         <h3>Desenvolvimento de Software</h3>
-                        <p>Criação de soluções que se adaptam a múltiplos dispositivos, com técnicas de user experience e interfaces amigáveis, unindo HTML5, CSS3 e JavaScript a tecnologias server-side como Ruby on Rails, resultando em sistemas flexíveis e poderosos.</p>
+                        <p>Criação de soluções que se adaptam a múltiplos dispositivos, com foco em experiência de uso e interfaces amigáveis. A base técnica une HTML5, CSS3 e JavaScript a tecnologias de servidor como Ruby on Rails. O resultado são sistemas flexíveis, rápidos e fáceis de manter. Para estimar o custo de um app, use a <a href="calculadora/">calculadora de preço de aplicativo</a>.</p>
                     </div>
                 </article>
             </div>
@@ -390,12 +533,12 @@
                 <article class="syllabus-item reveal-on-scroll">
                     <span class="syllabus-num">05</span>
                     <h3>IA generativa</h3>
-                    <p>Use ChatGPT, Gemini e outras IAs para criar conteúdo e resolver problemas.</p>
+                    <p>Use ChatGPT, Gemini e outras IAs. Assim, você cria conteúdo e resolve problemas mais rápido.</p>
                 </article>
                 <article class="syllabus-item reveal-on-scroll">
                     <span class="syllabus-num">06</span>
                     <h3>Identificando oportunidades</h3>
-                    <p>Descubra onde a IA pode fazer diferença no seu negócio e por onde começar.</p>
+                    <p>Primeiro, descubra onde a IA faz diferença no seu negócio. Depois, saiba por onde começar.</p>
                 </article>
                 <article class="syllabus-item reveal-on-scroll">
                     <span class="syllabus-num">07</span>
@@ -405,7 +548,7 @@
                 <article class="syllabus-item reveal-on-scroll">
                     <span class="syllabus-num">08</span>
                     <h3>Aplicações reais</h3>
-                    <p>Cases de sucesso em empresas e organizações públicas para você se inspirar.</p>
+                    <p>Por fim, cases de sucesso em empresas e organizações públicas para você se inspirar.</p>
                 </article>
             </div>
         </div>
@@ -423,7 +566,7 @@
             <div class="feed-grid" id="casos-grid">
                 <!-- Static fallback for crawlers / no-JS. JavaScript replaces this with the live Medium feed. -->
                 <div class="feed-fallback">
-                    <p>Luiz Carvalho publica artigos sobre Inteligência Artificial, palestras e inovação no Medium. Leia o conteúdo completo na <a href="https://medium.com/luizcarvalho-com/tagged/palestra" target="_blank" rel="noopener">publicação no Medium</a> ou acompanhe os destaques abaixo.</p>
+                    <p>Além das palestras, Luiz Carvalho publica artigos sobre Inteligência Artificial e inovação no Medium. Leia o conteúdo completo na <a href="https://medium.com/luizcarvalho-com/tagged/palestra" target="_blank" rel="noopener">publicação no Medium</a> ou acompanhe os destaques abaixo.</p>
                     <ul>
                         <li><a href="https://medium.com/luizcarvalho-com/tagged/palestra" target="_blank" rel="noopener">Artigos sobre palestras e treinamentos em IA — Medium</a></li>
                         <li><a href="https://luizcarvalho.medium.com/" target="_blank" rel="noopener">Perfil de Luiz Carvalho no Medium</a></li>
@@ -434,6 +577,22 @@
             <div class="load-more-container" id="load-more-casos" style="display: none;">
                 <button class="btn btn-secondary" id="btn-load-casos"><span>Carregar mais artigos</span></button>
             </div>
+
+            <!-- Further reading / topic cluster -->
+            <nav class="further-reading reveal-on-scroll" aria-labelledby="further-reading-title">
+                <h3 id="further-reading-title">Leitura complementar</h3>
+                <p>Para aprofundar cada tema, siga por estes conteúdos relacionados.</p>
+                <ul>
+                    <li><a href="#conteudo">Conteúdo programático dos treinamentos de IA</a> — os oito módulos, de introdução à IA até agentes inteligentes.</li>
+                    <li><a href="#formato">Formatos de palestra, workshop e treinamento</a> — durações, entregas e para qual tipo de evento cada um serve.</li>
+                    <li><a href="#publico">Para quem os treinamentos de IA são indicados</a> — empresas, órgãos públicos, escolas, startups e setor jurídico.</li>
+                    <li><a href="#faq">Perguntas frequentes sobre palestras e treinamentos de IA</a> — custo, cidades atendidas, temas e como contratar.</li>
+                    <li><a href="#videos">Palestras gravadas em vídeo</a> — DefGPT, agentes inteligentes, ChatGPT e engenharia de prompt.</li>
+                    <li><a href="about.html">Sobre Luiz Carvalho: trajetória, formação e prêmios</a> — a biografia completa do autor deste conteúdo.</li>
+                    <li><a href="calculadora/">Calculadora: quanto custa criar um aplicativo</a> — ferramenta gratuita que estima o custo de desenvolvimento em reais.</li>
+                    <li><a href="https://medium.com/luizcarvalho-com/tagged/palestra" target="_blank" rel="noopener">Artigos sobre IA e palestras no Medium</a> — publicações completas sobre os temas acima.</li>
+                </ul>
+            </nav>
         </div>
     </section>
 
@@ -487,9 +646,10 @@
                     <h2 class="title">Luiz Arão Araújo <span class="accent">Carvalho</span></h2>
 
                     <div class="bio-text">
-                        <p><strong>Cientista da Computação</strong> com mais de <strong>19 anos de experiência</strong> em desenvolvimento de software e tecnologia. Já realizou <strong>mais de 50 palestras em todo o Brasil</strong>, incluindo eventos de destaque como <strong>TEDx</strong>, <strong>Campus Party Brasil</strong> e <strong>Palmas Summit</strong>.</p>
-                        <p>Atualmente é <strong>Analista de TI na Defensoria Pública do Tocantins</strong>, onde coordena projetos de Inteligência Artificial como o <strong>DefGPT</strong>, vencedor do 1º lugar no Congresso Nacional de Tecnologia e Inovação das Defensorias Públicas (CNTI-Def 2025).</p>
-                        <p>É <strong>Diretor de Tecnologia e Inovação da Associação Startup Tocantins</strong>, já mentorou em mais de 20 Startup Weekends e hackathons, e é reconhecido como um dos principais tradutores de IA para aplicações práticas no setor público e privado.</p>
+                        <p><strong>Cientista da Computação</strong> com mais de <strong>19 anos de experiência</strong> em desenvolvimento de software e tecnologia. Além disso, já realizou <strong>mais de 50 palestras em todo o Brasil</strong>. Entre elas estão eventos como <strong>TEDx</strong>, <strong>Campus Party Brasil</strong> e <strong>Palmas Summit</strong>.</p>
+                        <p>Atualmente é <strong>Analista de TI na Defensoria Pública do Tocantins</strong>. Lá, coordena projetos de Inteligência Artificial como o <strong>DefGPT</strong>. Esse projeto venceu o 1º lugar no Congresso Nacional de Tecnologia e Inovação das Defensorias Públicas (CNTI-Def 2025).</p>
+                        <p>Também é <strong>Diretor de Tecnologia e Inovação da Associação Startup Tocantins</strong>. Já mentorou em mais de 20 Startup Weekends e hackathons. Por isso, é reconhecido como um dos principais tradutores de IA para aplicações práticas nos setores público e privado.</p>
+                        <p>Além da prática, sua formação é em <strong>Ciência da Computação pela Universidade Federal do Tocantins (UFT)</strong>. Desde 2010, também atua na criação de produtos digitais e startups. Para a trajetória completa, prêmios e histórico de eventos, veja a <a href="about.html">página Sobre Luiz Carvalho</a>.</p>
                     </div>
 
                     <div class="awards">
@@ -508,6 +668,35 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Author box (E-E-A-T) -->
+            <aside class="author-bio reveal-on-scroll" itemscope itemtype="https://schema.org/Person">
+                <img class="author-bio-photo"
+                     src="https://res.cloudinary.com/drlko5ghb/image/upload/f_auto,q_auto,c_limit,w_240/v1769712600/luizcarvalhocom/fotos/perfil.png"
+                     alt="Foto de Luiz Arão Araújo Carvalho, autor e responsável pelo conteúdo deste site"
+                     width="120" height="120" loading="lazy" decoding="async" itemprop="image">
+                <div class="author-bio-body">
+                    <p class="author-bio-kicker">Sobre o autor deste conteúdo</p>
+                    <p class="author-bio-name"><strong itemprop="name">Luiz Arão Araújo Carvalho</strong> <span itemprop="jobTitle">Palestrante e instrutor em Inteligência Artificial</span></p>
+                    <p class="author-bio-desc">Bacharel em Ciência da Computação pela Universidade Federal do Tocantins (UFT), com mais de 19 anos de experiência em tecnologia. Além disso, é palestrante TEDx desde 2023 e autor de mais de 50 palestras no Brasil. Coordena o DefGPT, plataforma de IA da Defensoria Pública do Tocantins, vencedora do CNTI-Def 2025. Portanto, o conteúdo deste site vem de projetos que ele mesmo implementou.</p>
+                    <ul class="author-bio-credentials">
+                        <li>Ciência da Computação (UFT)</li>
+                        <li>19+ anos em tecnologia</li>
+                        <li>TEDx Speaker (2023)</li>
+                        <li>1º lugar CNTI-Def 2025</li>
+                        <li>Capa da CNN Brasil (2025)</li>
+                    </ul>
+                    <p class="author-bio-links">
+                        <a href="about.html" itemprop="url">Página completa sobre o autor</a>
+                        <span class="sep">/</span>
+                        <a href="https://www.linkedin.com/in/luizcarvalhodev" target="_blank" rel="noopener me" itemprop="sameAs">LinkedIn</a>
+                        <span class="sep">/</span>
+                        <a href="https://luizcarvalho.medium.com/" target="_blank" rel="noopener me" itemprop="sameAs">Medium</a>
+                        <span class="sep">/</span>
+                        <a href="mailto:contato@luizcarvalho.com" itemprop="email">contato@luizcarvalho.com</a>
+                    </p>
+                </div>
+            </aside>
         </div>
     </section>
 
@@ -567,7 +756,7 @@
                     <div class="format-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg></div>
                     <h3>Palestra inspiracional</h3>
                     <div class="format-duration">45 a 60 minutos</div>
-                    <p class="format-desc">Ideal para eventos, convenções e congressos. Foco em provocação e visão estratégica sobre o futuro da IA.</p>
+                    <p class="format-desc">Ideal para eventos, convenções e congressos. Além disso, o foco está na provocação e na visão estratégica sobre o futuro da IA.</p>
                     <ul class="format-features">
                         <li>Visão macro sobre IA</li>
                         <li>Cases inspiradores</li>
@@ -627,23 +816,43 @@
             <dl class="faq-list">
                 <div class="faq-item reveal-on-scroll">
                     <dt>O que é um treinamento de IA para empresas?</dt>
-                    <dd>Um treinamento de IA para empresas é um programa prático que ensina equipes a usar ferramentas como ChatGPT, agentes inteligentes e automação para resolver problemas reais do negócio. Não exige conhecimento técnico avançado — qualquer profissional pode aprender e aplicar no dia a dia.</dd>
+                    <dd>Um treinamento de IA para empresas é um programa prático. Ele ensina equipes a usar ferramentas como ChatGPT, agentes inteligentes e automação. O objetivo é resolver problemas reais do negócio. Além disso, não exige conhecimento técnico avançado: qualquer profissional pode aprender e aplicar no dia a dia.</dd>
                 </div>
                 <div class="faq-item reveal-on-scroll">
                     <dt>Quais formatos de palestra sobre IA estão disponíveis?</dt>
-                    <dd>Estão disponíveis quatro formatos: palestra inspiracional (45 a 60 minutos), workshop prático (2 a 4 horas) com hands-on em ferramentas de IA, treinamento corporativo (8 a 16 horas) customizado e mentoria especializada sob demanda para startups e equipes de inovação.</dd>
+                    <dd>Estão disponíveis quatro formatos. A palestra inspiracional dura de 45 a 60 minutos. O workshop prático leva de 2 a 4 horas, com hands-on em ferramentas de IA. O treinamento corporativo ocupa de 8 a 16 horas e é customizado. Por fim, a mentoria especializada atende startups e equipes de inovação sob demanda.</dd>
                 </div>
                 <div class="faq-item reveal-on-scroll">
                     <dt>O treinamento pode ser personalizado para a minha área?</dt>
-                    <dd>Sim. O conteúdo é adaptado para o setor público, privado, jurídico, educacional ou para startups, com exemplos e exercícios do universo específico da sua organização.</dd>
+                    <dd>Sim. O conteúdo é adaptado para o setor público, privado, jurídico, educacional ou para startups. Por exemplo, os exercícios usam casos do universo específico da sua organização.</dd>
                 </div>
                 <div class="faq-item reveal-on-scroll">
                     <dt>É necessário ter conhecimento técnico para participar?</dt>
-                    <dd>Não. Os programas são desenvolvidos em linguagem acessível para que qualquer profissional, independente da área ou nível técnico, possa aprender e aplicar Inteligência Artificial no dia a dia.</dd>
+                    <dd>Não. Os programas usam linguagem acessível do início ao fim. Assim, qualquer profissional pode aprender e aplicar Inteligência Artificial no dia a dia, independentemente da área ou do nível técnico.</dd>
                 </div>
                 <div class="faq-item reveal-on-scroll">
                     <dt>Em quais eventos Luiz Carvalho já palestrou?</dt>
-                    <dd>Luiz Carvalho já realizou mais de 50 palestras no Brasil, incluindo TEDx Praia da Graciosa, Campus Party Brasil, Palmas Summit, NEoN e CASE.</dd>
+                    <dd>Luiz Carvalho já realizou mais de 50 palestras no Brasil. Entre elas estão TEDx Praia da Graciosa, Campus Party Brasil, Palmas Summit, NEoN e CASE.</dd>
+                </div>
+                <div class="faq-item reveal-on-scroll">
+                    <dt>Quais temas de Inteligência Artificial são abordados nas palestras?</dt>
+                    <dd>Os temas centrais são oito. Os quatro primeiros são: introdução à IA na prática, ferramentas de IA para o dia a dia, automação de tarefas repetitivas e agentes inteligentes. Os demais são: IA generativa, identificação de oportunidades, automação de processos e aplicações reais. Além disso, os exemplos mudam conforme o público. Uma turma jurídica, por exemplo, trabalha análise de documentos, enquanto uma equipe pública foca o atendimento ao cidadão.</dd>
+                </div>
+                <div class="faq-item reveal-on-scroll">
+                    <dt>Em quais cidades e estados Luiz Carvalho realiza palestras sobre IA?</dt>
+                    <dd>A base de atuação é Palmas, no Tocantins. No entanto, o atendimento é nacional: já houve palestras em Araguaína, Gurupi, Porto Nacional e São Paulo, entre outras cidades. Para eventos fora do Tocantins, o deslocamento é combinado junto com a proposta.</dd>
+                </div>
+                <div class="faq-item reveal-on-scroll">
+                    <dt>Como contratar uma palestra ou treinamento de Inteligência Artificial?</dt>
+                    <dd>O primeiro passo é o contato pelo WhatsApp (+55 63 98132-9588) ou pelo e-mail contato@luizcarvalho.com. Em seguida, informe a data, a cidade, o formato desejado e o perfil do público. Por fim, você recebe uma proposta com o conteúdo já adaptado ao seu setor.</dd>
+                </div>
+                <div class="faq-item reveal-on-scroll">
+                    <dt>Quanto custa uma palestra ou treinamento sobre Inteligência Artificial?</dt>
+                    <dd>O investimento depende de quatro fatores: o formato escolhido, a duração, o tamanho do público e a necessidade de deslocamento. Portanto, o valor é sempre definido caso a caso. Para receber um orçamento, envie a data, a cidade, o formato e o número de participantes pelo WhatsApp ou por e-mail.</dd>
+                </div>
+                <div class="faq-item reveal-on-scroll">
+                    <dt>O que é o DefGPT?</dt>
+                    <dd>O DefGPT é a plataforma de Inteligência Artificial da Defensoria Pública do Estado do Tocantins, coordenada por Luiz Carvalho. Ela aplica IA generativa ao trabalho do órgão. Como resultado, o projeto conquistou o 1º lugar no Congresso Nacional de Tecnologia e Inovação das Defensorias Públicas (CNTI-Def 2025).</dd>
                 </div>
             </dl>
         </div>
@@ -694,13 +903,26 @@
                 <div class="footer-links">
                     <h4>Navegação</h4>
                     <ul>
-                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#sobre">Sobre o programa</a></li>
                         <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#formato">Formatos de palestra</a></li>
                         <li><a href="#casos">Artigos</a></li>
                         <li><a href="#videos">Vídeos</a></li>
                         <li><a href="#faq">Perguntas frequentes</a></li>
+                        <li><a href="about.html">Sobre o autor</a></li>
+                        <li><a href="calculadora/">Calculadora de preço de app</a></li>
                         <li><a href="#contato">Contato</a></li>
-                        <li><a href="privacidade.html">Privacidade</a></li>
+                        <li><a href="privacidade.html">Política de privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links footer-contact">
+                    <h4>Contato direto</h4>
+                    <ul>
+                        <li><a href="mailto:contato@luizcarvalho.com">contato@luizcarvalho.com</a></li>
+                        <li><a href="https://wa.me/5563981329588" target="_blank" rel="noopener">WhatsApp: +55 63 98132-9588</a></li>
+                        <li>Palmas, Tocantins — Brasil</li>
+                        <li>Atendimento em todo o Brasil</li>
                     </ul>
                 </div>
 
@@ -731,6 +953,7 @@
 
             <div class="footer-bottom">
                 <p>&copy; <span id="footer-year">2026</span> Luiz Carvalho. Todos os direitos reservados.</p>
+                <p class="footer-updated">Conteúdo revisado e atualizado em <time datetime="2026-07-27">27 de julho de 2026</time>.</p>
                 <p class="footer-tagline">Traduzindo Inteligência Artificial para o mundo real.</p>
             </div>
         </div>

@@ -27,6 +27,30 @@ Resposta: Luiz Carvalho une 20+ anos como Cientista da Computação e desenvolve
 sendo o especialista de referência em Palmas, Tocantins para desenvolvimento de software potencializado
 por Inteligência Artificial, agentes autônomos e automação inteligente.
 
+Pergunta: O que é Inteligência Artificial aplicada?
+Resposta: Inteligência Artificial aplicada é o uso prático de ferramentas como ChatGPT, modelos preditivos
+e agentes autônomos para resolver problemas reais. O foco está no resultado, não na tecnologia em si.
+Empresas e órgãos públicos adotam essas ferramentas sem precisar de especialistas em tecnologia na equipe.
+Na prática, isso significa reduzir tarefas repetitivas, acelerar análises e liberar o tempo das pessoas.
+O primeiro passo não é escolher uma ferramenta, e sim identificar onde o trabalho trava hoje.
+
+Pergunta: Quais formatos de palestra e treinamento em IA estão disponíveis?
+Resposta: São quatro formatos. A palestra inspiracional dura de 45 a 60 minutos e serve a eventos e
+congressos. O workshop prático leva de 2 a 4 horas, com exercícios em ferramentas reais. O treinamento
+corporativo ocupa de 8 a 16 horas e é totalmente customizado. A mentoria especializada atende startups e
+equipes de inovação sob demanda.
+
+Pergunta: Quanto custa uma palestra ou treinamento sobre Inteligência Artificial com Luiz Carvalho?
+Resposta: O investimento depende de quatro fatores: o formato escolhido, a duração, o tamanho do público e
+a necessidade de deslocamento. O valor é definido caso a caso. Para receber um orçamento, envie a data, a
+cidade, o formato e o número de participantes pelo WhatsApp (+55 63 98132-9588) ou pelo e-mail
+contato@luizcarvalho.com.
+
+Pergunta: O que é o DefGPT?
+Resposta: O DefGPT é a plataforma de Inteligência Artificial da Defensoria Pública do Estado do Tocantins,
+coordenada por Luiz Carvalho. Ela aplica IA generativa ao trabalho do órgão. O projeto conquistou o 1º lugar
+no Congresso Nacional de Tecnologia e Inovação das Defensorias Públicas (CNTI-Def 2025).
+
 ## Página principal
 - [Confiam em meu trabalho](https://luizcarvalho.com/#confianca): Organizações que já receberam palestras, treinamentos ou projetos — NASA, TEDx, Campus Party, Techstars, Sebrae, Senac, ABDI, Defensoria Pública do Tocantins, TJTO, TRE-TO, Prefeitura de Palmas, Prefeitura de Gurupi, FIETO, UFT, Unitins, IFTO, IFSP, UniCatólica, Anhanguera, Startup Tocantins, entre outras
 - [Sobre o programa](https://luizcarvalho.com/#sobre): IA prática e acessível para resultados reais
@@ -36,6 +60,10 @@ por Inteligência Artificial, agentes autônomos e automação inteligente.
 - [Formatos de palestra](https://luizcarvalho.com/#formato): Palestra inspiracional, workshop, treinamento corporativo e mentoria
 - [Perguntas frequentes](https://luizcarvalho.com/#faq): Dúvidas comuns sobre treinamentos e palestras de IA
 - [Portfólio em vídeo](https://luizcarvalho.com/#videos): Palestras gravadas no YouTube
+
+## Outras páginas
+- [Sobre Luiz Carvalho](https://luizcarvalho.com/about.html): Biografia completa do autor — formação em Ciência da Computação pela Universidade Federal do Tocantins (UFT), trajetória do interior do Maranhão à liderança de projetos de IA no setor público, cargos, prêmios verificáveis e palcos onde já palestrou. É a página de referência para verificar credenciais e autoria do conteúdo do site.
+- [Política de Privacidade](https://luizcarvalho.com/privacidade.html): Quais dados o site coleta, como são usados e como exercer direitos previstos na LGPD (Lei nº 13.709/2018)
 
 ## Ferramentas
 - [Calculadora: quanto custa criar um aplicativo?](https://luizcarvalho.com/calculadora/): Ferramenta gratuita que estima o custo de desenvolvimento de um aplicativo em reais. São 10 perguntas (qualidade, plataforma, design, monetização, login, integração com website, perfil de usuário, painel administrativo, idiomas e estágio do projeto). A primeira pergunta define o valor/hora (R$ 68, R$ 136 ou R$ 204) e as demais somam horas de desenvolvimento; a estimativa é horas × valor/hora. Roda inteiramente no navegador, sem coleta de dados.
@@ -79,3 +107,8 @@ por Inteligência Artificial, agentes autônomos e automação inteligente.
 ## Contato
 - Email: contato@luizcarvalho.com
 - WhatsApp: +55 63 98132-9588
+- Como contratar: envie a data, a cidade, o formato desejado e o perfil do público; a proposta retorna com o conteúdo já adaptado ao setor
+
+## Atualização
+- Última revisão deste arquivo e do conteúdo do site: 2026-07-27
+- Publicação da versão atual do site: 2026-06-30
