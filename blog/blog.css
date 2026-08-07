@@ -1,0 +1,412 @@
+/* ==========================================================================
+   BLOG — extends styles.css ("Keynote")
+   Editorial post list + long-form article typography. Tokens come from :root
+   in styles.css; nothing new is hardcoded here.
+   ========================================================================== */
+
+/* ---------- Post list (blog index) ---------- */
+
+.post-list {
+    max-width: 74ch;
+    margin-top: clamp(1.5rem, 4vw, 2.5rem);
+    border-top: 1px solid var(--line);
+}
+
+.post-row {
+    display: block;
+    padding: clamp(1.5rem, 3.5vw, 2.25rem) 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.post-row-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-3);
+}
+
+.post-row-meta .tag {
+    color: var(--clay-deep);
+}
+
+.post-row-meta .sep {
+    color: var(--line);
+}
+
+.post-row h2 {
+    font-size: clamp(1.35rem, 3vw, 1.9rem);
+    line-height: 1.2;
+    margin-top: 0.7rem;
+}
+
+.post-row h2 a {
+    color: var(--ink);
+    text-decoration: none;
+    transition: color var(--t-fast);
+}
+
+.post-row h2 a:hover {
+    color: var(--clay);
+}
+
+.post-row p {
+    margin-top: 0.75rem;
+    color: var(--ink-2);
+    line-height: 1.65;
+    max-width: 62ch;
+}
+
+.post-row-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--clay-deep);
+    text-decoration: none;
+    border-bottom: 1px solid var(--clay-line);
+    transition: color var(--t-fast);
+}
+
+.post-row-link:hover {
+    color: var(--clay);
+}
+
+/* ---------- Article shell ---------- */
+
+.article-head .lead {
+    max-width: 64ch;
+}
+
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 1.35rem;
+    font-size: 0.9rem;
+    color: var(--ink-3);
+}
+
+.article-meta a {
+    color: var(--ink-2);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+    transition: color var(--t-fast);
+}
+
+.article-meta a:hover {
+    color: var(--clay);
+}
+
+.article-meta .sep {
+    color: var(--line);
+}
+
+/* Left-aligned, like every other subpage text column (see styles.css) */
+.article-body {
+    max-width: 68ch;
+}
+
+.article-body h2 {
+    font-size: clamp(1.35rem, 2.8vw, 1.85rem);
+    line-height: 1.2;
+    margin-top: clamp(2.25rem, 5vw, 3.25rem);
+    margin-bottom: 0.85rem;
+}
+
+.article-body h3 {
+    font-family: var(--display);
+    font-size: clamp(1.08rem, 2.1vw, 1.25rem);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: clamp(1.75rem, 3.5vw, 2.25rem);
+    margin-bottom: 0.6rem;
+}
+
+.article-body p {
+    color: var(--ink-2);
+    line-height: 1.72;
+}
+
+.article-body p + p {
+    margin-top: 1.1rem;
+}
+
+.article-body strong {
+    color: var(--ink);
+    font-weight: 700;
+}
+
+.article-body a {
+    color: var(--clay-deep);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--clay-line);
+    transition: color var(--t-fast);
+}
+
+.article-body a:hover {
+    color: var(--clay);
+}
+
+.article-body ul,
+.article-body ol {
+    margin-top: 1.1rem;
+    padding-left: 1.35rem;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.article-body li {
+    color: var(--ink-2);
+    line-height: 1.65;
+}
+
+.article-body li::marker {
+    color: var(--clay);
+    font-weight: 700;
+}
+
+.article-body hr {
+    border: 0;
+    border-top: 1px solid var(--line);
+    margin-block: clamp(2.25rem, 5vw, 3rem);
+}
+
+/* Inline code */
+.article-body code {
+    font-family: ui-monospace, "SFMono-Regular", "Menlo", "Consolas", monospace;
+    font-size: 0.88em;
+    background: var(--paper-3);
+    border: 1px solid var(--line);
+    border-radius: var(--r-sm);
+    padding: 0.1em 0.38em;
+    color: var(--ink);
+    word-break: break-word;
+}
+
+/* ---------- Steps (numbered editorial list) ---------- */
+
+.steps {
+    counter-reset: step;
+    margin-top: clamp(1.25rem, 3vw, 1.75rem);
+    display: grid;
+    gap: 1.1rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    color: var(--ink-2);
+    line-height: 1.68;
+}
+
+.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0.05em;
+    width: 1.85rem;
+    height: 1.85rem;
+    display: grid;
+    place-items: center;
+    border-radius: 999px;
+    background: var(--clay-tint);
+    border: 1px solid var(--clay-line);
+    color: var(--clay-deep);
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* ---------- Callout ---------- */
+
+.callout {
+    margin-top: clamp(1.25rem, 3vw, 1.75rem);
+    padding: clamp(1.1rem, 3vw, 1.5rem);
+    background: var(--paper-2);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--clay);
+    border-radius: var(--r);
+}
+
+.callout h3 {
+    margin-top: 0;
+}
+
+.callout p {
+    color: var(--ink-2);
+    line-height: 1.68;
+}
+
+.callout p + p {
+    margin-top: 0.85rem;
+}
+
+.callout.callout-soft {
+    border-left-color: var(--line);
+}
+
+/* ---------- Prompt block (dark stage surface) ---------- */
+
+.prompt-block {
+    margin-top: clamp(1.5rem, 3.5vw, 2rem);
+    background: var(--stage);
+    border: 1px solid var(--stage-line);
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.prompt-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.85rem clamp(1rem, 3vw, 1.4rem);
+    border-bottom: 1px solid var(--stage-line);
+    background: var(--stage-2);
+}
+
+.prompt-bar .prompt-label {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--on-stage-2);
+}
+
+.copy-btn {
+    font-family: var(--body);
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--on-stage);
+    background: transparent;
+    border: 1px solid var(--stage-line);
+    border-radius: 999px;
+    padding: 0.4rem 0.95rem;
+    cursor: pointer;
+    transition: background var(--t-fast), border-color var(--t-fast), color var(--t-fast);
+}
+
+.copy-btn:hover {
+    background: var(--clay);
+    border-color: var(--clay);
+    color: var(--on-stage);
+}
+
+.copy-btn[data-copied="true"] {
+    background: var(--clay-deep);
+    border-color: var(--clay-deep);
+}
+
+.prompt-block pre {
+    margin: 0;
+    padding: clamp(1rem, 3vw, 1.5rem);
+    overflow-x: auto;
+    max-height: 30rem;
+    overflow-y: auto;
+}
+
+.prompt-block code {
+    font-family: ui-monospace, "SFMono-Regular", "Menlo", "Consolas", monospace;
+    font-size: 0.82rem;
+    line-height: 1.62;
+    color: var(--on-stage-2);
+    background: none;
+    border: 0;
+    padding: 0;
+    white-space: pre;
+    display: block;
+    word-break: normal;
+}
+
+.prompt-note {
+    font-size: 0.92rem;
+    color: var(--ink-3);
+    margin-top: 0.85rem;
+}
+
+/* ---------- Author box ---------- */
+
+.author-box {
+    max-width: 68ch;
+    margin-top: clamp(2.25rem, 5vw, 3rem);
+    padding: clamp(1.25rem, 3vw, 1.75rem);
+    background: var(--paper-2);
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.author-box img {
+    width: 76px;
+    height: 76px;
+    border-radius: 999px;
+    object-fit: cover;
+    border: 1px solid var(--line);
+}
+
+.author-box .author-text {
+    flex: 1 1 18rem;
+}
+
+.author-box h3 {
+    font-family: var(--display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+.author-box p {
+    color: var(--ink-2);
+    font-size: 0.97rem;
+    line-height: 1.65;
+}
+
+.author-box a {
+    color: var(--clay-deep);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--clay-line);
+    transition: color var(--t-fast);
+}
+
+.author-box a:hover {
+    color: var(--clay);
+}
+
+/* ---------- Shared blocks re-centered inside the article column ---------- */
+
+.article-body .answer-block,
+.article-body .faq-list,
+.article-body .further-reading {
+    max-width: none;
+    margin-inline: 0;
+}
+
+@media (max-width: 720px) {
+    .prompt-block code {
+        font-size: 0.76rem;
+    }
+
+    .author-box {
+        gap: 1rem;
+    }
+}

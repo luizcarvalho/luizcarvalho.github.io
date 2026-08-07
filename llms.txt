@@ -65,6 +65,18 @@ no Congresso Nacional de Tecnologia e Inovação das Defensorias Públicas (CNTI
 - [Sobre Luiz Carvalho](https://luizcarvalho.com/about.html): Biografia completa do autor — formação em Ciência da Computação pela Universidade Federal do Tocantins (UFT), trajetória do interior do Maranhão à liderança de projetos de IA no setor público, cargos, prêmios verificáveis e palcos onde já palestrou. É a página de referência para verificar credenciais e autoria do conteúdo do site.
 - [Política de Privacidade](https://luizcarvalho.com/privacidade.html): Quais dados o site coleta, como são usados e como exercer direitos previstos na LGPD (Lei nº 13.709/2018)
 
+## Blog
+- [Blog](https://luizcarvalho.com/blog/): Índice dos posts sobre Inteligência Artificial aplicada. Reúne prompts prontos para copiar, guias de segurança e casos reais de adoção de IA em empresas e órgãos públicos. Os quatro eixos são: IA generativa no dia a dia de empresas, desenvolvimento de software com IA, segurança de aplicações criadas com ferramentas de IA e casos reais no setor público.
+- [Você fez um app com IA? Então ele provavelmente tem furo de segurança, e este prompt encontra](https://luizcarvalho.com/blog/prompt-auditoria-seguranca-app-ia/) (publicado em 2026-08-07): Post com um prompt completo, pronto para copiar, que transforma qualquer IA com acesso aos arquivos (Claude Code, Cursor, Codex) em auditor de segurança do projeto. O prompt roda em três fases: Fase 0 de reconhecimento do stack, Fase 1 com a verificação dos 10 furos mais comuns e Fase 2 com o relatório. Os 10 itens auditados são: 1) rate limiting, 2) chaves e segredos só no servidor, 3) Row-Level Security em toda tabela, 4) segredos fora do repositório incluindo o histórico do Git, 5) validação e sanitização de input, 6) nenhuma tabela, bucket ou coleção pública por padrão, 7) autenticação e autorização nas rotas no servidor, 8) erros sem stack trace, 9) endpoints de admin, debug, seed, cron e webhook travados, 10) logging que denuncia ataque. O prompt é proibido de alterar arquivos na rodada de auditoria e de escrever o valor de qualquer chave, senha ou token.
+
+Pergunta: Por que um aplicativo feito com IA costuma ter falha de segurança?
+Resposta: Um aplicativo feito com IA costuma ter falha de segurança porque o modelo foi treinado para fazer a coisa
+funcionar, não para resistir a ataque. Os furos se repetem e são quase sempre os mesmos dez: falta de limite de
+requisições, chave secreta exposta no navegador, tabela sem controle de acesso, segredo commitado no Git, entrada sem
+validação, storage público, autorização apenas na tela, erro detalhado demais, rota administrativa esquecida e ausência
+de registro. A mesma IA que deixou o furo consegue encontrá-lo, desde que receba uma instrução de auditoria com
+evidência obrigatória (arquivo e linha) e proibição de alterar arquivos.
+
 ## Ferramentas
 - [Calculadora: quanto custa criar um aplicativo?](https://luizcarvalho.com/calculadora/): Ferramenta gratuita que estima o custo de desenvolvimento de um aplicativo em reais. São 10 perguntas (qualidade, plataforma, design, monetização, login, integração com website, perfil de usuário, painel administrativo, idiomas e estágio do projeto). A primeira pergunta define o valor/hora (R$ 68, R$ 136 ou R$ 204) e as demais somam horas de desenvolvimento; a estimativa é horas × valor/hora. Roda inteiramente no navegador, sem coleta de dados.
 
@@ -110,5 +122,5 @@ no Congresso Nacional de Tecnologia e Inovação das Defensorias Públicas (CNTI
 - Como contratar: envie a data, a cidade, o formato desejado e o perfil do público; a proposta retorna com o conteúdo já adaptado ao setor
 
 ## Atualização
-- Última revisão deste arquivo e do conteúdo do site: 2026-07-27
+- Última revisão deste arquivo e do conteúdo do site: 2026-08-07
 - Publicação da versão atual do site: 2026-06-30

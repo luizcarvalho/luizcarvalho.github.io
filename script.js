@@ -165,7 +165,7 @@ async function loadMediumArticles() {
 
     // Setup load more
     if (allArticles.length > ARTICLES_PER_PAGE) {
-      loadMoreContainer.style.display = 'block';
+      loadMoreContainer.style.display = 'flex';
       loadMoreBtn.addEventListener('click', displayArticles);
     }
 
@@ -265,7 +265,7 @@ function loadYouTubeVideos() {
 
   // Setup load more
   if (YOUTUBE_VIDEOS.length > VIDEOS_PER_PAGE) {
-    loadMoreContainer.style.display = 'block';
+    loadMoreContainer.style.display = 'flex';
     loadMoreBtn.addEventListener('click', displayVideos);
   }
 }
