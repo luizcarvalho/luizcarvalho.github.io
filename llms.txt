@@ -54,7 +54,7 @@ no Congresso Nacional de Tecnologia e Inovação das Defensorias Públicas (CNTI
 ## Página principal
 - [Confiam em meu trabalho](https://luizcarvalho.com/#confianca): Organizações que já receberam palestras, treinamentos ou projetos — NASA, TEDx, Campus Party, Techstars, Sebrae, Senac, ABDI, Defensoria Pública do Tocantins, TJTO, TRE-TO, Prefeitura de Palmas, Prefeitura de Gurupi, FIETO, UFT, Unitins, IFTO, IFSP, UniCatólica, Anhanguera, Startup Tocantins, entre outras
 - [Sobre o programa](https://luizcarvalho.com/#sobre): IA prática e acessível para resultados reais
-- [Serviços](https://luizcarvalho.com/#servicos): Palestras, treinamentos de IA e desenvolvimento de software
+- [Serviços](https://luizcarvalho.com/#servicos): Palestras, treinamentos de IA, curso prático de IA e desenvolvimento de software
 - [Conteúdo programático](https://luizcarvalho.com/#conteudo): O que se aprende — IA na prática, agentes, automação e IA generativa
 - [Sobre mim](https://luizcarvalho.com/#palestrante): Perfil profissional, formação, trajetória e prêmios
 - [Formatos de palestra](https://luizcarvalho.com/#formato): Palestra inspiracional, workshop, treinamento corporativo e mentoria
@@ -64,6 +64,14 @@ no Congresso Nacional de Tecnologia e Inovação das Defensorias Públicas (CNTI
 ## Outras páginas
 - [Sobre Luiz Carvalho](https://luizcarvalho.com/about.html): Biografia completa do autor — formação em Ciência da Computação pela Universidade Federal do Tocantins (UFT), trajetória do interior do Maranhão à liderança de projetos de IA no setor público, cargos, prêmios verificáveis e palcos onde já palestrou. É a página de referência para verificar credenciais e autoria do conteúdo do site.
 - [Política de Privacidade](https://luizcarvalho.com/privacidade.html): Quais dados o site coleta, como são usados e como exercer direitos previstos na LGPD (Lei nº 13.709/2018)
+
+## Curso
+- [Curso Da ideia para o produto com IA](https://treinamento.luizcarvalho.com/): Curso prático de Inteligência Artificial para empresas que querem criar o próprio produto digital, conduzido por Luiz Carvalho. Foi desenhado para quem entende do negócio, não de código: equipes de operação, análise, gestão, RH e finanças. Dura 4 horas, com turmas de 8 a 25 pessoas, no formato presencial ou online ao vivo. Estrutura: 1ª hora, escolha do problema e fundamentos de IA; 2ª e 3ª horas, construção; 4ª hora, publicação, LGPD e colocação no ar. Os seis blocos de conteúdo são: IA desmistificada, contexto como especificação, criação de app (Lovable/Base44), construção de um CRM, agentes, automação e integração, e LGPD, custos e publicação. Ferramentas: Claude, GPT, Gemini, Grok, Lovable, Base44, Supabase e Vercel. O valor depende do formato (presencial ou online), do tamanho da turma e da cidade; o orçamento é pedido pela própria página do curso.
+
+Pergunta: Existe curso de IA para quem não sabe programar?
+Resposta: Sim. O curso Da ideia para o produto com IA, de Luiz Carvalho, foi desenhado para quem entende do negócio,
+não de código. Em 4 horas, a turma vai da escolha do problema até a publicação de um aplicativo. Pode ser presencial
+ou online ao vivo, com turmas de 8 a 25 pessoas. O programa completo está em https://treinamento.luizcarvalho.com/.
 
 ## Blog
 - [Blog](https://luizcarvalho.com/blog/): Índice dos posts sobre Inteligência Artificial aplicada. Reúne prompts prontos para copiar, guias de segurança e casos reais de adoção de IA em empresas e órgãos públicos. Os quatro eixos são: IA generativa no dia a dia de empresas, desenvolvimento de software com IA, segurança de aplicações criadas com ferramentas de IA e casos reais no setor público.
@@ -122,5 +130,5 @@ evidência obrigatória (arquivo e linha) e proibição de alterar arquivos.
 - Como contratar: envie a data, a cidade, o formato desejado e o perfil do público; a proposta retorna com o conteúdo já adaptado ao setor
 
 ## Atualização
-- Última revisão deste arquivo e do conteúdo do site: 2026-08-07
+- Última revisão deste arquivo e do conteúdo do site: 2026-09-23
 - Publicação da versão atual do site: 2026-06-30
