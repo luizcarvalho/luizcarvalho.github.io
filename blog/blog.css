@@ -410,3 +410,33 @@
         gap: 1rem;
     }
 }
+
+/* Figuras e galeria de depoimentos nos posts */
+.article-body figure {
+  margin: var(--space-6, 2rem) 0;
+}
+
+.article-body figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md, 12px);
+}
+
+.article-body figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  opacity: 0.75;
+}
+
+.article-body .proof-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  align-items: start;
+  margin: var(--space-6, 2rem) 0;
+}
+
+.article-body .proof-grid figure {
+  margin: 0;
+}
