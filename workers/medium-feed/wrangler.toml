@@ -1,0 +1,8 @@
+name = "medium-feed"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+# Roda na mesma origem do site (zona luizcarvalho.com, já no Cloudflare)
+routes = [
+  { pattern = "luizcarvalho.com/api/medium-feed", zone_name = "luizcarvalho.com" }
+]

@@ -115,9 +115,12 @@ function initScrollAnimations() {
 // ==========================================
 // MEDIUM RSS FEED
 // ==========================================
-// Usando rss2json API que já resolve CORS
-const RSS2JSON_API = 'https://api.rss2json.com/v1/api.json?rss_url=';
-const MEDIUM_FEED_URL = 'https://medium.com/feed/luizcarvalho-com/tagged/Palestra';
+// Feed ao vivo: RSS do Medium servido pelo Cloudflare Worker em
+// workers/medium-feed (o Medium não envia cabeçalhos CORS).
+// URL absoluta para funcionar também no servidor local.
+const MEDIUM_FEED_PROXY = 'https://luizcarvalho.com/api/medium-feed';
+// Reserva caso o Worker falhe: cópia gerada por scripts/update_articles.py
+const ARTICLES_JSON_URL = 'assets/data/articles.json';
 
 let allArticles = [];
 let displayedArticles = 0;
@@ -129,33 +132,15 @@ async function loadMediumArticles() {
   const loadMoreBtn = document.getElementById('btn-load-casos');
 
   try {
-    const response = await fetch(RSS2JSON_API + encodeURIComponent(MEDIUM_FEED_URL));
-    const data = await response.json();
-
-    if (data.status !== 'ok') {
-      throw new Error('RSS feed error');
+    try {
+      allArticles = await fetchLiveArticles();
+    } catch (liveError) {
+      console.warn('Feed ao vivo indisponível, usando cópia local:', liveError);
+      allArticles = await fetchCachedArticles();
     }
-
-    allArticles = data.items.map(item => {
-      const title = item.title || '';
-      const link = item.link || '';
-      const pubDate = item.pubDate || '';
-      const content = item.content || item.description || '';
-
-      // Extract image from thumbnail or content
-      let image = item.thumbnail || '';
-      if (!image) {
-        const imgMatch = content.match(/<img[^>]+src="([^"]+)"/);
-        image = imgMatch ? imgMatch[1] : '';
-      }
-
-      // Extract description (clean HTML and limit characters)
-      const tempDiv = document.createElement('div');
-      tempDiv.innerHTML = content;
-      const description = tempDiv.textContent?.substring(0, 200) + '...' || '';
-
-      return { title, link, pubDate, image, description };
-    });
+    if (allArticles.length === 0) {
+      throw new Error('Nenhum artigo no feed');
+    }
 
     // Clear loading spinner
     grid.innerHTML = '';
@@ -177,6 +162,47 @@ async function loadMediumArticles() {
             </div>
         `;
   }
+}
+
+async function fetchLiveArticles() {
+  const response = await fetch(MEDIUM_FEED_PROXY);
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}`);
+  }
+  const xml = new DOMParser().parseFromString(await response.text(), 'application/xml');
+  if (xml.querySelector('parsererror')) {
+    throw new Error('RSS inválido');
+  }
+
+  return [...xml.querySelectorAll('item')].map(item => {
+    const text = selector => item.querySelector(selector)?.textContent || '';
+    // content:encoded tem namespace; getElementsByTagNameNS evita escapar o ":"
+    const content = item.getElementsByTagNameNS('*', 'encoded')[0]?.textContent || text('description');
+
+    const imgMatch = content.match(/<img[^>]+src="([^"]+)"/);
+
+    // Texto puro do HTML (DOMParser não baixa imagens nem executa handlers)
+    const plain = new DOMParser().parseFromString(content, 'text/html').body.textContent;
+    const description = plain.replace(/\s+/g, ' ').trim().substring(0, 200) + '...';
+
+    return {
+      title: text('title').trim(),
+      // Remove o parâmetro de rastreamento "?source=rss..."
+      link: text('link').split('?source=')[0],
+      pubDate: text('pubDate'),
+      image: imgMatch ? imgMatch[1] : '',
+      description
+    };
+  });
+}
+
+async function fetchCachedArticles() {
+  const response = await fetch(ARTICLES_JSON_URL);
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}`);
+  }
+  const data = await response.json();
+  return data.items || [];
 }
 
 function displayArticles() {
