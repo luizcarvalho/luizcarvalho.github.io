@@ -110,6 +110,11 @@
     color: var(--line);
 }
 
+/* Segunda linha de metadados: local e data de um evento */
+.article-meta.event-meta {
+    margin-top: 0.5rem;
+}
+
 /* Left-aligned, like every other subpage text column (see styles.css) */
 .article-body {
     max-width: 68ch;
