@@ -1633,8 +1633,6 @@ strong {
 /* Self-contained answer block (citability) */
 .answer-block {
     margin-top: clamp(3rem, 6vw, 5rem);
-    max-width: 68ch;
-    margin-inline: auto;
     padding: clamp(1.5rem, 4vw, 2.25rem);
     background: var(--paper-2);
     border: 1px solid var(--line);
