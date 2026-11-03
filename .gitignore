@@ -38,3 +38,8 @@ Icon
 
 # Cloudflare Wrangler (cache local do `wrangler dev`)
 .wrangler/
+
+# Dropbox (metadados de atributos)
+*:com.dropbox.attrs
+.dropbox
+.dropbox.attr
