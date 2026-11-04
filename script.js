@@ -275,44 +275,20 @@ const YOUTUBE_VIDEOS = [
   { id: 'zJz9vzG8K8s', title: 'Sua empresa Não precisa de IA - Especialista em Inteligência Artificial' }
 ];
 
-let displayedVideos = 0;
-const VIDEOS_PER_PAGE = 9;
+// A home mostra só os vídeos em destaque. A lista completa fica em
+// palestras/index.html (estática, sem JS) — mantenha as duas em sincronia.
+const VIDEOS_ON_HOME = 6;
 
 function loadYouTubeVideos() {
   const grid = document.getElementById('videos-grid');
-  const loadMoreContainer = document.getElementById('load-more-videos');
-  const loadMoreBtn = document.getElementById('btn-load-videos');
+  if (!grid) return;
 
-  // Clear loading
+  // Clear static fallback
   grid.innerHTML = '';
 
-  // Display first batch
-  displayVideos();
-
-  // Setup load more
-  if (YOUTUBE_VIDEOS.length > VIDEOS_PER_PAGE) {
-    loadMoreContainer.style.display = 'flex';
-    loadMoreBtn.addEventListener('click', displayVideos);
-  }
-}
-
-function displayVideos() {
-  const grid = document.getElementById('videos-grid');
-  const loadMoreContainer = document.getElementById('load-more-videos');
-
-  const nextBatch = YOUTUBE_VIDEOS.slice(displayedVideos, displayedVideos + VIDEOS_PER_PAGE);
-
-  nextBatch.forEach(video => {
-    const card = createVideoCard(video);
-    grid.appendChild(card);
+  YOUTUBE_VIDEOS.slice(0, VIDEOS_ON_HOME).forEach(video => {
+    grid.appendChild(createVideoCard(video));
   });
-
-  displayedVideos += nextBatch.length;
-
-  // Hide load more if no more videos
-  if (displayedVideos >= YOUTUBE_VIDEOS.length) {
-    loadMoreContainer.style.display = 'none';
-  }
 
   // Trigger animations
   setTimeout(() => {
