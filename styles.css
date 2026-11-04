@@ -305,6 +305,7 @@ strong {
 }
 
 .nav-link {
+    white-space: nowrap;
     font-size: 0.95rem;
     font-weight: 500;
     color: var(--ink-2);
@@ -709,7 +710,8 @@ strong {
 
 .service-body {
     display: grid;
-    grid-template-columns: minmax(0, 22ch) 1fr;
+    /* min-content: a long single word ("Desenvolvimento") must not overflow into the text column */
+    grid-template-columns: minmax(min-content, 17.5rem) 1fr;
     gap: clamp(0.75rem, 3vw, 3rem);
     align-items: baseline;
 }
@@ -1527,23 +1529,11 @@ strong {
     }
 }
 
-@media (max-width: 720px) {
+/* Seven nav items (with "Desenvolvimento") no longer fit below ~960px:
+   switch to the hamburger menu earlier than the rest of the mobile layout. */
+@media (max-width: 960px) {
     .nav-toggle {
         display: flex;
-    }
-
-    .trust-grid {
-        grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
-        gap: 0.5rem;
-    }
-
-    .trust-tile {
-        aspect-ratio: 8 / 5;
-        padding: 0.8rem 0.9rem;
-    }
-
-    .trust-tile img {
-        max-height: 40px;
     }
 
     .nav-menu {
@@ -1567,6 +1557,22 @@ strong {
 
     .nav-link {
         font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .trust-grid {
+        grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+        gap: 0.5rem;
+    }
+
+    .trust-tile {
+        aspect-ratio: 8 / 5;
+        padding: 0.8rem 0.9rem;
+    }
+
+    .trust-tile img {
+        max-height: 40px;
     }
 
     .benefits {
@@ -2068,4 +2074,70 @@ strong {
     margin: 0;
     color: var(--ink-2);
     line-height: 1.65;
+}
+/* ==========================================
+   SERVICE PAGES: palestras/, treinamentos/, desenvolvimento/
+   Subpages that keep the full navbar (loaded by assets/js/pagina.js).
+   ========================================== */
+.service-page .subpage-head {
+    /* The navbar is fixed: leave room below it. */
+    padding-top: clamp(6.5rem, 13vw, 9rem);
+}
+
+.service-page section[id] {
+    scroll-margin-top: 5.5rem;
+}
+
+.nav-link[aria-current="page"] {
+    color: var(--clay-deep);
+    font-weight: 600;
+}
+
+/* "Ver a página" link at the end of a summary row on the home */
+.service-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    margin-top: 0.9rem;
+    font-weight: 600;
+    color: var(--clay-deep);
+    text-decoration: none;
+    border-bottom: 1px solid var(--clay-line);
+    transition: color var(--t-fast), gap var(--t-fast);
+}
+
+.service-more::after {
+    content: "→";
+}
+
+.service-more:hover {
+    color: var(--clay);
+    gap: 0.6em;
+}
+
+.section-foot {
+    margin-top: clamp(2rem, 4vw, 2.75rem);
+    display: flex;
+    justify-content: center;
+}
+
+/* Static video cards (no JS): the card is a link to YouTube */
+a.video-card {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.video-card:hover .video-title {
+    color: oklch(0.72 0.13 38);
+}
+
+.section-head .lead a {
+    color: var(--clay-deep);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--clay-line);
+}
+
+.section-head .lead a:hover {
+    color: var(--clay);
 }

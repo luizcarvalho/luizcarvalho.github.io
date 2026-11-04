@@ -54,12 +54,15 @@ no Congresso Nacional de Tecnologia e Inovação das Defensorias Públicas (CNTI
 ## Página principal
 - [Confiam em meu trabalho](https://luizcarvalho.com/#confianca): Organizações que já receberam palestras, treinamentos ou projetos — NASA, TEDx, Campus Party, Techstars, Sebrae, Senac, ABDI, Defensoria Pública do Tocantins, TJTO, TRE-TO, Prefeitura de Palmas, Prefeitura de Gurupi, FIETO, UFT, Unitins, IFTO, IFSP, UniCatólica, Anhanguera, Startup Tocantins, entre outras
 - [Sobre o programa](https://luizcarvalho.com/#sobre): IA prática e acessível para resultados reais
-- [Serviços](https://luizcarvalho.com/#servicos): Palestras, treinamentos de IA, curso prático de IA e desenvolvimento de software
-- [Conteúdo programático](https://luizcarvalho.com/#conteudo): O que se aprende — IA na prática, agentes, automação e IA generativa
+- [Serviços](https://luizcarvalho.com/#servicos): Resumo das três frentes — palestras, treinamentos e cursos, e desenvolvimento — com link para a página de cada uma
 - [Sobre mim](https://luizcarvalho.com/#palestrante): Perfil profissional, formação, trajetória e prêmios
-- [Formatos de palestra](https://luizcarvalho.com/#formato): Palestra inspiracional, workshop, treinamento corporativo e mentoria
-- [Perguntas frequentes](https://luizcarvalho.com/#faq): Dúvidas comuns sobre treinamentos e palestras de IA
-- [Portfólio em vídeo](https://luizcarvalho.com/#videos): Palestras gravadas no YouTube
+- [Perguntas frequentes](https://luizcarvalho.com/#faq): Dúvidas gerais — o que é um treinamento de IA, formatos, cidades atendidas, como contratar e custo
+- [Portfólio em vídeo](https://luizcarvalho.com/#videos): Seis palestras gravadas em destaque
+
+## Páginas de serviço
+- [Palestras sobre Inteligência Artificial](https://luizcarvalho.com/palestras/): Palestra inspiracional de 45 a 60 minutos para eventos, convenções e congressos. Traz os oito temas já apresentados (agentes inteligentes, como criar o seu próprio ChatGPT, engenharia de prompt, IA nos negócios, DefGPT, "Você não precisa ter medo da IA", pitch e chatbots), as etapas do diagnóstico à rodada de perguntas, os palcos e cidades atendidas, os cases (UniSaberes 2026, ENASTIC + CNTI 2025, TEDx Praia da Graciosa 2023, Palmas Summit) e a lista completa das 12 palestras gravadas.
+- [Treinamentos e cursos de IA](https://luizcarvalho.com/treinamentos/): Workshop prático (2 a 4 horas), treinamento corporativo (8 a 16 horas, com acompanhamento pós-turma e certificado), mentoria especializada (sob demanda) e o curso Da ideia para o produto com IA (4 horas, turmas de 8 a 25 pessoas). Inclui o conteúdo programático em oito módulos, o público ideal (empresas, órgãos públicos, instituições de ensino, profissionais, startups e setor jurídico) e o case da Turma 1, em Palmas.
+- [Desenvolvimento de software e soluções de IA](https://luizcarvalho.com/desenvolvimento/): Soluções de IA sob medida (de chatbots a modelos preditivos e IA generativa integrada ao fluxo de trabalho) e sistemas web em HTML5, CSS3, JavaScript e Ruby on Rails. Cases: DefGPT (22 mil processos em 11 dias em vez de 2,1 anos, economia estimada de R$ 3,9 milhões, 1º lugar no CNTI-Def 2025), chatbot de atendimento da Defensoria (Prêmio DPE/Bradesco 2018), plataforma de IA para a Indústria 4.0 (Desafio Industrial 2025) e o app Droido (270 mil downloads). Explica de forma estrutural quanto custa um aplicativo.
 
 ## Outras páginas
 - [Sobre Luiz Carvalho](https://luizcarvalho.com/about.html): Biografia completa do autor — formação em Ciência da Computação pela Universidade Federal do Tocantins (UFT), trajetória do interior do Maranhão à liderança de projetos de IA no setor público, cargos, prêmios verificáveis e palcos onde já palestrou. É a página de referência para verificar credenciais e autoria do conteúdo do site.
@@ -132,5 +135,5 @@ evidência obrigatória (arquivo e linha) e proibição de alterar arquivos.
 - Como contratar: envie a data, a cidade, o formato desejado e o perfil do público; a proposta retorna com o conteúdo já adaptado ao setor
 
 ## Atualização
-- Última revisão deste arquivo e do conteúdo do site: 2026-10-26
+- Última revisão deste arquivo e do conteúdo do site: 2026-11-04
 - Publicação da versão atual do site: 2026-06-30
