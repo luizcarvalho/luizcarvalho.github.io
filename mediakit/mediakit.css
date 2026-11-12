@@ -22,6 +22,16 @@
 .mk-card figcaption a { color: var(--clay-deep); white-space: nowrap; font-weight: 600; text-decoration: none; }
 .mk-card figcaption a:hover { text-decoration: underline; }
 .mk-path { display: block; color: var(--ink-3); font-size: .72rem; }
+.mk-tag-svg {
+    display: inline-block;
+    background: var(--clay-tint);
+    color: var(--clay-deep);
+    font-weight: 600;
+    padding: .08rem .4rem;
+    border-radius: 4px;
+    margin-top: .2rem;
+    letter-spacing: .02em;
+}
 
 .mk-sub { margin-top: 1.75rem; }
 .mk-sub h3 { font-family: var(--display); font-size: 1.05rem; color: var(--ink-2); margin: 0 0 .75rem; padding-bottom: .4rem; border-bottom: 1px solid var(--line-soft); }

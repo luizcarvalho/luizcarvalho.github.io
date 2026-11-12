@@ -19,10 +19,11 @@ Todos os arquivos deste pacote foram gerados diretamente a partir do vetor ofici
 
 ## Guia das Pastas
 
-### `01-logo-sem-fundo/` — Logo Completa Transparente
+### `01-logo-sem-fundo/` — Logo Completa Transparente (SVG e PNG)
 Ideal para aplicar sobre sites, vídeos, thumbnails, apresentações, documentos e artes no Canva/Figma/Photoshop.
-- **`recorte-justo/`**: Sem margens extras (proporção exata `~2.57:1`). Perfeito para alinhar via CSS em sites, assinaturas e layouts. Tamanhos de `180px` até `4096px` (4K).
-- **`com-espacamento/`**: Já inclui margem de proteção ao redor da logo para nunca encostar nas bordas.
+- **Vetor SVG**: Versões vetoriais puras incluídas em cada pasta para escala infinita sem perda de qualidade.
+- **`recorte-justo/`**: Sem margens extras (proporção exata `~2.57:1`). Perfeito para alinhar via CSS em sites, assinaturas e layouts. Vetor SVG e PNGs de `180px` até `4096px` (4K).
+- **`com-espacamento/`**: Já inclui margem de proteção ao redor da logo para nunca encostar nas bordas. Vetor SVG e PNGs de `600px` até `4096px`.
 - **4 variações de cor:**
   - `cor-original`: Símbolo vermelho + texto preto *(para fundos claros)*
   - `texto-branco`: Símbolo vermelho + texto branco *(para fundos escuros)*
@@ -32,10 +33,10 @@ Ideal para aplicar sobre sites, vídeos, thumbnails, apresentações, documentos
 ### `02-logo-com-fundo/` — Logo Completa com Fundo Sólido
 Versões prontas com fundo **Branco**, **Preto**, **Grafite** e **Vermelho**, tanto com **espaçamento padrão** quanto com **espaçamento amplo** (`600px` até `4096px`).
 
-### `03-simbolo/` — Símbolo Isolado (*"Ca"* Infinito)
+### `03-simbolo/` — Símbolo Isolado (*"Ca"* Infinito, SVG e PNG)
 Apenas o ícone da marca, ideal para miniaturas onde o nome completo ficaria pequeno:
-- **`sem-fundo-recorte-justo/`**: Vermelho, Preto e Branco (`64px` a `2048px`).
-- **`sem-fundo-com-espacamento/`**: Centralizado em quadrado `1:1` transparente (`256px` a `2048px`).
+- **`sem-fundo-recorte-justo/`**: Vermelho, Preto e Branco em vetor SVG e PNGs (`64px` a `2048px`).
+- **`sem-fundo-com-espacamento/`**: Centralizado em quadrado `1:1` transparente em vetor SVG e PNGs (`256px` a `2048px`).
 - **`com-fundo/`**: Quadrados `1:1` com fundo Branco, Preto, Grafite e Vermelho (`256px` a `2048px`).
 
 ### `04-enquadramentos/` — Proporções Padronizadas, Espaçamentos e Overlays de Vídeo

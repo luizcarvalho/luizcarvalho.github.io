@@ -89,7 +89,9 @@
                 fig.appendChild(box);
                 var cap = el('figcaption');
                 var label = el('span', '', i.name);
-                label.appendChild(el('small', 'mk-path', i.w + '×' + i.h));
+                var isSvg = i.ext === 'svg';
+                var dim = isSvg ? 'Vetor SVG' : i.w + '×' + i.h;
+                label.appendChild(el('small', 'mk-path' + (isSvg ? ' mk-tag-svg' : ''), dim));
                 var dl = el('a', '', 'Baixar'); dl.href = i.src; dl.download = i.name + '.' + (i.ext || 'png');
                 var cp = el('button', 'mk-copy', 'Copiar link'); cp.type = 'button';
                 cp.addEventListener('click', function () { copyLink(new URL(i.src, location.href).href, cp); });
