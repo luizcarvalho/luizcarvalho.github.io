@@ -170,6 +170,11 @@
     gap: 0.5rem;
 }
 
+.article-body ul + p,
+.article-body ol + p {
+    margin-top: 1.1rem;
+}
+
 .article-body li {
     color: var(--ink-2);
     line-height: 1.65;
@@ -444,4 +449,40 @@
 
 .article-body .proof-grid figure {
   margin: 0;
+}
+
+/* Galeria de vídeos verticais (Reels) nos posts */
+.article-body .reel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: var(--space-6, 2rem) 0;
+}
+
+.article-body .reel-grid figure {
+  margin: 0;
+}
+
+.article-body .reel-grid video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  border-radius: var(--r);
+  background: var(--stage);
+  box-shadow: var(--shadow);
+}
+
+.article-body .reel-grid figcaption {
+  font-family: var(--display);
+  font-weight: 600;
+  text-align: center;
+  opacity: 1;
+  color: var(--ink-2);
+}
+
+@media (max-width: 720px) {
+  .article-body .reel-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }

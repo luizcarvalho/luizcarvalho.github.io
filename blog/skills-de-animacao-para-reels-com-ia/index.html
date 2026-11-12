@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Instale 6 skills de animação para Claude Code, Codex e outras IAs. Uma frase vira um vídeo vertical 1080×1920 pronto para Reels, sem After Effects e sem chave de API.">
+    <meta name="keywords"
+        content="skills de animação, animação para Reels com IA, Claude Code skills, Codex skills, vídeo vertical com IA, motion design com código, gráfico animado, rota de voo animada">
+    <meta name="author" content="Luiz Arão Araújo Carvalho">
+    <meta name="robots" content="index, follow">
+
+    <title>6 skills de animação para Reels com IA (grátis e open source)</title>
+
+    <link rel="canonical" href="https://luizcarvalho.com/blog/skills-de-animacao-para-reels-com-ia/">
+
+    <!-- Freshness signals (GEO) -->
+    <meta name="date" content="2026-11-12">
+    <meta name="last-modified" content="2026-11-12">
+    <meta property="article:published_time" content="2026-11-12T09:00:00-03:00">
+    <meta property="article:modified_time" content="2026-11-12T09:00:00-03:00">
+    <meta property="article:author" content="Luiz Arão Araújo Carvalho">
+    <meta property="article:section" content="Ferramentas de IA">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="6 skills de animação para Reels: uma frase vira vídeo pronto">
+    <meta property="og:description"
+        content="Seis comandos para Claude Code, Codex e outras IAs que geram vídeos verticais prontos para Reels. Grátis, de código aberto e renderizados no seu computador.">
+    <meta property="og:url" content="https://luizcarvalho.com/blog/skills-de-animacao-para-reels-com-ia/">
+    <meta property="og:site_name" content="Luiz Carvalho">
+    <meta property="og:image"
+        content="https://luizcarvalho.com/blog/skills-de-animacao-para-reels-com-ia/img/capa.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="6 skills de animação para Reels: uma frase vira vídeo pronto">
+    <meta name="twitter:description"
+        content="Seis comandos para Claude Code, Codex e outras IAs que geram vídeos verticais prontos para Reels. Grátis, de código aberto e renderizados no seu computador.">
+    <meta name="twitter:image"
+        content="https://luizcarvalho.com/blog/skills-de-animacao-para-reels-com-ia/img/capa.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
+    <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:ital,wght@0,400..800;1,400..600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../blog.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://luizcarvalho.com/blog/skills-de-animacao-para-reels-com-ia/#post",
+          "headline": "6 skills de animação para Reels: uma frase vira vídeo pronto",
+          "description": "Seis skills de código aberto para Claude Code, Codex e outras IAs que transformam uma frase em vídeo vertical 1080×1920 pronto para Reels, Shorts e TikTok. O post mostra como instalar, um prompt de exemplo para cada skill e como criar a sua.",
+          "url": "https://luizcarvalho.com/blog/skills-de-animacao-para-reels-com-ia/",
+          "inLanguage": "pt-BR",
+          "articleSection": "Ferramentas de IA",
+          "keywords": "skills de animação, animação para Reels com IA, Claude Code skills, Codex skills, vídeo vertical com IA",
+          "image": "https://luizcarvalho.com/blog/skills-de-animacao-para-reels-com-ia/img/capa.jpg",
+          "datePublished": "2026-11-12T09:00:00-03:00",
+          "dateModified": "2026-11-12T09:00:00-03:00",
+          "author": { "@id": "https://luizcarvalho.com/#person" },
+          "publisher": { "@id": "https://luizcarvalho.com/#person" },
+          "isPartOf": { "@id": "https://luizcarvalho.com/blog/#blog" },
+          "mainEntityOfPage": { "@id": "https://luizcarvalho.com/blog/skills-de-animacao-para-reels-com-ia/#webpage" },
+          "isBasedOn": "https://github.com/luizcarvalho/skills/tree/main/animacoes"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://luizcarvalho.com/blog/skills-de-animacao-para-reels-com-ia/#webpage",
+          "url": "https://luizcarvalho.com/blog/skills-de-animacao-para-reels-com-ia/",
+          "name": "6 skills de animação para Reels com IA (grátis e open source)",
+          "description": "Guia de instalação e uso das seis skills de animação para Reels: /breakdown, /deep-dive, /one-line, /8-bit, /flight-path e /graph.",
+          "inLanguage": "pt-BR",
+          "isPartOf": { "@id": "https://luizcarvalho.com/#website" },
+          "author": { "@id": "https://luizcarvalho.com/#person" },
+          "publisher": { "@id": "https://luizcarvalho.com/#person" },
+          "datePublished": "2026-11-12T09:00:00-03:00",
+          "dateModified": "2026-11-12T09:00:00-03:00",
+          "mainEntity": { "@id": "https://luizcarvalho.com/blog/skills-de-animacao-para-reels-com-ia/#post" },
+          "breadcrumb": { "@id": "https://luizcarvalho.com/blog/skills-de-animacao-para-reels-com-ia/#breadcrumb" },
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".answer-block"]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://luizcarvalho.com/blog/skills-de-animacao-para-reels-com-ia/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://luizcarvalho.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blog",
+              "item": "https://luizcarvalho.com/blog/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Skills de animação para Reels com IA",
+              "item": "https://luizcarvalho.com/blog/skills-de-animacao-para-reels-com-ia/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://luizcarvalho.com/blog/skills-de-animacao-para-reels-com-ia/#faq",
+          "inLanguage": "pt-BR",
+          "isPartOf": { "@id": "https://luizcarvalho.com/blog/skills-de-animacao-para-reels-com-ia/#webpage" },
+          "dateModified": "2026-11-12T09:00:00-03:00",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Preciso saber programar para usar as skills?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. Você só precisa rodar dois comandos para instalar e depois pedir em português. Quem escreve a configuração e roda o render é a IA. No entanto, saber abrir o terminal ajuda muito na instalação."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Funciona no Windows?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Funciona dentro do WSL, o Linux que roda no Windows. Foi nesse ambiente que as skills foram testadas. Além disso, o instalador foi escrito para Linux e macOS, com os mesmos requisitos: Node 18 ou mais novo e ffmpeg."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "A IA pode inventar os números do vídeo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "As instruções de cada skill proíbem isso. Os números precisam vir de você ou de uma fonte citada. Quando algo é calculado, como a distância de um voo, a IA deve dizer que é cálculo ou estimativa. Mesmo assim, confira os dados antes de publicar."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Posso usar os vídeos em conteúdo comercial?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim. O código está sob a licença MIT e as fontes sob a SIL Open Font License. Ambas permitem uso comercial. Por outro lado, evite marcas e personagens de terceiros dentro das animações."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quanto custa usar as skills?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "As skills são gratuitas e não usam nenhuma chave de API. O render acontece no seu computador, sem serviço pago. Portanto, o único custo é o da IA que você já usa no dia a dia."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body class="subpage">
+    <header class="subpage-head article-head">
+        <div class="shell">
+            <nav class="breadcrumb" aria-label="Trilha de navegação">
+                <ol>
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li aria-current="page">Skills de animação para Reels</li>
+                </ol>
+            </nav>
+            <span class="kicker">Ferramentas de IA</span>
+            <h1 class="title">6 skills de animação para Reels: <span class="accent">uma frase vira vídeo
+                    pronto</span></h1>
+            <p class="lead">Você digita um comando como /graph ou /flight-path e recebe um vídeo vertical pronto para
+                Reels, Shorts e TikTok. É grátis, de código aberto e roda no seu computador.</p>
+            <p class="article-meta">
+                <span>Por <a href="/about.html">Luiz Carvalho</a></span>
+                <span class="sep">·</span>
+                <time datetime="2026-11-12">12 de novembro de 2026</time>
+                <span class="sep">·</span>
+                <span>Leitura de 7 minutos</span>
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" aria-labelledby="artigo-title">
+            <div class="shell">
+                <h2 class="visually-hidden" id="artigo-title">Skills de animação para Reels com IA</h2>
+
+                <div class="article-body">
+                    <div class="answer-block">
+                        <h3>O que são as skills de animação para Reels?</h3>
+                        <p>As skills de animação para Reels são seis comandos que transformam uma frase em vídeo
+                            vertical pronto. Cada comando gera um formato diferente. Por exemplo, o /graph anima um
+                            gráfico que cresce e o /flight-path desenha uma rota de voo entre duas cidades. O resultado
+                            é um arquivo MP4 de 1080 por 1920 pixels, a 30 quadros por segundo. Além disso, tudo roda no
+                            seu computador, sem filmagem, sem After Effects e sem chave de API. As skills funcionam no
+                            Claude Code, no Codex CLI e em outras IAs que executam comandos no terminal. Na prática, a
+                            IA lê as instruções da skill e escreve um arquivo curto com seus números e textos. Em
+                            seguida, ela renderiza o vídeo, o que leva de 15 a 25 segundos. O código é aberto, sob
+                            licença MIT, e está no GitHub. Portanto, você pode usar, adaptar e criar comandos novos no
+                            mesmo formato.</p>
+                    </div>
+
+                    <p>Fazer um Reel animado costumava exigir um programa de edição, horas de ajuste e algum talento
+                        para motion design. Com as skills, o trabalho vira um pedido em português. Você diz o que quer
+                        mostrar, e a IA cuida do resto.</p>
+
+                    <div class="reel-grid" role="group" aria-label="Exemplos das seis skills de animação">
+                        <figure>
+                            <video src="img/breakdown.mp4" poster="img/breakdown.webp" width="540" height="960"
+                                autoplay muted loop playsinline preload="metadata"
+                                aria-label="Animação do /breakdown: nove cubos de açúcar caem ao lado de uma lata de refrigerante"></video>
+                            <figcaption>/breakdown</figcaption>
+                        </figure>
+                        <figure>
+                            <video src="img/deep-dive.mp4" poster="img/deep-dive.webp" width="540" height="960"
+                                autoplay muted loop playsinline preload="metadata"
+                                aria-label="Animação do /deep-dive: um submarino desce até 3.800 metros, onde está o Titanic"></video>
+                            <figcaption>/deep-dive</figcaption>
+                        </figure>
+                        <figure>
+                            <video src="img/one-line.mp4" poster="img/one-line.webp" width="540" height="960"
+                                autoplay muted loop playsinline preload="metadata"
+                                aria-label="Animação do /one-line: uma linha oscila mas sobe, com a frase o progresso não é uma linha reta"></video>
+                            <figcaption>/one-line</figcaption>
+                        </figure>
+                        <figure>
+                            <video src="img/8-bit.mp4" poster="img/8-bit.webp" width="540" height="960" autoplay
+                                muted loop playsinline preload="metadata"
+                                aria-label="Animação do /8-bit: o pouso na Lua de 1969 em pixel art, com a bandeira do Brasil"></video>
+                            <figcaption>/8-bit</figcaption>
+                        </figure>
+                        <figure>
+                            <video src="img/flight-path.mp4" poster="img/flight-path.webp" width="540" height="960"
+                                autoplay muted loop playsinline preload="metadata"
+                                aria-label="Animação do /flight-path: rota de voo de Palmas para o Rio de Janeiro"></video>
+                            <figcaption>/flight-path</figcaption>
+                        </figure>
+                        <figure>
+                            <video src="img/graph.mp4" poster="img/graph.webp" width="540" height="960" autoplay
+                                muted loop playsinline preload="metadata"
+                                aria-label="Animação do /graph: um centavo dobrando todo dia chega a R$ 5.368.709 no dia 30"></video>
+                            <figcaption>/graph</figcaption>
+                        </figure>
+                    </div>
+
+                    <hr>
+
+                    <h2>O que você precisa</h2>
+
+                    <ul>
+                        <li>Uma IA que rode comandos no terminal: Claude Code, Codex CLI, Gemini CLI, Cursor ou
+                            similar.</li>
+                        <li>Node 18 ou mais novo.</li>
+                        <li>ffmpeg, o programa que monta o vídeo.</li>
+                    </ul>
+
+                    <p>Além disso, você não precisa de nenhuma chave de API. No macOS, o Node e o ffmpeg saem com
+                        <code>brew install ffmpeg node</code>. Já no Ubuntu, Debian ou WSL, use <code>sudo apt install
+                        ffmpeg</code> e instale o Node pelo site oficial.</p>
+
+                    <h2>Como instalar em dois comandos</h2>
+
+                    <p>Primeiro, abra o terminal e cole os dois comandos abaixo. Eles baixam o repositório e rodam o
+                        instalador.</p>
+
+                    <div class="prompt-block">
+                        <div class="prompt-bar">
+                            <span class="prompt-label">Instalação</span>
+                            <button type="button" class="copy-btn" id="copy-prompt">Copiar comandos</button>
+                        </div>
+                        <pre><code id="prompt-text">git clone https://github.com/luizcarvalho/skills.git ~/skills
+cd ~/skills/animacoes &amp;&amp; ./install.sh</code></pre>
+                    </div>
+
+                    <p>Em seguida, o instalador faz três coisas. Ele instala o Playwright, baixa uma vez o navegador
+                        usado no render (cerca de 150 MB) e liga as seis skills em <code>~/.claude/skills</code>. Por
+                        fim, ele gera uma imagem de teste para confirmar que está tudo certo.</p>
+
+                    <ol class="steps">
+                        <li><strong>Claude Code:</strong> funciona direto depois da instalação. Digite, por exemplo,
+                            <code>/graph Um centavo, dobrando todo dia por 30 dias</code>.</li>
+                        <li><strong>Codex CLI:</strong> rode <code>./install.sh --codex</code>. Assim, as skills também
+                            ficam em <code>~/.codex/skills</code>.</li>
+                        <li><strong>Outras IAs:</strong> rode <code>./install.sh --no-link</code> e abra a pasta
+                            <code>animacoes</code> na sua ferramenta. O arquivo AGENTS.md explica o fluxo para qualquer
+                            assistente.</li>
+                    </ol>
+
+                    <hr>
+
+                    <h2>As 6 skills, com um prompt de exemplo</h2>
+
+                    <h3>1. /breakdown: do que algo é feito de verdade</h3>
+                    <p>Essa skill transforma uma quantidade abstrata em objetos que dá para contar. Os itens caem um a
+                        um e empilham ao lado de uma embalagem. Ao mesmo tempo, o contador sobe até o número final.
+                        A embalagem pode ser lata, pote ou caixa, com nome e cor que você escolher.</p>
+                    <p><strong>Prompt:</strong> <code>/breakdown Quanto açúcar tem numa lata de refrigerante?</code><br>
+                        <strong>Tempo de render:</strong> cerca de 20 segundos.</p>
+
+                    <h3>2. /deep-dive: descida com marcos no caminho</h3>
+                    <p>Um submarino desce enquanto o contador de profundidade sobe. Cada marco cruza o veículo
+                        exatamente no valor certo. Em seguida, a luz some, o farol acende e o fundo aparece. Também dá
+                        para trocar o submarino por um mergulhador e tirar o naufrágio.</p>
+                    <p><strong>Prompt:</strong> <code>/deep-dive Qual a profundidade do Titanic, de verdade?</code><br>
+                        <strong>Tempo de render:</strong> cerca de 25 segundos.</p>
+
+                    <h3>3. /one-line: uma ideia, uma linha</h3>
+                    <p>Aqui o visual é mínimo: fundo liso, uma frase e uma linha viva. A linha sobe, cai e volta, mas
+                        termina acima de onde começou. Por isso, ela funciona bem para hábitos, paciência e
+                        consistência. O tema pode ser branco no preto ou preto no branco.</p>
+                    <p><strong>Prompt:</strong> <code>/one-line O progresso não é uma linha reta</code><br>
+                        <strong>Tempo de render:</strong> cerca de 15 segundos.</p>
+
+                    <h3>4. /8-bit: cenas retrô em pixel art</h3>
+                    <p>A cena é montada como um videogame dos anos 80. Ela tem céu estrelado, planeta, chão e sprites
+                        que seguem trajetos no tempo. Os sprites prontos incluem módulo lunar, astronauta, foguete,
+                        disco voador e as bandeiras do Brasil, dos EUA e de Portugal. Além disso, a IA pode desenhar
+                        sprites novos pixel a pixel.</p>
+                    <p><strong>Prompt:</strong> <code>/8-bit O pouso na Lua de 1969 em 8-bit</code><br>
+                        <strong>Tempo de render:</strong> cerca de 20 segundos.</p>
+
+                    <h3>5. /flight-path: rota animada entre duas cidades</h3>
+                    <p>O mapa segue a direção real entre as cidades. O avião percorre o arco e o cartão mostra os
+                        códigos dos aeroportos. Enquanto isso, a distância e o tempo contam até o selo de pouso. A
+                        distância sai das coordenadas, em linha reta. Já o tempo é uma estimativa, a menos que você
+                        informe o valor real.</p>
+                    <p><strong>Prompt:</strong> <code>/flight-path De Palmas para o Rio de Janeiro</code><br>
+                        <strong>Tempo de render:</strong> cerca de 20 segundos.</p>
+
+                    <h3>6. /graph: qualquer número vira gráfico</h3>
+                    <p>Um número grande conta até o valor final enquanto as barras se formam. Você passa os números
+                        reais, como seguidores, faturamento ou quilos. Também pode passar uma regra, como dobrar todo
+                        dia. O formato dos números segue o padrão brasileiro, com R$ e ponto de milhar.</p>
+                    <p><strong>Prompt:</strong> <code>/graph Um centavo, dobrando todo dia por 30 dias</code><br>
+                        <strong>Tempo de render:</strong> cerca de 15 segundos.</p>
+
+                    <p class="prompt-note">Tempos medidos num computador com Linux (WSL2), para vídeos de 5,5 a 6
+                        segundos.</p>
+
+                    <hr>
+
+                    <h2>Como uma frase vira vídeo?</h2>
+
+                    <div class="answer-block">
+                        <h3>Como as skills transformam uma frase em vídeo?</h3>
+                        <p>As skills transformam uma frase em vídeo em quatro etapas, todas no seu computador. Primeiro,
+                            a IA lê o arquivo SKILL.md da skill escolhida. Esse arquivo explica quando usar a skill,
+                            quais campos existem e quais regras seguir. Em seguida, a IA escreve um spec, ou seja, um
+                            arquivo JSON curto com seus números, lugares, textos e cores. Depois, um navegador sem janela
+                            desenha cada quadro em código e o ffmpeg junta tudo num MP4. Como cada quadro depende só do
+                            tempo, o mesmo spec sempre gera o mesmo vídeo. Por fim, a IA confere uma folha de contato com
+                            faixas vermelhas. Essas faixas marcam onde ficam os botões e a legenda do Reels, e a IA
+                            corrige o que estiver embaixo delas. Além disso, as skills proíbem inventar dados. Os números
+                            vêm de você ou de uma fonte citada, e estimativas aparecem como estimativas.</p>
+                    </div>
+
+                    <div class="callout">
+                        <h3>Dá para usar sem IA também</h3>
+                        <p>O renderizador é um comando comum. Por exemplo, <code>node engine/render.mjs graph
+                            meu-spec.json</code> gera o vídeo direto. Além disso, cada skill tem um template que abre no
+                            navegador para pré-visualizar a animação.</p>
+                    </div>
+
+                    <h2>Como criar a sua própria skill</h2>
+
+                    <p>Cada skill é uma pasta com quatro arquivos. Portanto, criar uma nova é copiar uma pasta e mudar
+                        o desenho. Os arquivos são estes:</p>
+
+                    <ul>
+                        <li><code>SKILL.md</code>: quando usar, passo a passo, campos do spec e regras. É o que a IA
+                            lê.</li>
+                        <li><code>template.html</code>: a animação, desenhada em Canvas 2D.</li>
+                        <li><code>example.json</code>: um spec de exemplo.</li>
+                        <li><code>render.sh</code>: o atalho para renderizar, igual em todas.</li>
+                    </ul>
+
+                    <p>Também dá para pedir à própria IA. Por exemplo: <em>"crie uma nova skill neste repositório que
+                        anime X, no mesmo formato da /graph"</em>. Depois, rode o instalador de novo para ligar a skill
+                        nova. O código completo está no <a href="https://github.com/luizcarvalho/skills/tree/main/animacoes"
+                            target="_blank" rel="noopener">repositório das skills de animação no GitHub</a>.</p>
+
+                    <h2>Perguntas que sempre chegam</h2>
+
+                    <dl class="faq-list">
+                        <div class="faq-item">
+                            <dt>Preciso saber programar para usar as skills?</dt>
+                            <dd>Não. Você só precisa rodar dois comandos para instalar e depois pedir em português. Quem
+                                escreve a configuração e roda o render é a IA. No entanto, saber abrir o terminal ajuda
+                                muito na instalação.</dd>
+                        </div>
+                        <div class="faq-item">
+                            <dt>Funciona no Windows?</dt>
+                            <dd>Funciona dentro do WSL, o Linux que roda no Windows. Foi nesse ambiente que as skills
+                                foram testadas. Além disso, o instalador foi escrito para Linux e macOS, com os mesmos
+                                requisitos: Node 18 ou mais novo e ffmpeg.</dd>
+                        </div>
+                        <div class="faq-item">
+                            <dt>A IA pode inventar os números do vídeo?</dt>
+                            <dd>As instruções de cada skill proíbem isso. Os números precisam vir de você ou de uma fonte
+                                citada. Quando algo é calculado, como a distância de um voo, a IA deve dizer que é cálculo
+                                ou estimativa. Mesmo assim, confira os dados antes de publicar.</dd>
+                        </div>
+                        <div class="faq-item">
+                            <dt>Posso usar os vídeos em conteúdo comercial?</dt>
+                            <dd>Sim. O código está sob a licença MIT e as fontes sob a SIL Open Font License. Ambas
+                                permitem uso comercial. Por outro lado, evite marcas e personagens de terceiros dentro
+                                das animações.</dd>
+                        </div>
+                        <div class="faq-item">
+                            <dt>Quanto custa usar as skills?</dt>
+                            <dd>As skills são gratuitas e não usam nenhuma chave de API. O render acontece no seu
+                                computador, sem serviço pago. Portanto, o único custo é o da IA que você já usa no dia a
+                                dia.</dd>
+                        </div>
+                    </dl>
+
+                    <nav class="further-reading" aria-labelledby="further-reading-title">
+                        <h3 id="further-reading-title">Leitura complementar</h3>
+                        <p>Para seguir no mesmo tema, veja estes conteúdos relacionados.</p>
+                        <ul>
+                            <li><a href="/blog/">Todos os posts do blog</a> — prompts prontos e guias práticos de
+                                Inteligência Artificial aplicada.</li>
+                            <li><a href="/blog/prompt-auditoria-seguranca-app-ia/">Prompt de auditoria de segurança para
+                                    app feito com IA</a> — outro recurso pronto para usar no Claude Code ou no Codex.</li>
+                            <li><a href="/desenvolvimento/">Desenvolvimento de software com IA</a> — como esse trabalho é
+                                feito em projeto real, não só em post.</li>
+                            <li><a href="/treinamentos/#conteudo">Conteúdo programático dos treinamentos de IA</a> — os
+                                módulos aplicados em empresas e órgãos públicos.</li>
+                            <li><a href="/about.html">Sobre Luiz Carvalho</a> — formação, cargos e prêmios verificáveis
+                                do autor deste post.</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="author-box">
+                    <img src="https://res.cloudinary.com/drlko5ghb/image/upload/v1769712600/luizcarvalhocom/fotos/perfil.png"
+                        alt="Luiz Carvalho, autor do post" width="76" height="76" loading="lazy">
+                    <div class="author-text">
+                        <h3>Escrito por Luiz Carvalho</h3>
+                        <p>Cientista da Computação com mais de 21 anos de experiência e palestrante TEDx. Coordena o
+                            DefGPT, plataforma de IA da Defensoria Pública do Tocantins. Conheça a <a
+                                href="/about.html">trajetória completa</a> ou acompanhe no <a
+                                href="https://instagram.com/luizcarvalhocom" target="_blank"
+                                rel="noopener">Instagram</a>. Se você fizer um vídeo com as skills, me marque.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-section" id="contato">
+            <div class="shell">
+                <div class="cta-inner">
+                    <h2>Quer levar IA aplicada para a sua equipe?</h2>
+                    <p>Envie a data, a cidade, o formato desejado e o perfil do público. Em seguida, você recebe uma
+                        proposta adaptada ao seu setor.</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/5563981329588?text=Ol%C3%A1%20Luiz%2C%20gostaria%20de%20saber%20mais%20sobre%20suas%20palestras%20e%20treinamentos%20em%20IA."
+                            class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+                            <span>Falar no WhatsApp</span>
+                        </a>
+                        <a href="mailto:contato@luizcarvalho.com" class="btn btn-secondary btn-lg">
+                            <span>Enviar e-mail</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="shell">
+            <div class="footer-bottom">
+                <p>&copy; <span id="footer-year">2026</span> Luiz Carvalho. Todos os direitos reservados.</p>
+                <p class="footer-updated">Conteúdo revisado e atualizado em <time datetime="2026-11-12">12 de novembro
+                        de 2026</time>.</p>
+                <p class="footer-tagline"><a href="/blog/">Voltar ao blog</a> · <a href="/">Página inicial</a> · <a
+                        href="/privacidade.html">Política de privacidade</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+        (function () {
+            var btn = document.getElementById('copy-prompt');
+            var code = document.getElementById('prompt-text');
+            if (!btn || !code) return;
+            if (!navigator.clipboard) { btn.hidden = true; return; }
+
+            btn.addEventListener('click', function () {
+                navigator.clipboard.writeText(code.textContent).then(function () {
+                    btn.textContent = 'Comandos copiados';
+                    btn.dataset.copied = 'true';
+                    setTimeout(function () {
+                        btn.textContent = 'Copiar comandos';
+                        btn.dataset.copied = 'false';
+                    }, 2200);
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>
