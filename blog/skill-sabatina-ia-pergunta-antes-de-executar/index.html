@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Skill gratuita para Claude Code, Codex e outras IAs que faz perguntas em rodadas até não sobrar dúvida sobre o seu projeto. Veja como funciona, como instalar e copie o arquivo completo.">
+    <meta name="description" content="Skill gratuita para Claude Code, Codex e outras IAs que faz perguntas em rodadas até não sobrar dúvida sobre o seu projeto. Veja como funciona e como instalar a partir do GitHub.">
     <meta name="keywords"
         content="skill sabatina, skills para Claude Code, skills para Codex, IA que faz perguntas, planejamento com IA, árvore de decisões, SKILL.md">
     <meta name="author" content="Luiz Arão Araújo Carvalho">
@@ -65,7 +65,7 @@
           "@type": "BlogPosting",
           "@id": "https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/#post",
           "headline": "A skill que eu mais uso: a Sabatina faz a IA perguntar até não sobrar dúvida",
-          "description": "A Sabatina é uma skill gratuita e de código aberto que faz a IA perguntar em rodadas, com recomendação pronta, até não sobrar dúvida sobre o projeto. O post explica o funcionamento, a instalação e traz o arquivo completo.",
+          "description": "A Sabatina é uma skill gratuita e de código aberto que faz a IA perguntar em rodadas, com recomendação pronta, até não sobrar dúvida sobre o projeto. O post explica o funcionamento e a instalação.",
           "url": "https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/",
           "inLanguage": "pt-BR",
           "articleSection": "Ferramentas de IA",
@@ -92,7 +92,7 @@
           "@id": "https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/#webpage",
           "url": "https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/",
           "name": "Skill Sabatina: a IA que pergunta antes de executar (grátis)",
-          "description": "Como funciona, como instalar e o arquivo completo da skill Sabatina, que faz a IA perguntar antes de executar.",
+          "description": "Como funciona e como instalar a skill Sabatina, que faz a IA perguntar antes de executar.",
           "inLanguage": "pt-BR",
           "isPartOf": {
             "@id": "https://luizcarvalho.com/#website"
@@ -218,7 +218,7 @@
                 <span class="sep">·</span>
                 <time datetime="2026-11-17">17 de novembro de 2026</time>
                 <span class="sep">·</span>
-                <span>Leitura de 6 minutos</span>
+                <span>Leitura de 5 minutos</span>
             </p>
         </div>
     </header>
@@ -241,8 +241,8 @@
                     <p>Se eu tivesse que escolher apenas uma skill, com certeza seria essa. Ela é a mais simples e a mais
                         poderosa que eu conheço. Hoje, eu não consigo trabalhar sem ela.</p>
 
-                    <p>Por isso, resolvi compartilhar. Neste post, você vê como a Sabatina funciona e como instalar. Além
-                        disso, o arquivo completo está no final, pronto para copiar.</p>
+                    <p>Por isso, resolvi compartilhar. Neste post, você vê como a Sabatina funciona e, em seguida, como
+                        instalar a partir do GitHub.</p>
 
                     <div class="answer-block">
                         <h3>Por que vale a pena deixar a IA perguntar antes de executar?</h3>
@@ -323,56 +323,6 @@ ln -sfn ~/skills/desenvolvimento/sabatina ~/.claude/skills/sabatina</code></pre>
 
                     <p>Ela também combina com outras skills. Por exemplo, eu sabatino a ideia de um vídeo antes de usar
                         as <a href="/blog/skills-de-animacao-para-reels-com-ia/">skills de animação para Reels</a>.</p>
-
-                    <hr>
-
-                    <h2>O arquivo completo da skill</h2>
-
-                    <p>Este é o conteúdo do arquivo SKILL.md, sem cortes. Para instalar sem o GitHub, crie uma pasta
-                        chamada <code>sabatina</code> dentro da sua pasta de skills e salve o texto nela como
-                        <code>SKILL.md</code>.</p>
-
-                    <div class="prompt-block">
-                        <div class="prompt-bar">
-                            <span class="prompt-label">SKILL.md da Sabatina</span>
-                            <button type="button" class="copy-btn" data-target="skill-text" data-label="Copiar skill">Copiar skill</button>
-                        </div>
-                        <pre><code id="skill-text">---
-name: sabatina
-description: Submeta qualquer plano, arquitetura ou ideia de negócio a uma sabatina implacável baseada em árvore de decisões. Elimina suposições ocultas e pontos cegos antes da execução. Use quando o usuário quiser blindar um projeto, testar a solidez de uma ideia ou acionar gatilhos como "/sabatina", "faça uma sabatina", "prova de fogo", "teste de estresse" ou "me interrogue".
----
-
-Conduza uma sabatina implacável com o usuário até alcançarem um entendimento absoluto e blindado sobre o projeto. Mapeie todo o raciocínio como uma **árvore de decisões**: cada escolha abre ramificações para as próximas decisões que dependem dela.
-
-Avance pela árvore em **rodadas**. A **fronteira** representa todas as decisões cujos pré-requisitos já foram resolvidos: são as perguntas que você pode fazer _agora_, sem precisar adivinhar respostas que ainda não ouviu. Dispare toda a fronteira de uma só vez na mesma rodada: numere cada pergunta e entregue imediatamente a sua recomendação estratégica. Depois, aguarde as respostas do usuário antes de avançar para a próxima rodada.
-
-Estruture cada rodada exatamente neste formato:
-
-
-```
-
-* ❓ **P1**
-**&lt;título direto da decisão&gt;**: &lt;contexto e pergunta detalhada, podendo conter múltiplos parágrafos e opções claras de escolha&gt;
-
-➡️ 
-
----
-
-* ❓ **P2**
-**&lt;título direto da decisão&gt;**: &lt;contexto e pergunta detalhada, podendo conter múltiplos parágrafos e opções claras de escolha&gt;
-
-➡️ 
-
-```
-
-Formule cada pergunta de modo que um simples "sim" do usuário aprove imediatamente a sua recomendação.
-
-A cada rodada respondida, a árvore se reconfigura: decisões tomadas empurram a fronteira para frente e desbloqueiam as perguntas que dependiam delas. Recalcule a nova fronteira e dispare a próxima rodada. Qualquer pergunta que dependa de uma resposta ainda em aberto nesta rodada pertence a uma rodada _futura_, nunca à atual.
-
-Buscar _fatos_ é sua obrigação, jamais do usuário. Sempre que uma pergunta da fronteira exigir um dado concreto do ambiente (arquivos, ferramentas, sistema, etc.), acione um subagente com janela de contexto limpa para investigar; nunca pergunte ao usuário algo que você mesmo pode descobrir. Não trave o fluxo por causa disso: uma investigação em andamento é um pré-requisito pendente, então apenas as perguntas dependentes dela aguardam o retorno do subagente; dispare o restante da fronteira imediatamente. As _decisões_ pertencem ao usuário: coloque cada uma na mesa e aguarde.
-
-A sessão só termina quando a fronteira estiver vazia: cada galho da árvore de decisões explorado, sem nenhuma premissa oculta ou suposição silenciosa. Não execute nenhuma ação final até que o usuário confirme que vocês chegaram a um entendimento sólido e compartilhado. Por fim pergunte ao usuário o que ele deseja fazer com o resultado da sabatina.</code></pre>
-                    </div>
 
                     <h2>Perguntas que sempre chegam</h2>
 
