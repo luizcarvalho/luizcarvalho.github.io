@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skill gratuita para Claude Code, Codex e outras IAs que faz perguntas em rodadas até não sobrar dúvida sobre o seu projeto. Veja como funciona, como instalar e copie o arquivo completo.">
+    <meta name="keywords"
+        content="skill sabatina, skills para Claude Code, skills para Codex, IA que faz perguntas, planejamento com IA, árvore de decisões, SKILL.md">
+    <meta name="author" content="Luiz Arão Araújo Carvalho">
+    <meta name="robots" content="index, follow">
+
+    <title>Skill Sabatina: a IA que pergunta antes de executar (grátis)</title>
+
+    <link rel="canonical" href="https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/">
+
+    <!-- Freshness signals (GEO) -->
+    <meta name="date" content="2026-11-17">
+    <meta name="last-modified" content="2026-11-17">
+    <meta property="article:published_time" content="2026-11-17T09:00:00-03:00">
+    <meta property="article:modified_time" content="2026-11-17T09:00:00-03:00">
+    <meta property="article:author" content="Luiz Arão Araújo Carvalho">
+    <meta property="article:section" content="Ferramentas de IA">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="A skill que eu mais uso: a Sabatina faz a IA perguntar até não sobrar dúvida">
+    <meta property="og:description" content="A Sabatina transforma a IA num entrevistador implacável: perguntas em rodadas, com recomendação pronta, até nenhum dos dois ter dúvida. Grátis e de código aberto.">
+    <meta property="og:url" content="https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/">
+    <meta property="og:site_name" content="Luiz Carvalho">
+    <meta property="og:image" content="https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/img/capa.jpg">
+    <meta property="og:image:width" content="1600">
+    <meta property="og:image:height" content="900">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="A skill que eu mais uso: a Sabatina faz a IA perguntar até não sobrar dúvida">
+    <meta name="twitter:description" content="A Sabatina transforma a IA num entrevistador implacável: perguntas em rodadas, com recomendação pronta, até nenhum dos dois ter dúvida. Grátis e de código aberto.">
+    <meta name="twitter:image" content="https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/img/capa.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
+    <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:ital,wght@0,400..800;1,400..600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../blog.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/#post",
+          "headline": "A skill que eu mais uso: a Sabatina faz a IA perguntar até não sobrar dúvida",
+          "description": "A Sabatina é uma skill gratuita e de código aberto que faz a IA perguntar em rodadas, com recomendação pronta, até não sobrar dúvida sobre o projeto. O post explica o funcionamento, a instalação e traz o arquivo completo.",
+          "url": "https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/",
+          "inLanguage": "pt-BR",
+          "articleSection": "Ferramentas de IA",
+          "keywords": "skill sabatina, Claude Code skills, Codex skills, IA que faz perguntas, árvore de decisões, planejamento com IA",
+          "image": "https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/img/capa.jpg",
+          "datePublished": "2026-11-17T09:00:00-03:00",
+          "dateModified": "2026-11-17T09:00:00-03:00",
+          "author": {
+            "@id": "https://luizcarvalho.com/#person"
+          },
+          "publisher": {
+            "@id": "https://luizcarvalho.com/#person"
+          },
+          "isPartOf": {
+            "@id": "https://luizcarvalho.com/blog/#blog"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/#webpage"
+          },
+          "isBasedOn": "https://github.com/luizcarvalho/skills/tree/main/desenvolvimento/sabatina"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/#webpage",
+          "url": "https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/",
+          "name": "Skill Sabatina: a IA que pergunta antes de executar (grátis)",
+          "description": "Como funciona, como instalar e o arquivo completo da skill Sabatina, que faz a IA perguntar antes de executar.",
+          "inLanguage": "pt-BR",
+          "isPartOf": {
+            "@id": "https://luizcarvalho.com/#website"
+          },
+          "author": {
+            "@id": "https://luizcarvalho.com/#person"
+          },
+          "publisher": {
+            "@id": "https://luizcarvalho.com/#person"
+          },
+          "datePublished": "2026-11-17T09:00:00-03:00",
+          "dateModified": "2026-11-17T09:00:00-03:00",
+          "mainEntity": {
+            "@id": "https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/#post"
+          },
+          "breadcrumb": {
+            "@id": "https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/#breadcrumb"
+          },
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [
+              ".answer-block"
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://luizcarvalho.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blog",
+              "item": "https://luizcarvalho.com/blog/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Skill Sabatina",
+              "item": "https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/#faq",
+          "inLanguage": "pt-BR",
+          "isPartOf": {
+            "@id": "https://luizcarvalho.com/blog/skill-sabatina-ia-pergunta-antes-de-executar/#webpage"
+          },
+          "dateModified": "2026-11-17T09:00:00-03:00",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "A Sabatina funciona fora do Claude Code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Funciona. O arquivo segue o formato SKILL.md, que o Codex CLI, o Cursor, o Gemini CLI e o Antigravity também leem. No Codex, a pasta de instalação é ~/.codex/skills. Nas outras ferramentas, use a pasta de skills configurada nelas ou a pasta .agents/skills dentro do projeto."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Preciso instalar alguma dependência?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. A Sabatina é um único arquivo de texto, sem código para rodar. Por isso, basta copiar a pasta para o lugar certo. Outra opção é pedir para a sua IA instalar a partir do link do GitHub."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "A IA vai executar alguma coisa durante a sabatina?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nenhuma ação final. A skill proíbe isso até você confirmar que os dois chegaram a um entendimento compartilhado. No entanto, ela pode ler arquivos do projeto para descobrir fatos, em vez de perguntar a você."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quantas rodadas de perguntas são?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depende do tamanho do plano. A sabatina termina quando a fronteira fica vazia, ou seja, quando todos os galhos da árvore de decisões foram explorados. Além disso, cada pergunta já traz uma recomendação. Assim, muitas vezes basta responder sim."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "A skill é gratuita?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim. A Sabatina é de código aberto, sob licença MIT, e está no repositório luizcarvalho/skills, no GitHub. Portanto, você pode usar, adaptar e compartilhar à vontade."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body class="subpage">
+    <header class="subpage-head article-head">
+        <div class="shell">
+            <nav class="breadcrumb" aria-label="Trilha de navegação">
+                <ol>
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li aria-current="page">Skill Sabatina</li>
+                </ol>
+            </nav>
+            <span class="kicker">Ferramentas de IA</span>
+            <h1 class="title">A skill que eu mais uso: a Sabatina faz a IA <span class="accent">perguntar até não sobrar
+                    dúvida</span></h1>
+            <p class="lead">Você descreve o que quer fazer, e a IA pergunta em rodadas até nenhum dos dois ter dúvida. Só
+                depois ela executa. É grátis, de código aberto e funciona no Claude Code, no Codex e em outras IAs.</p>
+            <p class="article-meta">
+                <span>Por <a href="/about.html">Luiz Carvalho</a></span>
+                <span class="sep">·</span>
+                <time datetime="2026-11-17">17 de novembro de 2026</time>
+                <span class="sep">·</span>
+                <span>Leitura de 6 minutos</span>
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" aria-labelledby="artigo-title">
+            <div class="shell">
+                <h2 class="visually-hidden" id="artigo-title">Skill Sabatina para Claude Code e Codex</h2>
+
+                <div class="article-body">
+                    <figure>
+                        <img src="img/capa.jpg" alt="Capa do post: a palavra Sabatina ao lado de um terminal com o comando /sabatina e três perguntas numeradas" width="1600" height="900">
+                    </figure>
+
+                    <div class="answer-block">
+                        <h3>O que é a skill Sabatina?</h3>
+                        <p>A skill Sabatina é um arquivo de instruções que faz a IA perguntar antes de executar. Ela funciona no Claude Code, no Codex CLI e em outras ferramentas que leem arquivos SKILL.md. Você descreve um plano, uma ideia ou uma tarefa, e a IA passa a interrogar você. Primeiro, ela organiza o assunto como uma árvore de decisões. Em seguida, faz as perguntas em rodadas numeradas, sempre com uma recomendação pronta. Ou seja, um simples sim aprova a sugestão dela. Além disso, quando a resposta depende de um fato do seu projeto, a própria IA investiga os arquivos em vez de perguntar a você. A sabatina só termina quando não sobra nenhuma dúvida, nem sua nem dela. Por isso, a IA não executa nada antes da sua confirmação. A skill é gratuita, de código aberto sob licença MIT, e está no GitHub. Ela serve para sistemas, sites, projetos, relatórios e textos.</p>
+                    </div>
+
+                    <p>Se eu tivesse que escolher apenas uma skill, com certeza seria essa. Ela é a mais simples e a mais
+                        poderosa que eu conheço. Hoje, eu não consigo trabalhar sem ela.</p>
+
+                    <p>Por isso, resolvi compartilhar. Neste post, você vê como a Sabatina funciona e como instalar. Além
+                        disso, o arquivo completo está no final, pronto para copiar.</p>
+
+                    <div class="answer-block">
+                        <h3>Por que vale a pena deixar a IA perguntar antes de executar?</h3>
+                        <p>Vale a pena deixar a IA perguntar antes porque a maior parte do retrabalho nasce de uma suposição que ninguém disse em voz alta. Quando você pede algo vago, a IA preenche as lacunas sozinha. Ela escolhe o público, o formato, a tecnologia e o tom sem avisar. Como resultado, você só descobre a escolha errada quando o trabalho já está pronto. A Sabatina inverte essa ordem. Primeiro, ela lista as decisões que dependem só do que já foi dito. Depois, apresenta todas de uma vez, cada uma com a recomendação dela. Assim, você corrige o rumo antes da primeira linha de código ou de texto. Por outro lado, as perguntas que dependem de uma resposta ainda aberta ficam para a rodada seguinte. Isso impede a IA de chutar. No fim, ela pergunta o que você quer fazer com o resultado da sabatina.</p>
+                    </div>
+
+                    <hr>
+
+                    <h2>Como a Sabatina funciona</h2>
+
+                    <p>A skill tem uma única ideia: transformar o seu pedido numa árvore de decisões e percorrer essa
+                        árvore com você. Na prática, ela segue cinco regras.</p>
+
+                    <ol class="steps">
+                        <li><strong>Árvore de decisões.</strong> Cada escolha abre ramificações para as decisões que
+                            dependem dela. Por exemplo, decidir o público muda as perguntas sobre formato.</li>
+                        <li><strong>Rodadas pela fronteira.</strong> A fronteira reúne as decisões que já podem ser
+                            tomadas sem adivinhar nada. A IA dispara toda a fronteira de uma vez e espera as respostas.</li>
+                        <li><strong>Recomendação em cada pergunta.</strong> As perguntas vêm numeradas, com a sugestão da
+                            IA. Portanto, responder "sim" aprova a recomendação dela.</li>
+                        <li><strong>Fatos com a IA, decisões com você.</strong> Se a pergunta depende de um dado do
+                            projeto, a IA investiga sozinha com um subagente. Em contrapartida, toda decisão fica na sua
+                            mão.</li>
+                        <li><strong>Fim só com a fronteira vazia.</strong> A sabatina acaba quando todos os galhos foram
+                            explorados. Em seguida, a IA pergunta o que você quer fazer com o resultado.</li>
+                    </ol>
+
+                    <h2>Como instalar</h2>
+
+                    <p>O jeito mais fácil é pedir para a sua própria IA. Primeiro, abra o Claude Code, o Codex ou outra
+                        ferramenta que use skills. Depois, cole o pedido abaixo.</p>
+
+                    <div class="prompt-block">
+                        <div class="prompt-bar">
+                            <span class="prompt-label">Pedido para a sua IA</span>
+                            <button type="button" class="copy-btn" data-target="install-ai" data-label="Copiar pedido">Copiar pedido</button>
+                        </div>
+                        <pre><code id="install-ai">Instale a skill sabatina para mim a partir de:
+https://github.com/luizcarvalho/skills/tree/main/desenvolvimento/sabatina</code></pre>
+                    </div>
+
+                    <p>Se preferir o terminal, a instalação manual no Claude Code usa três comandos. Eles baixam o
+                        repositório e ligam a skill na pasta de skills.</p>
+
+                    <div class="prompt-block">
+                        <div class="prompt-bar">
+                            <span class="prompt-label">Instalação manual (Claude Code)</span>
+                            <button type="button" class="copy-btn" data-target="install-manual" data-label="Copiar comandos">Copiar comandos</button>
+                        </div>
+                        <pre><code id="install-manual">git clone https://github.com/luizcarvalho/skills.git ~/skills
+mkdir -p ~/.claude/skills
+ln -sfn ~/skills/desenvolvimento/sabatina ~/.claude/skills/sabatina</code></pre>
+                    </div>
+
+                    <p>No Codex CLI, troque <code>~/.claude/skills</code> por <code>~/.codex/skills</code>. Já em
+                        outras ferramentas, use <code>.agents/skills</code> dentro do projeto. O passo a passo completo
+                        está no <a href="https://github.com/luizcarvalho/skills/tree/main/desenvolvimento/sabatina" target="_blank" rel="noopener">repositório da Sabatina no GitHub</a>.</p>
+
+                    <h2>Como usar</h2>
+
+                    <ol class="steps">
+                        <li>Abra a IA na pasta do seu projeto. Assim, ela consegue investigar os fatos sozinha.</li>
+                        <li>Digite <code>/sabatina</code> seguido do que você quer fazer. Por exemplo:
+                            <code>/sabatina quero criar um sistema de agendamento para a minha clínica</code>.</li>
+                        <li>Responda cada rodada pelo número da pergunta. Quando concordar com a recomendação, basta
+                            escrever "sim".</li>
+                        <li>No fim, diga o que fazer com o resultado: um plano, um documento ou a execução direta.</li>
+                    </ol>
+
+                    <p>Além do comando, a skill também é acionada por frases como "faça uma sabatina", "prova de
+                        fogo", "teste de estresse" e "me interrogue".</p>
+
+                    <h2>Para que eu uso</h2>
+
+                    <p>Eu uso a Sabatina em quase tudo: sistemas, sites, projetos, relatórios e textos. Em outras
+                        palavras, ela entra sempre que existe uma decisão que eu ainda não tomei. É a skill que eu mais
+                        utilizo nos meus projetos de <a href="/desenvolvimento/">desenvolvimento de software com IA</a>.</p>
+
+                    <p>Ela também combina com outras skills. Por exemplo, eu sabatino a ideia de um vídeo antes de usar
+                        as <a href="/blog/skills-de-animacao-para-reels-com-ia/">skills de animação para Reels</a>.</p>
+
+                    <hr>
+
+                    <h2>O arquivo completo da skill</h2>
+
+                    <p>Este é o conteúdo do arquivo SKILL.md, sem cortes. Para instalar sem o GitHub, crie uma pasta
+                        chamada <code>sabatina</code> dentro da sua pasta de skills e salve o texto nela como
+                        <code>SKILL.md</code>.</p>
+
+                    <div class="prompt-block">
+                        <div class="prompt-bar">
+                            <span class="prompt-label">SKILL.md da Sabatina</span>
+                            <button type="button" class="copy-btn" data-target="skill-text" data-label="Copiar skill">Copiar skill</button>
+                        </div>
+                        <pre><code id="skill-text">---
+name: sabatina
+description: Submeta qualquer plano, arquitetura ou ideia de negócio a uma sabatina implacável baseada em árvore de decisões. Elimina suposições ocultas e pontos cegos antes da execução. Use quando o usuário quiser blindar um projeto, testar a solidez de uma ideia ou acionar gatilhos como "/sabatina", "faça uma sabatina", "prova de fogo", "teste de estresse" ou "me interrogue".
+---
+
+Conduza uma sabatina implacável com o usuário até alcançarem um entendimento absoluto e blindado sobre o projeto. Mapeie todo o raciocínio como uma **árvore de decisões**: cada escolha abre ramificações para as próximas decisões que dependem dela.
+
+Avance pela árvore em **rodadas**. A **fronteira** representa todas as decisões cujos pré-requisitos já foram resolvidos: são as perguntas que você pode fazer _agora_, sem precisar adivinhar respostas que ainda não ouviu. Dispare toda a fronteira de uma só vez na mesma rodada: numere cada pergunta e entregue imediatamente a sua recomendação estratégica. Depois, aguarde as respostas do usuário antes de avançar para a próxima rodada.
+
+Estruture cada rodada exatamente neste formato:
+
+
+```
+
+* ❓ **P1**
+**&lt;título direto da decisão&gt;**: &lt;contexto e pergunta detalhada, podendo conter múltiplos parágrafos e opções claras de escolha&gt;
+
+➡️ 
+
+---
+
+* ❓ **P2**
+**&lt;título direto da decisão&gt;**: &lt;contexto e pergunta detalhada, podendo conter múltiplos parágrafos e opções claras de escolha&gt;
+
+➡️ 
+
+```
+
+Formule cada pergunta de modo que um simples "sim" do usuário aprove imediatamente a sua recomendação.
+
+A cada rodada respondida, a árvore se reconfigura: decisões tomadas empurram a fronteira para frente e desbloqueiam as perguntas que dependiam delas. Recalcule a nova fronteira e dispare a próxima rodada. Qualquer pergunta que dependa de uma resposta ainda em aberto nesta rodada pertence a uma rodada _futura_, nunca à atual.
+
+Buscar _fatos_ é sua obrigação, jamais do usuário. Sempre que uma pergunta da fronteira exigir um dado concreto do ambiente (arquivos, ferramentas, sistema, etc.), acione um subagente com janela de contexto limpa para investigar; nunca pergunte ao usuário algo que você mesmo pode descobrir. Não trave o fluxo por causa disso: uma investigação em andamento é um pré-requisito pendente, então apenas as perguntas dependentes dela aguardam o retorno do subagente; dispare o restante da fronteira imediatamente. As _decisões_ pertencem ao usuário: coloque cada uma na mesa e aguarde.
+
+A sessão só termina quando a fronteira estiver vazia: cada galho da árvore de decisões explorado, sem nenhuma premissa oculta ou suposição silenciosa. Não execute nenhuma ação final até que o usuário confirme que vocês chegaram a um entendimento sólido e compartilhado. Por fim pergunte ao usuário o que ele deseja fazer com o resultado da sabatina.</code></pre>
+                    </div>
+
+                    <h2>Perguntas que sempre chegam</h2>
+
+                    <dl class="faq-list">
+                        <div class="faq-item">
+                            <dt>A Sabatina funciona fora do Claude Code?</dt>
+                            <dd>Funciona. O arquivo segue o formato SKILL.md, que o Codex CLI, o Cursor, o Gemini CLI e o Antigravity também leem. No Codex, a pasta de instalação é ~/.codex/skills. Nas outras ferramentas, use a pasta de skills configurada nelas ou a pasta .agents/skills dentro do projeto.</dd>
+                        </div>
+                        <div class="faq-item">
+                            <dt>Preciso instalar alguma dependência?</dt>
+                            <dd>Não. A Sabatina é um único arquivo de texto, sem código para rodar. Por isso, basta copiar a pasta para o lugar certo. Outra opção é pedir para a sua IA instalar a partir do link do GitHub.</dd>
+                        </div>
+                        <div class="faq-item">
+                            <dt>A IA vai executar alguma coisa durante a sabatina?</dt>
+                            <dd>Nenhuma ação final. A skill proíbe isso até você confirmar que os dois chegaram a um entendimento compartilhado. No entanto, ela pode ler arquivos do projeto para descobrir fatos, em vez de perguntar a você.</dd>
+                        </div>
+                        <div class="faq-item">
+                            <dt>Quantas rodadas de perguntas são?</dt>
+                            <dd>Depende do tamanho do plano. A sabatina termina quando a fronteira fica vazia, ou seja, quando todos os galhos da árvore de decisões foram explorados. Além disso, cada pergunta já traz uma recomendação. Assim, muitas vezes basta responder sim.</dd>
+                        </div>
+                        <div class="faq-item">
+                            <dt>A skill é gratuita?</dt>
+                            <dd>Sim. A Sabatina é de código aberto, sob licença MIT, e está no repositório luizcarvalho/skills, no GitHub. Portanto, você pode usar, adaptar e compartilhar à vontade.</dd>
+                        </div>
+                    </dl>
+
+                    <nav class="further-reading" aria-labelledby="further-reading-title">
+                        <h3 id="further-reading-title">Leitura complementar</h3>
+                        <p>Para seguir no mesmo tema, veja estes conteúdos relacionados.</p>
+                        <ul>
+                            <li><a href="/blog/">Todos os posts do blog</a> — prompts prontos e guias práticos de
+                                Inteligência Artificial aplicada.</li>
+                            <li><a href="/blog/skills-de-animacao-para-reels-com-ia/">6 skills de animação para Reels com
+                                    IA</a> — outras skills do mesmo repositório, para gerar vídeos verticais.</li>
+                            <li><a href="/blog/prompt-auditoria-seguranca-app-ia/">Prompt de auditoria de segurança para
+                                    app feito com IA</a> — outro recurso pronto para usar no Claude Code ou no Codex.</li>
+                            <li><a href="/desenvolvimento/">Desenvolvimento de software com IA</a> — como esse trabalho é
+                                feito em projeto real, não só em post.</li>
+                            <li><a href="/about.html">Sobre Luiz Carvalho</a> — formação, cargos e prêmios verificáveis
+                                do autor deste post.</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="author-box">
+                    <img src="https://res.cloudinary.com/drlko5ghb/image/upload/v1769712600/luizcarvalhocom/fotos/perfil.png"
+                        alt="Luiz Carvalho, autor do post" width="76" height="76" loading="lazy">
+                    <div class="author-text">
+                        <h3>Escrito por Luiz Carvalho</h3>
+                        <p>Cientista da Computação com mais de 21 anos de experiência e palestrante TEDx. Coordena o
+                            DefGPT, plataforma de IA da Defensoria Pública do Tocantins. Conheça a <a
+                                href="/about.html">trajetória completa</a> ou acompanhe no <a
+                                href="https://instagram.com/luizcarvalhocom" target="_blank"
+                                rel="noopener">Instagram</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-section" id="contato">
+            <div class="shell">
+                <div class="cta-inner">
+                    <h2>Quer levar IA aplicada para a sua equipe?</h2>
+                    <p>Envie a data, a cidade, o formato desejado e o perfil do público. Em seguida, você recebe uma
+                        proposta adaptada ao seu setor.</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/5563981329588?text=Ol%C3%A1%20Luiz%2C%20gostaria%20de%20saber%20mais%20sobre%20suas%20palestras%20e%20treinamentos%20em%20IA."
+                            class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+                            <span>Falar no WhatsApp</span>
+                        </a>
+                        <a href="mailto:contato@luizcarvalho.com" class="btn btn-secondary btn-lg">
+                            <span>Enviar e-mail</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="shell">
+            <div class="footer-bottom">
+                <p>&copy; <span id="footer-year">2026</span> Luiz Carvalho. Todos os direitos reservados.</p>
+                <p class="footer-updated">Conteúdo revisado e atualizado em <time datetime="2026-11-17">17 de novembro de 2026</time>.</p>
+                <p class="footer-tagline"><a href="/blog/">Voltar ao blog</a> · <a href="/">Página inicial</a> · <a
+                        href="/privacidade.html">Política de privacidade</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+        (function () {
+            var buttons = document.querySelectorAll('.copy-btn[data-target]');
+            buttons.forEach(function (btn) {
+                var code = document.getElementById(btn.dataset.target);
+                if (!code) return;
+                if (!navigator.clipboard) { btn.hidden = true; return; }
+                btn.addEventListener('click', function () {
+                    navigator.clipboard.writeText(code.textContent).then(function () {
+                        btn.textContent = 'Copiado';
+                        btn.dataset.copied = 'true';
+                        setTimeout(function () {
+                            btn.textContent = btn.dataset.label;
+                            btn.dataset.copied = 'false';
+                        }, 2200);
+                    });
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>
