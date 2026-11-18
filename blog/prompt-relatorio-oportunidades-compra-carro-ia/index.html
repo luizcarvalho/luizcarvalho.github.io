@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Passo a passo prático e prompt único para copiar o HTML da OLX e do Facebook Marketplace, comparar cada carro com a Tabela FIPE e gerar um painel interativo.">
+    <meta name="keywords"
+        content="analisar anúncios OLX com IA, Facebook Marketplace Tabela FIPE, prompt comprar carro com IA, painel oportunidades HTML, Luiz Carvalho">
+    <meta name="author" content="Luiz Arão Araújo Carvalho">
+    <meta name="robots" content="index, follow">
+
+    <title>Como analisar anúncios da OLX e do Facebook com IA e montar um painel FIPE</title>
+
+    <link rel="canonical" href="https://luizcarvalho.com/blog/prompt-relatorio-oportunidades-compra-carro-ia/">
+
+    <!-- Freshness signals (GEO) -->
+    <meta name="date" content="2026-11-18">
+    <meta name="last-modified" content="2026-11-18">
+    <meta property="article:published_time" content="2026-11-18T09:00:00-03:00">
+    <meta property="article:modified_time" content="2026-11-18T09:00:00-03:00">
+    <meta property="article:author" content="Luiz Arão Araújo Carvalho">
+    <meta property="article:section" content="IA na Prática">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="article">
+    <meta property="og:title"
+        content="Como usei IA para transformar 87 anúncios da OLX e do Facebook em um painel de oportunidades">
+    <meta property="og:description"
+        content="Copie o HTML das duas buscas, cole um único prompt e receba um painel interativo comparando preço, km, duplicidades e Tabela FIPE.">
+    <meta property="og:url" content="https://luizcarvalho.com/blog/prompt-relatorio-oportunidades-compra-carro-ia/">
+    <meta property="og:site_name" content="Luiz Carvalho">
+    <meta property="og:image" content="https://luizcarvalho.com/blog/prompt-relatorio-oportunidades-compra-carro-ia/img/capa.jpg">
+    <meta property="og:image:width" content="1600">
+    <meta property="og:image:height" content="900">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title"
+        content="Como usei IA para transformar 87 anúncios da OLX e do Facebook em um painel de oportunidades">
+    <meta name="twitter:description"
+        content="Copie o HTML das duas buscas, cole um único prompt e receba um painel interativo comparando preço, km, duplicidades e Tabela FIPE.">
+    <meta name="twitter:image" content="https://luizcarvalho.com/blog/prompt-relatorio-oportunidades-compra-carro-ia/img/capa.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
+    <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:ital,wght@0,400..800;1,400..600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../blog.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@graph": [
+            {
+                  "@type": "BlogPosting",
+                  "@id": "https://luizcarvalho.com/blog/prompt-relatorio-oportunidades-compra-carro-ia/#post",
+                  "headline": "Como usei IA para transformar 87 anúncios da OLX e do Facebook em um painel de oportunidades",
+                  "description": "Passo a passo prático e prompt único para copiar o HTML da OLX e do Facebook Marketplace, comparar cada carro com a Tabela FIPE e gerar um painel interativo.",
+                  "url": "https://luizcarvalho.com/blog/prompt-relatorio-oportunidades-compra-carro-ia/",
+                  "inLanguage": "pt-BR",
+                  "articleSection": "IA na Prática",
+                  "keywords": "analisar anúncios OLX com IA, Facebook Marketplace Tabela FIPE, prompt comprar carro com IA, painel oportunidades HTML",
+                  "image": "https://luizcarvalho.com/blog/prompt-relatorio-oportunidades-compra-carro-ia/img/capa.jpg",
+                  "datePublished": "2026-11-18T09:00:00-03:00",
+                  "dateModified": "2026-11-18T09:00:00-03:00",
+                  "author": {
+                        "@id": "https://luizcarvalho.com/#person"
+                  },
+                  "publisher": {
+                        "@id": "https://luizcarvalho.com/#person"
+                  },
+                  "isPartOf": {
+                        "@id": "https://luizcarvalho.com/blog/#blog"
+                  },
+                  "mainEntityOfPage": {
+                        "@id": "https://luizcarvalho.com/blog/prompt-relatorio-oportunidades-compra-carro-ia/#webpage"
+                  }
+            },
+            {
+                  "@type": "WebPage",
+                  "@id": "https://luizcarvalho.com/blog/prompt-relatorio-oportunidades-compra-carro-ia/#webpage",
+                  "url": "https://luizcarvalho.com/blog/prompt-relatorio-oportunidades-compra-carro-ia/",
+                  "name": "Como analisar anúncios da OLX e do Facebook com IA e montar um painel FIPE",
+                  "description": "Guia prático com passo a passo e prompt único para analisar anúncios de carros da OLX e do Facebook Marketplace contra a Tabela FIPE.",
+                  "inLanguage": "pt-BR",
+                  "isPartOf": {
+                        "@id": "https://luizcarvalho.com/#website"
+                  },
+                  "author": {
+                        "@id": "https://luizcarvalho.com/#person"
+                  },
+                  "publisher": {
+                        "@id": "https://luizcarvalho.com/#person"
+                  },
+                  "datePublished": "2026-11-18T09:00:00-03:00",
+                  "dateModified": "2026-11-18T09:00:00-03:00",
+                  "mainEntity": {
+                        "@id": "https://luizcarvalho.com/blog/prompt-relatorio-oportunidades-compra-carro-ia/#post"
+                  },
+                  "breadcrumb": {
+                        "@id": "https://luizcarvalho.com/blog/prompt-relatorio-oportunidades-compra-carro-ia/#breadcrumb"
+                  },
+                  "speakable": {
+                        "@type": "SpeakableSpecification",
+                        "cssSelector": [
+                              ".answer-block"
+                        ]
+                  }
+            },
+            {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://luizcarvalho.com/blog/prompt-relatorio-oportunidades-compra-carro-ia/#breadcrumb",
+                  "itemListElement": [
+                        {
+                              "@type": "ListItem",
+                              "position": 1,
+                              "name": "Início",
+                              "item": "https://luizcarvalho.com/"
+                        },
+                        {
+                              "@type": "ListItem",
+                              "position": 2,
+                              "name": "Blog",
+                              "item": "https://luizcarvalho.com/blog/"
+                        },
+                        {
+                              "@type": "ListItem",
+                              "position": 3,
+                              "name": "Painel de oportunidades com IA",
+                              "item": "https://luizcarvalho.com/blog/prompt-relatorio-oportunidades-compra-carro-ia/"
+                        }
+                  ]
+            },
+            {
+                  "@type": "FAQPage",
+                  "@id": "https://luizcarvalho.com/blog/prompt-relatorio-oportunidades-compra-carro-ia/#faq",
+                  "inLanguage": "pt-BR",
+                  "isPartOf": {
+                        "@id": "https://luizcarvalho.com/blog/prompt-relatorio-oportunidades-compra-carro-ia/#webpage"
+                  },
+                  "dateModified": "2026-11-18T09:00:00-03:00",
+                  "mainEntity": [
+                        {
+                              "@type": "Question",
+                              "name": "Posso usar esse prompt para outro carro ou até para imóveis?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Sim. Basta editar o bloco de critérios no topo do prompt antes de colar na IA. Por exemplo, você pode trocar para Honda Civic, Hilux ou apartamentos em determinado bairro. Em seguida, salve o HTML das buscas na pasta e rode exatamente o mesmo fluxo."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Preciso saber programar ou instalar alguma ferramenta paga?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Não. Você só precisa de um navegador comum para copiar o código da página e de uma IA que leia arquivos locais. Por exemplo, Claude Code, Codex CLI, Gemini CLI, Cursor ou Antigravity resolvem tudo direto na pasta. O painel final abre em qualquer navegador, sem servidor."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Funciona também no ChatGPT ou Claude pelo navegador?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Funciona, mas com um limite importante. Os arquivos HTML da OLX e do Facebook costumam ser grandes e podem estourar a caixa de texto comum. Portanto, prefira anexar os arquivos no chat com análise de código ativada, ou use um agente na pasta local."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Por que não deixar a IA acessar o site direto em vez de copiar o HTML?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Portais de classificados costumam bloquear acessos automáticos e o Facebook Marketplace exige login para listar anúncios da sua região. Por outro lado, copiar o outerHTML direto da aba evita bloqueios. Além disso, garante que a IA analise exatamente os anúncios filtrados por você."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "O relatório substitui a vistoria cautelar na hora da compra?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "De jeito nenhum. O painel serve para filtrar o mercado, comparar preços com a Tabela FIPE e descobrir onde estão as melhores margens de negociação. No entanto, descontos grandes podem esconder leilão ou batida grave. Por isso, sempre faça vistoria cautelar antes de fechar negócio."
+                              }
+                        }
+                  ]
+            }
+      ]
+}
+    </script>
+</head>
+
+<body class="subpage">
+    <header class="subpage-head article-head">
+        <div class="shell">
+            <nav class="breadcrumb" aria-label="Trilha de navegação">
+                <ol>
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li aria-current="page">Painel de oportunidades com IA</li>
+                </ol>
+            </nav>
+            <span class="kicker">IA na Prática</span>
+            <h1 class="title">Como usei IA para transformar anúncios da OLX e do Facebook em um <span class="accent">painel de oportunidades</span></h1>
+            <p class="lead">Eu queria comprar um Corolla Sedan em Palmas sem abrir 80 abas. Em poucos minutos, um único prompt limpou 87 anúncios, cruzou com a FIPE e montou um relatório em HTML.</p>
+            <p class="article-meta">
+                <span>Por <a href="/about.html">Luiz Carvalho</a></span>
+                <span class="sep">·</span>
+                <time datetime="2026-11-18">18 de novembro de 2026</time>
+                <span class="sep">·</span>
+                <span>Leitura de 7 minutos</span>
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" aria-labelledby="artigo-title">
+            <div class="shell">
+                <h2 class="visually-hidden" id="artigo-title">Passo a passo e prompt para analisar anúncios de carros com IA</h2>
+
+                <div class="article-body">
+                    <figure>
+                        <img src="img/capa.jpg" alt="Capa do post: Anúncios de carros viram painel FIPE com um prompt, mostrando o funil de 87 para 47 anúncios válidos" width="1600" height="900">
+                    </figure>
+
+                    <div class="answer-block">
+                        <h3>Como analisar dezenas de anúncios da OLX e do Facebook com IA?</h3>
+                        <p>Você pode analisar dezenas de anúncios da OLX e do Facebook Marketplace em minutos. Basta salvar o HTML das duas buscas numa pasta e rodar um único prompt. Primeiro, abra as buscas no navegador com os filtros da sua cidade. Em seguida, copie o bloco da lista de resultados pelo menu Inspecionar e salve em arquivos de texto. Depois, abra uma IA com acesso à pasta e cole o prompt pronto deste guia. Ele manda a IA extrair título, preço, quilometragem, ano, versão e link de cada carro. Além disso, o comando filtra modelos errados e armadilhas de boleto, consulta a Tabela FIPE e identifica anúncios duplicados. Por fim, ele gera um painel interativo em HTML com gráfico, filtros e comparador lado a lado. Como resultado, você troca dezenas de abas abertas por uma lista ordenada do melhor negócio ao pior.</p>
+                    </div>
+
+                    <p>Eu precisei pesquisar um <strong>Toyota Corolla Sedan 2023 ou mais novo</strong> para comprar em
+                        Palmas, no Tocantins. Quem já procurou carro usado conhece o cansaço. Você abre a OLX, abre o
+                        Facebook Marketplace e começa a clicar em anúncio atrás de anúncio.</p>
+
+                    <p>No entanto, metade dos resultados vem misturada. Aparece SUV no meio da busca por sedã, carro
+                        mais velho, anúncio duplicado e oferta de financiamento disfarçada de preço à vista. Além disso,
+                        você ainda precisa conferir a Tabela FIPE de cada versão em outra aba.</p>
+
+                    <p>Por isso, decidi fazer diferente. Em vez de comparar tudo no olho, salvei o HTML das duas buscas
+                        numa pasta e pedi para a IA fazer a triagem completa. O resultado foi tão prático que resolvi
+                        compartilhar aqui o passo a passo e o prompt pronto.</p>
+
+                    <div class="answer-block">
+                        <h3>Por que copiar o HTML manualmente funciona melhor que robôs?</h3>
+                        <p>Copie o HTML manualmente porque os grandes portais bloqueiam robôs de raspagem e o Facebook Marketplace exige sessão logada para mostrar carros perto de você. Quando você mesmo faz a busca no navegador, já aplica localização, raio e faixa de ano em segundos. Depois, copiar o elemento da lista pelo DevTools leva menos de um minuto e entrega tudo limpo em texto puro. Como resultado, você não depende de extensões suspeitas nem paga por ferramentas externas. Além disso, o arquivo salvo guarda detalhes que passariam batido na correria, como anúncios que você já favoritou ou carros com preço reduzido recentemente. A partir daí, a IA faz o trabalho pesado de leitura, limpeza e cálculo. Você fica apenas com a parte humana: analisar o ranking gerado, mandar mensagem para os vendedores certos e fazer a vistoria presencial.</p>
+                    </div>
+
+                    <hr>
+
+                    <h2>O que aconteceu na minha busca real em Palmas</h2>
+
+                    <p>Eu salvei exatamente dois arquivos na pasta: um da OLX, com 50 anúncios, e outro do Facebook
+                        Marketplace, com 37. Ao todo, eram <strong>87 anúncios brutos</strong> para conferir.</p>
+
+                    <p>Em seguida, a IA leu os dois arquivos e aplicou os filtros de carroceria e ano. Como resultado,
+                        ela descartou <strong>40 anúncios fora do perfil</strong> sem perder o registro de nenhum deles.
+                        Eram 23 Corolla Cross SUV, 16 carros anteriores a 2023 e 1 anúncio de entrada com parcelas via
+                        boleto.</p>
+
+                    <p>Além disso, a triagem pegou detalhes que passam despercebido na pressa. Um Corolla Cross estava
+                        cadastrado como Sedã na OLX. Outros dois anúncios eram do mesmo carro híbrido em Palmas, mas com
+                        R$ 1.090 de diferença entre eles. Por fim, sobraram <strong>47 oportunidades válidas</strong>,
+                        sendo 17 abaixo da FIPE.</p>
+
+                    <hr>
+
+                    <h2>Passo a passo: como fazer o seu relatório do zero</h2>
+
+                    <ol class="steps">
+                        <li><strong>Crie uma pasta vazia no computador.</strong> Por exemplo, crie uma pasta chamada
+                            <code>pesquisa-carro</code> na sua área de trabalho ou nos seus documentos.</li>
+                        <li><strong>Faça a busca normal no navegador.</strong> Abra a OLX e o Facebook Marketplace,
+                            escolha sua cidade e aplique o filtro de modelo e ano. Role a página até carregar os
+                            anúncios que quer comparar.</li>
+                        <li><strong>Copie o HTML da lista de resultados.</strong> Aperte <code>F12</code> no Chrome ou
+                            no Edge (ou clique com o botão direito sobre um anúncio e escolha <em>Inspecionar</em>). Na
+                            aba <em>Elements</em>, suba o mouse pelas linhas até destacar o bloco que envolve toda a
+                            grade de anúncios.</li>
+                        <li><strong>Salve o código copiado em arquivos de texto.</strong> Clique com o botão direito no
+                            bloco marcado, vá em <em>Copy</em> e depois em <em>Copy outerHTML</em>. Cole o conteúdo no
+                            Bloco de Notas e salve na pasta como <code>olx.txt</code> e <code>facebook.txt</code>.</li>
+                        <li><strong>Abra sua IA dentro dessa pasta.</strong> Rode o Claude Code, Codex CLI, Gemini CLI,
+                            Antigravity ou Cursor na pasta onde os arquivos estão salvos.</li>
+                        <li><strong>Cole o prompt abaixo e ajuste os critérios.</strong> Troque apenas as cinco linhas
+                            iniciais do prompt para o seu carro, cidade e ano mínimo. Depois disso, a IA gera o arquivo
+                            <code>relatorio-oportunidades.html</code> pronto para abrir no navegador.</li>
+                    </ol>
+
+                    <div class="callout">
+                        <h3>Dica na hora de copiar o HTML no Facebook e na OLX</h3>
+                        <p>Na OLX, procure o container com a classe <code>olx-adcard</code> e suba um nível até a
+                            div que agrupa todos os cards. Já no Facebook Marketplace, procure o bloco com
+                            <code>aria-label="Coleção de artigos do Marketplace"</code>. Assim, você copia apenas a
+                            lista útil e deixa o arquivo leve.</p>
+                    </div>
+
+                    <hr>
+
+                    <h2>O prompt único: copie, ajuste os critérios e rode</h2>
+
+                    <p>O comando abaixo é auto-contido e não depende de nenhuma extensão nem de outro arquivo auxiliar.
+                        Primeiro, edite o bloco <strong>MEUS CRITÉRIOS DE BUSCA</strong> no topo. Em seguida, cole o
+                        bloco inteiro na sua IA.</p>
+
+                    <div class="prompt-block">
+                        <div class="prompt-bar">
+                            <span class="prompt-label">Prompt único para painel de oportunidades</span>
+                            <button type="button" class="copy-btn" data-target="prompt-text" data-label="Copiar prompt">Copiar prompt</button>
+                        </div>
+                        <pre><code id="prompt-text">Você é um analista de dados automotivos e desenvolvedor front-end sênior. Sua tarefa é ler os arquivos HTML ou TXT salvos nesta pasta (vindos da OLX, Facebook Marketplace ou outros portais), cruzar cada anúncio com a Tabela FIPE e gerar um painel interativo de oportunidades em um único arquivo HTML.
+
+════════════════════════════════════
+MEUS CRITÉRIOS DE BUSCA (EDITE AQUI)
+════════════════════════════════════
+- Modelo desejado: Toyota Corolla Sedan
+- O que excluir obrigatoriamente: Corolla Cross (SUV), mesmo quando cadastrado errado como Sedã, além de anúncios de repasse, ágio ou entrada + parcelas via boleto
+- Ano mínimo: 2023 em diante (2023, 2024, 2025, 2026)
+- Minha cidade e raio de preferência: Palmas, TO (priorizar Palmas e cidades até ~60 km como Porto Nacional e Paraíso do Tocantins; listar o restante do estado com etiqueta de distância)
+- Nome do arquivo final: relatorio-oportunidades.html
+
+════════════════════════════════════
+ETAPA 1 — EXTRAÇÃO E AUDITORIA DOS DADOS
+════════════════════════════════════
+1. Leia todos os arquivos de busca salvos na pasta atual (HTML bruto copiado do navegador ou TXT).
+2. Para cada anúncio encontrado, extraia sempre que existir no card:
+   - ID único (ex.: OLX-0, FB-0), plataforma de origem e link direto do anúncio
+   - Título, ano do modelo, versão exata (ex.: GLi, XEi, Altis Hybrid, GR-Sport), motor e cor
+   - Preço atual e preço anterior riscado (para destacar reduções de preço)
+   - Quilometragem, cidade/bairro e data de publicação
+   - Sinais importantes: se está marcado como favorito no HTML, selos como &quot;Histórico Veicular&quot; ou &quot;Aceita trocas&quot;, se é de locadora (ex.: Localiza, Movida, Unidas) e avaliação da loja
+   - URL da imagem de capa (com fallback elegante caso expire)
+3. Aplique os filtros com rigor:
+   - Separe os anúncios válidos daqueles que devem ser excluídos (modelo errado, ano abaixo do mínimo, financiamento disfarçado de preço à vista).
+   - Nunca descarte os excluídos em silêncio: guarde todos em uma lista auditável com o motivo exato da exclusão.
+4. Pesquise os valores médios atualizados da Tabela FIPE para cada combinação de ano e versão encontrada nos anúncios válidos.
+5. Para cada anúncio válido, calcule:
+   - Diferença em reais e em percentual frente à FIPE
+   - Possíveis duplicidades entre plataformas (mesmo carro, cor, cidade e km/preço parecidos na OLX e no Facebook)
+   - Alertas automáticos: &quot;Cautelar obrigatória&quot; quando o desconto passar de 10% abaixo da FIPE, &quot;Km alta&quot; acima de 90.000 km, &quot;Ex-locadora&quot; e &quot;Card genérico sem versão/km&quot; (comum no Facebook)
+   - Um Score de Oportunidade transparente (0 a 100) combinando desconto sobre a FIPE, quilometragem relativa ao ano, proximidade da minha cidade, redução recente de preço e histórico veicular.
+
+════════════════════════════════════
+ETAPA 2 — PAINEL INTERATIVO EM HTML ÚNICO
+════════════════════════════════════
+Gere o arquivo final em um único HTML auto-contido (HTML + CSS + JavaScript no mesmo arquivo, funcionando ao abrir direto no navegador, sem precisar de servidor ou build).
+
+Siga exatamente este padrão visual e funcional:
+1. ESTÉTICA MODERNA, CLEAN, FLAT E SOFISTICADA:
+   - Paleta clara arquitetural: fundo branco (#ffffff), superfícies neutras (#f4f5f7), texto principal grafite escuro (#111111), texto secundário (#666c78), bordas finas de 1px sem sombras pesadas e um único acento azul cobalto (#1a4be0) para ações, com verde (#0f7a4a) para abaixo da FIPE e âmbar (#b45309) para alertas de cautelar.
+   - Um bloco de destaque em alto contraste escuro (#111111) no topo (Spotlight) mostrando o #1 em compra segura e o maior desconto da pesquisa.
+   - Tipografia moderna com números tabulares (Chivo + Chivo Mono via Google Fonts, com fallback para fontes do sistema).
+   - Micro-animações discretas e sofisticadas: entrada escalonada do título, contagem progressiva dos indicadores principais no carregamento, abas com indicador deslizante suave, zoom sutil da foto dentro do card no hover e respeito a prefers-reduced-motion.
+
+2. SEÇÕES OBRIGATÓRIAS DO PAINEL:
+   - Barra fixa superior com atalhos para as seções e botão &quot;Exportar CSV&quot; dos anúncios filtrados.
+   - Cabeçalho com resumo do funil (total analisado -&gt; excluídos -&gt; válidos -&gt; quantos na cidade-alvo) + Spotlight escuro com os 2 carros principais.
+   - Faixa de 4 KPIs principais (anúncios válidos, oferta local, abaixo da FIPE e melhor referência de baixa km).
+   - Painel analítico em 2 colunas:
+     a) Gráfico interativo em SVG de Preço x Quilometragem, com legenda clicável para ligar/desligar anos, linha de referência da FIPE, mira dinâmica (crosshair) e tooltip ao passar o mouse, além de clique para abrir o anúncio.
+     b) Painel de auditoria com 3 abas: Favoritos &amp; Duplicidades detectadas, Tabela FIPE usada como base e Distribuição por cidade.
+   - Grade de Oportunidades Prioritárias filtrável por estratégia (Todas, Compra segura, Desconto forte, Seminovos recentes), com barra visual mostrando a posição do preço frente à FIPE e botão &quot;+ Comparar&quot;.
+   - Tabela completa interativa com todos os anúncios válidos: busca por texto, filtros (plataforma, localização, ano, versão, abaixo da FIPE, preço reduzido, favoritos), ordenação ao clicar nas colunas e botão &quot;+&quot; para comparar.
+   - Comparador lado a lado (até 3 veículos): barra flutuante no rodapé ao selecionar carros e modal comparando preço, FIPE, diferença %, km, versão, local e score.
+   - Roteiro prático de visitas e checagem (vistoria cautelar, revisão em concessionária, Detran e argumentos de negociação usando os concorrentes mais baratos da própria lista).
+   - Acordeão recolhível ao final listando todos os anúncios excluídos e seus motivos.
+
+3. REGRAS DE PRECISÃO:
+   - Todos os números, links, títulos, cidades e contagens no HTML devem vir exclusivamente dos dados extraídos dos arquivos da pasta e da consulta FIPE. Não invente anúncios, preços ou atributos ausentes.
+   - Antes de finalizar, valide a sintaxe do JavaScript gerado e confirme que não há tags ou placeholders quebrados.</code></pre>
+                    </div>
+
+                    <p class="prompt-note">Você também pode incluir resultados da Webmotors ou do iCarros. Para isso,
+                        copie a grade de cards da página e salve em outro arquivo <code>.txt</code> na mesma pasta.</p>
+
+                    <hr>
+
+                    <h2>O que o painel HTML entrega no final</h2>
+
+                    <p>Em vez de uma resposta longa de texto no chat, o prompt gera um arquivo HTML único que abre direto
+                        no navegador. Primeiro, ele traz um resumo do funil com quantos anúncios foram lidos e quantos
+                        foram eliminados.</p>
+
+                    <p>Em seguida, você enxerga um gráfico de Preço por Quilometragem com a linha da Tabela FIPE
+                        desenhada. Os melhores negócios aparecem no canto inferior esquerdo: preço baixo e pouca
+                        rodagem. Além disso, o painel permite filtrar por cidade, ano e versão, comparar até três carros
+                        lado a lado e exportar tudo para CSV.</p>
+
+                    <p>Por fim, ele inclui uma lista recolhível com todos os anúncios descartados e o motivo de cada
+                        exclusão. Portanto, você confia no filtro porque consegue auditar o que ficou de fora.</p>
+
+                    <div class="callout">
+                        <h3>Nunca pule a vistoria cautelar</h3>
+                        <p>Quando o painel apontar um carro mais de 10% abaixo da Tabela FIPE, trate isso como sinal de
+                            atenção, não como compra automática. Em seguida, peça placa e Renavam ao vendedor e faça
+                            vistoria cautelar completa antes de dar qualquer sinal.</p>
+                    </div>
+
+                    <p>Se você quiser montar fluxos práticos como esse com a sua equipe, conheça meus <a
+                            href="/treinamentos/">treinamentos corporativos e workshops de IA</a>. Além disso, veja como
+                        aplico IA em projetos reais de <a href="/desenvolvimento/">desenvolvimento de software</a>.</p>
+
+                    <h2>Perguntas que sempre chegam</h2>
+
+                    <dl class="faq-list">
+                        <div class="faq-item">
+                            <dt>Posso usar esse prompt para outro carro ou até para imóveis?</dt>
+                            <dd>Sim. Basta editar o bloco de critérios no topo do prompt antes de colar na IA. Por exemplo, você pode trocar para Honda Civic, Hilux ou apartamentos em determinado bairro. Em seguida, salve o HTML das buscas na pasta e rode exatamente o mesmo fluxo.</dd>
+                        </div>
+                        <div class="faq-item">
+                            <dt>Preciso saber programar ou instalar alguma ferramenta paga?</dt>
+                            <dd>Não. Você só precisa de um navegador comum para copiar o código da página e de uma IA que leia arquivos locais. Por exemplo, Claude Code, Codex CLI, Gemini CLI, Cursor ou Antigravity resolvem tudo direto na pasta. O painel final abre em qualquer navegador, sem servidor.</dd>
+                        </div>
+                        <div class="faq-item">
+                            <dt>Funciona também no ChatGPT ou Claude pelo navegador?</dt>
+                            <dd>Funciona, mas com um limite importante. Os arquivos HTML da OLX e do Facebook costumam ser grandes e podem estourar a caixa de texto comum. Portanto, prefira anexar os arquivos no chat com análise de código ativada, ou use um agente na pasta local.</dd>
+                        </div>
+                        <div class="faq-item">
+                            <dt>Por que não deixar a IA acessar o site direto em vez de copiar o HTML?</dt>
+                            <dd>Portais de classificados costumam bloquear acessos automáticos e o Facebook Marketplace exige login para listar anúncios da sua região. Por outro lado, copiar o outerHTML direto da aba evita bloqueios. Além disso, garante que a IA analise exatamente os anúncios filtrados por você.</dd>
+                        </div>
+                        <div class="faq-item">
+                            <dt>O relatório substitui a vistoria cautelar na hora da compra?</dt>
+                            <dd>De jeito nenhum. O painel serve para filtrar o mercado, comparar preços com a Tabela FIPE e descobrir onde estão as melhores margens de negociação. No entanto, descontos grandes podem esconder leilão ou batida grave. Por isso, sempre faça vistoria cautelar antes de fechar negócio.</dd>
+                        </div>
+                    </dl>
+
+                    <nav class="further-reading" aria-labelledby="further-reading-title">
+                        <h3 id="further-reading-title">Leitura complementar</h3>
+                        <p>Para seguir no mesmo tema, veja estes conteúdos relacionados.</p>
+                        <ul>
+                            <li><a href="/blog/">Todos os posts do blog</a> — prompts prontos e guias práticos de
+                                Inteligência Artificial aplicada.</li>
+                            <li><a href="/blog/skill-sabatina-ia-pergunta-antes-de-executar/">Skill Sabatina: a IA que
+                                    pergunta antes de executar</a> — como estruturar decisões antes de gerar código ou
+                                relatórios.</li>
+                            <li><a href="/blog/prompt-auditoria-seguranca-app-ia/">Prompt de auditoria de segurança para
+                                    app feito com IA</a> — outro prompt completo pronto para copiar e rodar na pasta do
+                                projeto.</li>
+                            <li><a href="/treinamentos/">Treinamentos e cursos de IA</a> — formatos presenciais e online
+                                para empresas e equipes.</li>
+                            <li><a href="/about.html">Sobre Luiz Carvalho</a> — formação, cargos e trajetória do autor
+                                deste post.</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="author-box">
+                    <img src="https://res.cloudinary.com/drlko5ghb/image/upload/v1769712600/luizcarvalhocom/fotos/perfil.png"
+                        alt="Luiz Carvalho, autor do post" width="76" height="76" loading="lazy">
+                    <div class="author-text">
+                        <h3>Escrito por Luiz Carvalho</h3>
+                        <p>Cientista da Computação com mais de 21 anos de experiência e palestrante TEDx. Coordena o
+                            DefGPT, plataforma de IA da Defensoria Pública do Tocantins. Conheça a <a
+                                href="/about.html">trajetória completa</a> ou acompanhe no <a
+                                href="https://instagram.com/luizcarvalhocom" target="_blank"
+                                rel="noopener">Instagram</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-section" id="contato">
+            <div class="shell">
+                <div class="cta-inner">
+                    <h2>Quer levar IA aplicada para a sua equipe?</h2>
+                    <p>Envie a data, a cidade, o formato desejado e o perfil do público. Em seguida, você recebe uma
+                        proposta adaptada ao seu setor.</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/5563981329588?text=Ol%C3%A1%20Luiz%2C%20gostaria%20de%20saber%20mais%20sobre%20suas%20palestras%20e%20treinamentos%20em%20IA."
+                            class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+                            <span>Falar no WhatsApp</span>
+                        </a>
+                        <a href="mailto:contato@luizcarvalho.com" class="btn btn-secondary btn-lg">
+                            <span>Enviar e-mail</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="shell">
+            <div class="footer-bottom">
+                <p>&copy; <span id="footer-year">2026</span> Luiz Carvalho. Todos os direitos reservados.</p>
+                <p class="footer-updated">Conteúdo revisado e atualizado em <time datetime="2026-11-18">18 de novembro de 2026</time>.</p>
+                <p class="footer-tagline"><a href="/blog/">Voltar ao blog</a> · <a href="/">Página inicial</a> · <a
+                        href="/privacidade.html">Política de privacidade</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+        (function () {
+            var buttons = document.querySelectorAll('.copy-btn[data-target]');
+            buttons.forEach(function (btn) {
+                var code = document.getElementById(btn.dataset.target);
+                if (!code) return;
+                if (!navigator.clipboard) { btn.hidden = true; return; }
+                btn.addEventListener('click', function () {
+                    navigator.clipboard.writeText(code.textContent).then(function () {
+                        btn.textContent = 'Copiado';
+                        btn.dataset.copied = 'true';
+                        setTimeout(function () {
+                            btn.textContent = btn.dataset.label;
+                            btn.dataset.copied = 'false';
+                        }, 2200);
+                    });
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>
