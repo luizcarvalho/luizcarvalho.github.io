@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prompt gratuito para editar vídeos falados com IA no Claude Code, no Codex ou no Antigravity: corta silêncios, erros e regravações e coloca legendas animadas na cor da sua marca.">
+    <meta name="keywords"
+        content="editar vídeos com IA, prompt para editar vídeo, legendas animadas com IA, cortar silêncios do vídeo, Claude Code, Codex, Antigravity, Reels">
+    <meta name="author" content="Luiz Arão Araújo Carvalho">
+    <meta name="robots" content="index, follow">
+
+    <title>Prompt para editar vídeos com IA: cortes e legendas animadas</title>
+
+    <link rel="canonical" href="https://luizcarvalho.com/blog/prompt-editar-videos-com-ia/">
+
+    <!-- Freshness signals (GEO) -->
+    <meta name="date" content="2026-11-23">
+    <meta name="last-modified" content="2026-11-23">
+    <meta property="article:published_time" content="2026-11-23T09:00:00-03:00">
+    <meta property="article:modified_time" content="2026-11-23T09:00:00-03:00">
+    <meta property="article:author" content="Luiz Arão Araújo Carvalho">
+    <meta property="article:section" content="IA na Prática">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Eu levava quase uma hora para editar um vídeo. Hoje a IA edita tudo com este prompt">
+    <meta property="og:description" content="Uma pasta, o vídeo bruto e um pedido: edite esse vídeo. Copie o arquivo de instruções que eu uso para editar meus vídeos 100% com IA.">
+    <meta property="og:url" content="https://luizcarvalho.com/blog/prompt-editar-videos-com-ia/">
+    <meta property="og:site_name" content="Luiz Carvalho">
+    <meta property="og:image" content="https://luizcarvalho.com/blog/prompt-editar-videos-com-ia/img/capa.jpg">
+    <meta property="og:image:width" content="1600">
+    <meta property="og:image:height" content="900">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Eu levava quase uma hora para editar um vídeo. Hoje a IA edita tudo com este prompt">
+    <meta name="twitter:description" content="Uma pasta, o vídeo bruto e um pedido: edite esse vídeo. Copie o arquivo de instruções que eu uso para editar meus vídeos 100% com IA.">
+    <meta name="twitter:image" content="https://luizcarvalho.com/blog/prompt-editar-videos-com-ia/img/capa.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
+    <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:ital,wght@0,400..800;1,400..600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../blog.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://luizcarvalho.com/blog/prompt-editar-videos-com-ia/#post",
+          "headline": "Eu levava quase uma hora para editar um vídeo. Hoje a IA edita tudo com este prompt",
+          "description": "Um prompt gratuito, em formato de arquivo de instruções, que faz a IA editar vídeos falados: corta silêncios, erros e regravações, coloca legendas animadas na cor da marca e revisa o sincronismo. O post traz o passo a passo e o prompt completo.",
+          "url": "https://luizcarvalho.com/blog/prompt-editar-videos-com-ia/",
+          "inLanguage": "pt-BR",
+          "articleSection": "IA na Prática",
+          "keywords": "editar vídeos com IA, prompt de edição de vídeo, legendas animadas, Claude Code, Codex, Antigravity, Reels",
+          "image": "https://luizcarvalho.com/blog/prompt-editar-videos-com-ia/img/capa.jpg",
+          "datePublished": "2026-11-23T09:00:00-03:00",
+          "dateModified": "2026-11-23T09:00:00-03:00",
+          "author": {
+            "@id": "https://luizcarvalho.com/#person"
+          },
+          "publisher": {
+            "@id": "https://luizcarvalho.com/#person"
+          },
+          "isPartOf": {
+            "@id": "https://luizcarvalho.com/blog/#blog"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://luizcarvalho.com/blog/prompt-editar-videos-com-ia/#webpage"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://luizcarvalho.com/blog/prompt-editar-videos-com-ia/#webpage",
+          "url": "https://luizcarvalho.com/blog/prompt-editar-videos-com-ia/",
+          "name": "Prompt para editar vídeos com IA: cortes e legendas animadas",
+          "description": "Passo a passo e prompt pronto para editar vídeos falados com IA, com cortes e legendas animadas.",
+          "inLanguage": "pt-BR",
+          "isPartOf": {
+            "@id": "https://luizcarvalho.com/#website"
+          },
+          "author": {
+            "@id": "https://luizcarvalho.com/#person"
+          },
+          "publisher": {
+            "@id": "https://luizcarvalho.com/#person"
+          },
+          "datePublished": "2026-11-23T09:00:00-03:00",
+          "dateModified": "2026-11-23T09:00:00-03:00",
+          "mainEntity": {
+            "@id": "https://luizcarvalho.com/blog/prompt-editar-videos-com-ia/#post"
+          },
+          "breadcrumb": {
+            "@id": "https://luizcarvalho.com/blog/prompt-editar-videos-com-ia/#breadcrumb"
+          },
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [
+              ".answer-block"
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://luizcarvalho.com/blog/prompt-editar-videos-com-ia/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://luizcarvalho.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blog",
+              "item": "https://luizcarvalho.com/blog/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Prompt para editar vídeos com IA",
+              "item": "https://luizcarvalho.com/blog/prompt-editar-videos-com-ia/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://luizcarvalho.com/blog/prompt-editar-videos-com-ia/#faq",
+          "inLanguage": "pt-BR",
+          "isPartOf": {
+            "@id": "https://luizcarvalho.com/blog/prompt-editar-videos-com-ia/#webpage"
+          },
+          "dateModified": "2026-11-23T09:00:00-03:00",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Preciso usar o Claude Code para editar vídeos com este prompt?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. O prompt funciona em ferramentas de IA que trabalham com os arquivos de uma pasta. Por exemplo, o Claude Code, o Codex do ChatGPT e o Antigravity, do Google. No vídeo, eu usei o Antigravity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O prompt é gratuito? E a ferramenta de IA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O prompt é gratuito, basta copiar do bloco deste post. Por outro lado, as ferramentas de IA têm planos próprios. Portanto, confira o que o plano da sua ferramenta inclui antes de começar."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Preciso ter logo, fonte e cores definidas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. A pasta contexto é opcional. Sem logo, a IA usa o amarelo #FFD400 como cor de destaque. Sem fonte, ela escolhe uma fonte pesada que esteja instalada no computador. Além disso, ela avisa no relatório quais padrões usou."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O prompt funciona com vídeo horizontal?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O vídeo final sempre sai na vertical, em 1080 por 1920. Se o vídeo já é vertical, a IA ajusta o tamanho sozinha. No entanto, se ele é horizontal ou quadrado, ela para e pergunta como reenquadrar."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "A IA também publica o vídeo ou faz a capa?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. Este prompt só edita e aplica o design. Ou seja, ele não escreve a legenda do post, não cria capa e nunca publica nada. Essas etapas continuam com você."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como faço a IA acertar nomes e termos que ela escuta errado?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Crie o arquivo contexto.md dentro da pasta contexto e coloque ali um glossário. A IA usa esses termos para orientar a transcrição. Também é possível ensinar durante o uso: ela pergunta antes de salvar uma correção nova."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body class="subpage">
+    <header class="subpage-head article-head">
+        <div class="shell">
+            <nav class="breadcrumb" aria-label="Trilha de navegação">
+                <ol>
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li aria-current="page">Prompt para editar vídeos com IA</li>
+                </ol>
+            </nav>
+            <span class="kicker">IA na Prática</span>
+            <h1 class="title">Eu levava quase uma hora para editar um vídeo. Hoje a IA <span class="accent">edita
+                    tudo</span> com este prompt</h1>
+            <p class="lead">Uma pasta, o vídeo bruto e um pedido: edite esse vídeo. A IA corta silêncios, erros e
+                regravações e coloca legendas animadas na cor da sua marca. O prompt completo está logo abaixo.</p>
+            <p class="article-meta">
+                <span>Por <a href="/about.html">Luiz Carvalho</a></span>
+                <span class="sep">·</span>
+                <time datetime="2026-11-23">23 de novembro de 2026</time>
+                <span class="sep">·</span>
+                <span>Leitura de 8 minutos</span>
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" aria-labelledby="artigo-title">
+            <div class="shell">
+                <h2 class="visually-hidden" id="artigo-title">Passo a passo e prompt para editar vídeos com IA</h2>
+
+                <div class="article-body">
+                    <figure>
+                        <img src="img/capa.jpg" alt="Capa do post: Edite vídeos com IA. Uma pasta com o vídeo bruto, o arquivo de instruções e a logo vira um vídeo vertical legendado" width="1600" height="900">
+                    </figure>
+
+                    <div class="answer-block">
+                        <h3>Como editar vídeos com IA usando só um prompt?</h3>
+                        <p>Você edita vídeos com IA usando uma pasta e um arquivo de instruções. Primeiro, crie uma pasta e coloque nela o vídeo bruto, do jeito que você gravou. Em seguida, salve na mesma pasta o prompt deste post, que funciona como as instruções do projeto. Se quiser, crie também uma pasta contexto com a sua logo, a fonte e as cores. Depois, abra uma ferramenta de IA que trabalha com arquivos. Por exemplo, o Claude Code, o Codex do ChatGPT ou o Antigravity, do Google. Por fim, selecione a pasta e peça: edite esse vídeo. A IA transcreve a fala e corta silêncios, erros e regravações. Além disso, ela coloca legendas animadas, com a palavra falada no momento na cor da sua marca. O vídeo final sai na vertical, em 1080 por 1920. Antes de entregar, a própria IA confere se a legenda está sincronizada com a fala.</p>
+                    </div>
+
+                    <p>Antes de usar o Claude Code, eu levava quase uma hora para editar um vídeo. Hoje, todos os
+                        meus vídeos são editados 100% com IA.</p>
+
+                    <p>Por isso, resolvi ensinar o passo a passo de graça e entregar o prompt que eu uso. Você copia
+                        o arquivo inteiro logo abaixo.</p>
+
+                    <div class="answer-block">
+                        <h3>O que o prompt de edição de vídeo faz?</h3>
+                        <p>O prompt de edição de vídeo é um arquivo de instruções, em inglês, que transforma a IA em editora de vídeos falados. Ele descreve a pasta de trabalho, a identidade visual e uma rotina de sete etapas. Primeiro, a IA lê a pasta contexto e analisa o vídeo. Em seguida, transcreve a fala por trechos, com o tempo de cada palavra. Assim, ela decide o que cortar: regravações, frases abandonadas, ruídos e legendas falsas inventadas pelo reconhecimento de voz. Depois, monta as legendas em blocos de duas a quatro palavras, com animação de entrada. O render final sai em 1080 por 1920, com o volume normalizado. Por fim, a IA revisa o próprio trabalho e mede a diferença entre legenda e fala. O arquivo não traz programas prontos. Por isso, a própria IA escreve os scripts que precisa e reaproveita esses scripts no vídeo seguinte.</p>
+                    </div>
+
+                    <hr>
+
+                    <h2>Passo a passo: da pasta ao vídeo editado</h2>
+
+                    <ol class="steps">
+                        <li><strong>Crie uma pasta.</strong> Eu chamei a minha de <code>editor</code>, mas pode ser
+                            qualquer nome. Dentro dela, coloque o vídeo bruto, sem nenhuma edição.</li>
+                        <li><strong>Coloque o arquivo de instruções.</strong> É o prompt deste post. Salve o texto
+                            inteiro num arquivo dentro da pasta. No vídeo, eu chamei de <code>instrucoes.md</code>.</li>
+                        <li><strong>Crie a pasta <code>contexto</code> (opcional).</strong> Ela guarda a sua identidade
+                            visual: logo, fonte, cores, o que precisar. Eu coloquei só a minha logo.</li>
+                        <li><strong>Abra a sua ferramenta de IA.</strong> Pode ser o Claude Code ou o Codex, do ChatGPT.
+                            No vídeo, eu usei o Antigravity, do Google.</li>
+                        <li><strong>Peça a edição.</strong> Abra um novo projeto, selecione a pasta e escreva:
+                            <code>Edite esse vídeo</code>.</li>
+                    </ol>
+
+                    <p>A estrutura final fica assim: o vídeo bruto e o arquivo de instruções na raiz, mais a pasta
+                        <code>contexto</code>. Depois da edição, a IA cria a pasta <code>out</code> com o vídeo pronto e
+                        a pasta <code>scripts</code> com as ferramentas que ela mesma escreveu.</p>
+
+                    <div class="callout">
+                        <h3>A cor da legenda sai da sua logo</h3>
+                        <p>Eu não informei nenhuma cor. Mesmo assim, a palavra ativa da legenda saiu no vermelho da minha
+                            marca. Isso acontece porque o prompt manda a IA tirar a cor de destaque da logo. Ou seja,
+                            ela ignora branco, preto e cinza e usa a cor mais forte que sobrar.</p>
+                    </div>
+
+                    <div class="callout">
+                        <h3>Sobre o nome do arquivo</h3>
+                        <p>O prompt foi escrito como um <code>CLAUDE.md</code>, o arquivo que o Claude Code lê sozinho ao
+                            abrir uma pasta. Portanto, se você usa o Claude Code, salve com esse nome. Com outro nome,
+                            como o <code>instrucoes.md</code> do vídeo, peça para a IA ler o arquivo antes de editar.</p>
+                    </div>
+
+                    <hr>
+
+                    <h2>O prompt: copie o arquivo inteiro</h2>
+
+                    <p>O texto está em inglês de propósito, e você não precisa traduzir. Além disso, ele funciona
+                        igual para vídeos em português. Copie o bloco inteiro e salve dentro da pasta do vídeo.</p>
+
+                    <div class="prompt-block">
+                        <div class="prompt-bar">
+                            <span class="prompt-label">Instruções de edição de vídeo (CLAUDE.md)</span>
+                            <button type="button" class="copy-btn" id="copy-prompt">Copiar prompt</button>
+                        </div>
+                        <pre><code id="prompt-text"># CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working in this folder.
+
+## What this folder is
+
+A workspace for editing recorded talking-head videos into finished vertical videos (Reels, Shorts, TikTok). Editing means cutting silences, mistakes and retakes, then burning in animated captions in the owner's visual identity. **This folder only edits and applies design.** It doesn't write post captions, it doesn't make thumbnails, and it never publishes anything.
+
+There is no ready-made tooling. Write whatever scripts you need to meet the requirements below, keep them in `scripts/`, and reuse and improve them from one video to the next.
+
+- **Root:** raw recordings waiting to be edited. Don't rename, move or re-encode them. Filenames often have spaces, so always quote paths.
+- **`contexto/`:** the owner's identity and references (see the next section). Read it before every edit.
+- **`scripts/`:** your own tooling.
+- **`out/&lt;slug&gt;/`:** everything generated, one folder per video. `work/` holds intermediates (transcript, cut decisions, captions, contact sheets), and the result is `video_final.mp4`. Never write generated files next to the raw videos.
+
+## The `contexto/` folder
+
+This folder is what makes the edit belong to its owner. Everything in it is a reference, and all of it is optional:
+
+| Item | Used for |
+| --- | --- |
+| `logo.svg` / `logo.png` | The **source of the brand colours**. The accent (active-word) colour is the logo's strongest non-neutral colour. An overlay or title may also use the logo. |
+| `contexto.md` | Free-form notes that override anything here, in plain language: who appears in the videos, brand colours as hex, the caption font, the language, the comment-CTA keyword, a glossary of names and terms Whisper gets wrong, the caption position, things to always or never do. |
+| `fonts/` | `.ttf`/`.otf` files for the captions. Use them instead of system fonts. |
+| Images or videos | Style references, such as an earlier edit they liked or a screenshot of the caption look. Look at them and match them. |
+
+**Precedence:**
+1. what the person says in the conversation;
+2. `contexto.md`;
+3. what you derive from the logo and the references;
+4. the defaults in this file.
+
+**Deriving the accent from the logo:**
+- Rasterise the logo if it's an SVG.
+- Ignore near-white, near-black and grey pixels, and take the dominant remaining colour.
+- If the logo has no colour (pure black and white) or there's no logo, use the default accent `#FFD400`.
+- The accent must read against a white text block with a black outline. If it's very dark or very light, pick the next brand colour or the default.
+
+**If `contexto/` is missing or empty:** apply the defaults, edit anyway, and say in the report which defaults were used. Offer to create `contexto/contexto.md` from what you learned in the video, such as the person's name or recurring terms.
+
+**When something is learned:** a correction the person makes, or a term Whisper keeps getting wrong, is worth adding to `contexto/contexto.md`. Ask first, then add it, so the next edit gets it right.
+
+## Standard routine for any video dropped here
+
+Every video file (`.mp4`, `.mov`, `.m4v`) in the root with no `out/&lt;slug&gt;/video_final.mp4` is waiting to be edited. When the person says "edit the video" or just drops a file, take the newest unprocessed one. If there are several, list them and do them one at a time. Apply the defaults without asking.
+
+1. **Read `contexto/`:** notes, logo colours, fonts, references.
+2. **Identify the video.**
+   - **Slug:** the filename lowercased, accents stripped, every run of non-alphanumerics turned into one `-`. For example, `My Video 01.mp4` → `my-video-01`. If `out/&lt;slug&gt;/` already belongs to a different video, append `-2`.
+   - **Probe** the resolution, frame rate and duration.
+   - **Format:** the output is vertical 1080x1920. If the input is vertical at another resolution, scale it. If it's horizontal or square, stop and ask how to reframe it (crop to the face, or blurred bars).
+   - **Contact sheet:** make one of the original with timestamps and look at it.
+   - **Layout:** decide whether the video is face-only or split-screen (screen or content on top, face below). Note when the screen changes, because a long silence may be the moment a result appears.
+3. **Transcribe, then decide what goes** (see "Cutting").
+4. **Assemble and caption** (see "Captions").
+5. **Render:** a quick preview first, then the final render in the background (see "Render").
+6. **Review** (see "Review"). Don't deliver a video that fails any check: fix it and re-render.
+7. **Report and stop.** End with:
+   - a table of what was cut (original time, text, reason);
+   - original vs final duration;
+   - the sync numbers;
+   - which `contexto/` items were used, or which defaults;
+   - the path to `video_final.mp4`;
+   - a reminder that you can't hear the audio, so the person should listen to the splices.
+
+## Cutting
+
+**Transcription.** Use faster-whisper large-v3, with word timestamps.
+- **Language:** the one in `contexto.md`, or detect it on the first island and keep it fixed for the whole video.
+- **Speech islands:** first split the audio into islands on silences (around −42 dB, 0.35 s). Transcribe each island separately, with a small margin on each side. A single pass over the whole video merges retakes and hides repetitions.
+- **Glossary:** if `contexto.md` has one, pass its terms as the initial prompt (hotwords) to bias recognition.
+- **What to keep:** each word's start, end and confidence, so you can read the transcript island by island with pauses and low-confidence words marked.
+
+**Deciding what goes** is a reading task. Read every island and record each decision with a reason. Cut:
+- **Retakes:** the same sentence or idea said twice. Keep the last complete take. Signs: identical openings, and short islands followed by a long pause.
+- **Abandoned sentences:** an island that stops mid-sentence and is picked up later.
+- **Whisper hallucinations:** short islands over silence turn into subtitle credits and sign-offs ("Legenda por…", "Thanks for watching", "Obrigado", "Tchau, tchau."). They aren't speech: cut them as silence and never caption them.
+- **Noise** before the first word and after the sign-off.
+- **Spoken instructions to the editor.** These aren't content. "Don't use what I said before, start from here" means cut everything it refers to, plus the instruction itself.
+- **On split-screen videos:** after a cut, the next sentence still has to make sense with what is on screen.
+
+**Fine pauses** are cut mechanically, with a more sensitive pass (around −35 dB, 0.22 s):
+- Cut every pause of 0.3 s or more.
+- Keep about 0.08 s before and 0.12 s after each speech chunk, so syllables aren't clipped.
+- **Snap every cut to a frame boundary.** Otherwise the audio drifts from the picture at each splice.
+- Put a ~12 ms audio fade in and out at each splice, to avoid clicks.
+- A content cut that starts mid-chunk must remove only the covered range, never the whole chunk.
+- Drop a tiny leftover (&lt; 0.3 s) after the sign-off.
+
+**Text fixes:**
+- Correct misheard technical terms, acronyms, brands and names, using the glossary in `contexto.md` and the video's own context.
+- Correct the comment-CTA keyword ("comment WORD") so it reads exactly as intended.
+- Treat words with confidence below 0.3 as suspect, and confirm them in the review.
+- Strip filler words ("uh", "um", "hã", "hum", "ééé" and similar) from the captions.
+
+## Captions
+
+Caption timing must come from the word timestamps **mapped onto the cut timeline**, not from the original timeline.
+
+The default look is below. `contexto/` can change any of it.
+
+**Colours:**
+
+| Role | Default | Source |
+| --- | --- | --- |
+| Text | white `#FFFFFF` | `contexto.md`, if set |
+| Outline and shadow | black `#000000` | `contexto.md`, if set |
+| Active word | brand accent | `contexto.md`, then the logo, then `#FFD400` |
+
+ASS colours are written `&amp;HAABBGGRR`, so `#FB0101` is `&amp;H000101FB`.
+
+**Look:**
+- UPPERCASE text, about 74–90 px, with a 5–6 px outline and a soft shadow (about 3 px, ~60% opacity).
+- **Font:** the font in `contexto/fonts/` or named in `contexto.md`. Otherwise a heavy sans-serif that is actually installed (Montserrat Black, Inter Black, Arial Black, and so on). Check before using it, and load it through a fonts dir.
+- **No background box, band or pill**, unless `contexto.md` asks for one. In ASS that rules out `BorderStyle=3`.
+- **The active word turns to the accent colour**, keeping the outline. The other words stay in the text colour.
+
+**Animation:**
+- Each block pops in: scale 80% → 100% over 120 ms, with a 60 ms fade-in.
+- The active word changes exactly at its start time, with a small bump: scale 108% over 80 ms, then back to 100% by 160 ms.
+
+**Breaking:**
+- Blocks of 2–4 words, on one line that fits 1080 px with margins. That's about 18 characters for a heavy font at 74 px; measure for other fonts.
+- Break at punctuation, at pauses over ~0.35 s, and around the CTA.
+- A block never ends on an article, preposition, conjunction or number; carry those to the next block.
+- The CTA is never split across blocks.
+- No block lasts less than ~0.3 s.
+
+**Position:**
+- Centred horizontally.
+- **Face-only videos:** vertical centre at y≈1300.
+- **Split-screen videos:** on the seam between content and face. Find the seam by measuring mean row brightness on a frame.
+- Always inside the platform safe zone: avoid the top 250 px and the bottom 380 px. Never cover the mouth or the eyes.
+
+**Overlays:** if a title, the logo or an image is wanted (for example over a blank frame at the start of a split-screen video), burn it in before the captions, timed on the cut timeline, with a short fade-in. Use the brand colours and fonts from `contexto/`.
+
+Before rendering everything, check the caption look on a single frame, and compare it with any style reference in `contexto/`.
+
+## Render
+
+- **One encode from the original file:** trim and concat, scaling if needed, overlays, caption burn-in and audio processing all in a single filtergraph. No re-encoded intermediates.
+- **Video:** 1080x1920, 30 fps (or the source rate if it's 25/24), H.264 High@4.2, preset slow, CRF 17, yuv420p, 2 s GOP, `+faststart`.
+- **Audio:** an 80 Hz high-pass, then a two-pass `loudnorm` to −14 LUFS integrated, −1.5 dBTP peak, LRA 11 (measure first, then apply linear). Output AAC 256k, 48 kHz, stereo.
+- **Preview:** the same graph with preset veryfast, CRF 23, to check cuts and captions first.
+- A final render takes roughly 1 s per second of video. Run it in the background.
+
+## Review (required)
+
+- **Contact sheet of the final video:** the captions are readable, inside the safe zone and off the face, and the colours match `contexto/`.
+- **Sheet of the last ~1.5 s:** the video ends cleanly, with no fragment after the sign-off.
+- **Sync:** re-transcribe the final video with word timestamps and measure the gap between each active (accent-coloured) caption word and the spoken word. Target: median within ±0.1 s and p90 within 0.25 s.
+- **Second transcript:**
+  - Read it for leftover repetition.
+  - Check that the last sentence before each cut survived whole.
+  - Where it disagrees with the first on a low-confidence word, go with the second and re-render.
+- **Audio:** you can't hear it. Say so.
+
+## Pitfalls already hit
+
+- **ffmpeg 4.x:** after `loudnorm` it can fail with `Cannot select channel layout` unless followed by `aresample=48000,aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo`.
+- **Paths in the `ass` filter:** escape `:` in the subtitle path inside the filtergraph.
+- **Split-screen videos:** captions at y=1300 cover the face there; measure the seam instead.
+- **Punch-in zoom:** a light zoom to hide the jump at splices crops the content on split-screen videos. Use it only on face-only videos.
+- **Unsnapped cuts:** they make the audio drift further out of sync at every splice.
+- **Fonts:** a font name that isn't installed silently falls back to a default. Always pass a fonts dir with the actual file.
+
+## Environment
+
+Check what's available before the first edit and say what's missing:
+- **ffmpeg** with the `ass` (libass) and `loudnorm` filters.
+- **faster-whisper:** a GPU is much faster but not required.
+  - With CUDA in a venv, `LD_LIBRARY_PATH` may need the venv's `site-packages/nvidia/cublas/lib` and `.../cudnn/lib`; on WSL, also `/usr/lib/wsl/lib`.
+  - If `soundfile` is missing, load audio with `faster_whisper.decode_audio`.
+- **Python with Pillow,** for frame measurements and logo colours. To rasterise an SVG logo, use `cairosvg`, `rsvg-convert`, or ffmpeg/ImageMagick if installed.
+- **Long jobs:** a full render plus re-transcription takes a few minutes. Run them in the background.</code></pre>
+                    </div>
+
+                    <p class="prompt-note">Fim do prompt. Cole o arquivo inteiro, sem cortar, para que a rotina, as
+                        regras de corte e o padrão de legenda cheguem juntos.</p>
+
+                    <hr>
+
+                    <h2>O que a IA faz quando você pede para editar</h2>
+
+                    <p>O prompt organiza o trabalho em sete etapas. Primeiro, a IA lê a pasta <code>contexto</code>.
+                        Em seguida, identifica o vídeo: resolução, duração e formato. Ela também monta uma folha de
+                        quadros para enxergar o vídeo inteiro.</p>
+
+                    <p>Depois disso, vem a parte mais importante: decidir o que sai. O prompt trata essa
+                        decisão como leitura, não como regra automática. Por isso, a IA lê cada trecho da transcrição e
+                        anota o motivo de cada corte.</p>
+
+                    <ul>
+                        <li><strong>Regravações:</strong> quando a mesma frase aparece duas vezes, fica a última versão
+                            completa.</li>
+                        <li><strong>Frases abandonadas:</strong> o trecho que para no meio e recomeça depois sai.</li>
+                        <li><strong>Legendas falsas:</strong> em trechos de silêncio, o reconhecimento de voz inventa
+                            frases como "Legenda por…" ou "Tchau, tchau". Elas saem.</li>
+                        <li><strong>Ruído:</strong> o barulho antes da primeira palavra e depois da despedida sai.</li>
+                        <li><strong>Recados para o editor:</strong> se você grava "desconsidera o que eu falei antes",
+                            a IA corta o trecho e o próprio recado.</li>
+                    </ul>
+
+                    <p>Além dos cortes de conteúdo, a IA remove toda pausa de 0,3 segundo ou mais. Ela também alinha
+                        cada corte ao quadro exato do vídeo. Assim, o áudio não sai de sincronia a cada emenda.</p>
+
+                    <h3>Como fica a legenda</h3>
+
+                    <p>O padrão é texto branco em maiúsculas, com contorno preto e sem caixa de fundo. A palavra falada
+                        no momento muda para a cor da marca, com um pequeno pulo de tamanho. Por exemplo, no meu caso ela
+                        fica vermelha.</p>
+
+                    <p>Os blocos têm de duas a quatro palavras e nunca terminam em artigo ou preposição. Em vídeos só
+                        com o rosto, a legenda fica um pouco abaixo do centro. Já em vídeos com tela em cima e rosto
+                        embaixo, ela vai para a linha que divide as duas partes.</p>
+
+                    <h3>A revisão antes de entregar</h3>
+
+                    <p>Por fim, a IA transcreve o vídeo final de novo. Com isso, ela mede a diferença entre cada palavra
+                        da legenda e a fala. A meta é ficar dentro de um décimo de segundo na mediana.</p>
+
+                    <p>Se alguma checagem falha, ela corrige e renderiza de novo. No entanto, tem uma coisa que ela não
+                        faz: ouvir o áudio. Por isso, o prompt manda a IA avisar. Então, sempre ouça as emendas antes de
+                        publicar.</p>
+
+                    <h2>O que precisa estar instalado</h2>
+
+                    <p>O prompt não traz ferramenta pronta, mas depende de três programas no computador. Antes da
+                        primeira edição, a IA confere cada um e avisa o que falta.</p>
+
+                    <ul>
+                        <li><strong>ffmpeg</strong>, com os filtros de legenda (<code>ass</code>) e de volume
+                            (<code>loudnorm</code>).</li>
+                        <li><strong>faster-whisper</strong>, para transcrever. Uma placa de vídeo acelera bastante, mas
+                            não é obrigatória.</li>
+                        <li><strong>Python com Pillow</strong>, para medir os quadros e tirar as cores da logo.</li>
+                    </ul>
+
+                    <p>O resultado é o vídeo editado, com cortes e legenda animada na cor da marca. Nos próximos vídeos,
+                        eu vou mostrar mais efeitos que dá para aplicar com a mesma ideia. Enquanto isso, veja também as
+                        <a href="/blog/skills-de-animacao-para-reels-com-ia/">skills de animação para Reels</a>, que
+                        geram vídeos curtos a partir de uma frase.</p>
+
+                    <h2>Perguntas que sempre chegam</h2>
+
+                    <dl class="faq-list">
+                        <div class="faq-item">
+                            <dt>Preciso usar o Claude Code para editar vídeos com este prompt?</dt>
+                            <dd>Não. O prompt funciona em ferramentas de IA que trabalham com os arquivos de uma pasta. Por exemplo, o Claude Code, o Codex do ChatGPT e o Antigravity, do Google. No vídeo, eu usei o Antigravity.</dd>
+                        </div>
+                        <div class="faq-item">
+                            <dt>O prompt é gratuito? E a ferramenta de IA?</dt>
+                            <dd>O prompt é gratuito, basta copiar do bloco deste post. Por outro lado, as ferramentas de IA têm planos próprios. Portanto, confira o que o plano da sua ferramenta inclui antes de começar.</dd>
+                        </div>
+                        <div class="faq-item">
+                            <dt>Preciso ter logo, fonte e cores definidas?</dt>
+                            <dd>Não. A pasta contexto é opcional. Sem logo, a IA usa o amarelo #FFD400 como cor de destaque. Sem fonte, ela escolhe uma fonte pesada que esteja instalada no computador. Além disso, ela avisa no relatório quais padrões usou.</dd>
+                        </div>
+                        <div class="faq-item">
+                            <dt>O prompt funciona com vídeo horizontal?</dt>
+                            <dd>O vídeo final sempre sai na vertical, em 1080 por 1920. Se o vídeo já é vertical, a IA ajusta o tamanho sozinha. No entanto, se ele é horizontal ou quadrado, ela para e pergunta como reenquadrar.</dd>
+                        </div>
+                        <div class="faq-item">
+                            <dt>A IA também publica o vídeo ou faz a capa?</dt>
+                            <dd>Não. Este prompt só edita e aplica o design. Ou seja, ele não escreve a legenda do post, não cria capa e nunca publica nada. Essas etapas continuam com você.</dd>
+                        </div>
+                        <div class="faq-item">
+                            <dt>Como faço a IA acertar nomes e termos que ela escuta errado?</dt>
+                            <dd>Crie o arquivo contexto.md dentro da pasta contexto e coloque ali um glossário. A IA usa esses termos para orientar a transcrição. Também é possível ensinar durante o uso: ela pergunta antes de salvar uma correção nova.</dd>
+                        </div>
+                    </dl>
+
+                    <nav class="further-reading" aria-labelledby="further-reading-title">
+                        <h3 id="further-reading-title">Leitura complementar</h3>
+                        <p>Para seguir no mesmo tema, veja estes conteúdos relacionados.</p>
+                        <ul>
+                            <li><a href="/blog/">Todos os posts do blog</a> — prompts prontos e guias práticos de
+                                Inteligência Artificial aplicada.</li>
+                            <li><a href="/blog/skills-de-animacao-para-reels-com-ia/">6 skills de animação para Reels com
+                                    IA</a> — outro recurso para produzir vídeos verticais com IA.</li>
+                            <li><a href="/blog/skill-sabatina-ia-pergunta-antes-de-executar/">Skill Sabatina</a> — faz a
+                                IA perguntar até não sobrar dúvida antes de executar.</li>
+                            <li><a href="/treinamentos/#conteudo">Conteúdo programático dos treinamentos de IA</a> — os
+                                módulos aplicados em empresas e órgãos públicos.</li>
+                            <li><a href="/about.html">Sobre Luiz Carvalho</a> — formação, cargos e prêmios verificáveis
+                                do autor deste post.</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="author-box">
+                    <img src="https://res.cloudinary.com/drlko5ghb/image/upload/v1769712600/luizcarvalhocom/fotos/perfil.png"
+                        alt="Luiz Carvalho, autor do post" width="76" height="76" loading="lazy">
+                    <div class="author-text">
+                        <h3>Escrito por Luiz Carvalho</h3>
+                        <p>Cientista da Computação com mais de 21 anos de experiência e palestrante TEDx. Coordena o
+                            DefGPT, plataforma de IA da Defensoria Pública do Tocantins. Conheça a <a
+                                href="/about.html">trajetória completa</a> ou acompanhe no <a
+                                href="https://instagram.com/luizcarvalhocom" target="_blank"
+                                rel="noopener">Instagram</a>. Se este prompt te ajudou, marque ele no story quando editar
+                            seu primeiro vídeo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-section" id="contato">
+            <div class="shell">
+                <div class="cta-inner">
+                    <h2>Quer levar IA aplicada para a sua equipe?</h2>
+                    <p>Envie a data, a cidade, o formato desejado e o perfil do público. Em seguida, você recebe uma
+                        proposta adaptada ao seu setor.</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/5563981329588?text=Ol%C3%A1%20Luiz%2C%20gostaria%20de%20saber%20mais%20sobre%20suas%20palestras%20e%20treinamentos%20em%20IA."
+                            class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+                            <span>Falar no WhatsApp</span>
+                        </a>
+                        <a href="mailto:contato@luizcarvalho.com" class="btn btn-secondary btn-lg">
+                            <span>Enviar e-mail</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="shell">
+            <div class="footer-bottom">
+                <p>&copy; <span id="footer-year">2026</span> Luiz Carvalho. Todos os direitos reservados.</p>
+                <p class="footer-updated">Conteúdo revisado e atualizado em <time datetime="2026-11-23">23 de novembro de 2026</time>.</p>
+                <p class="footer-tagline"><a href="/blog/">Voltar ao blog</a> · <a href="/">Página inicial</a> · <a
+                        href="/privacidade.html">Política de privacidade</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+        (function () {
+            var btn = document.getElementById('copy-prompt');
+            var code = document.getElementById('prompt-text');
+            if (!btn || !code) return;
+            if (!navigator.clipboard) { btn.hidden = true; return; }
+
+            btn.addEventListener('click', function () {
+                navigator.clipboard.writeText(code.textContent).then(function () {
+                    btn.textContent = 'Prompt copiado';
+                    btn.dataset.copied = 'true';
+                    setTimeout(function () {
+                        btn.textContent = 'Copiar prompt';
+                        btn.dataset.copied = 'false';
+                    }, 2200);
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>
