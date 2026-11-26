@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Relato de Luiz Carvalho sobre a apresentação do DefGPT e do sistema Solar no Seminário de IA da DPE-TO e PGE-TO, em Palmas (TO), com ganhos reais de eficiência.">
+        content="Bastidores do DefGPT no Seminário de IA da DPE-TO e PGE-TO em Palmas: servidor sem GPU, custo zero, ChatSummarizator (5x) e modelos de decisão Clef-Flash (89% para 97%).">
     <meta name="keywords"
-        content="DefGPT, DPE-TO, PGE-TO, seminário inteligência artificial Palmas, IA no setor público, Solar Defensoria, letramento tecnológico, Luiz Carvalho">
+        content="DefGPT, DPE-TO, PGE-TO, Clef-Flash, modelo de decisão IA, seminário inteligência artificial Palmas, IA no setor público, Solar Defensoria, Luiz Carvalho">
     <meta name="author" content="Luiz Arão Araújo Carvalho">
     <meta name="robots" content="index, follow">
 
@@ -20,7 +20,7 @@
     <meta name="date" content="2026-11-26">
     <meta name="last-modified" content="2026-11-26">
     <meta property="article:published_time" content="2026-11-26T17:00:00-03:00">
-    <meta property="article:modified_time" content="2026-11-26T17:00:00-03:00">
+    <meta property="article:modified_time" content="2026-11-26T17:25:00-03:00">
     <meta property="article:author" content="Luiz Arão Araújo Carvalho">
     <meta property="article:section" content="Eventos">
 
@@ -29,7 +29,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="DefGPT no seminário da DPE-TO e PGE-TO: IA real no setor público">
     <meta property="og:description"
-        content="Como a IA evoluiu na Defensoria Pública do Tocantins desde 2017 até o DefGPT e por que mudar o padrão de decisão trouxe 5x mais eficiência.">
+        content="Servidor comum sem GPU, custo zero e o salto para modelos de decisão (Clef-Flash): acertos de 89% para 97% e tempo de 76 s para 22 s.">
     <meta property="og:url" content="https://luizcarvalho.com/blog/defgpt-seminario-ia-dpe-to-pge-to-2026/">
     <meta property="og:site_name" content="Luiz Carvalho">
     <meta property="og:image"
@@ -39,7 +39,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="DefGPT no seminário da DPE-TO e PGE-TO: IA real no setor público">
     <meta name="twitter:description"
-        content="Como a IA evoluiu na Defensoria Pública do Tocantins desde 2017 até o DefGPT e por que mudar o padrão de decisão trouxe 5x mais eficiência.">
+        content="Servidor comum sem GPU, custo zero e o salto para modelos de decisão (Clef-Flash): acertos de 89% para 97% e tempo de 76 s para 22 s.">
     <meta name="twitter:image"
         content="https://luizcarvalho.com/blog/defgpt-seminario-ia-dpe-to-pge-to-2026/img/capa.jpg">
 
@@ -68,14 +68,14 @@
           "@type": "BlogPosting",
           "@id": "https://luizcarvalho.com/blog/defgpt-seminario-ia-dpe-to-pge-to-2026/#post",
           "headline": "DefGPT no seminário da DPE-TO e PGE-TO: IA real no setor público",
-          "description": "Relato de Luiz Carvalho sobre a apresentação do DefGPT e do sistema Solar no Seminário Inteligência Artificial e Transformação Digital nas Funções Essenciais à Justiça, em Palmas (TO).",
+          "description": "Bastidores da apresentação do DefGPT e do Solar no Seminário Inteligência Artificial e Transformação Digital nas Funções Essenciais à Justiça, em Palmas (TO).",
           "url": "https://luizcarvalho.com/blog/defgpt-seminario-ia-dpe-to-pge-to-2026/",
           "inLanguage": "pt-BR",
           "articleSection": "Eventos",
-          "keywords": "DefGPT, DPE-TO, PGE-TO, seminário inteligência artificial Palmas, IA no setor público, Solar Defensoria, letramento tecnológico",
+          "keywords": "DefGPT, DPE-TO, PGE-TO, Clef-Flash, modelo de decisão IA, seminário inteligência artificial Palmas, IA no setor público, Solar Defensoria",
           "image": "https://luizcarvalho.com/blog/defgpt-seminario-ia-dpe-to-pge-to-2026/img/capa.jpg",
           "datePublished": "2026-11-26T17:00:00-03:00",
-          "dateModified": "2026-11-26T17:00:00-03:00",
+          "dateModified": "2026-11-26T17:25:00-03:00",
           "author": {
             "@id": "https://luizcarvalho.com/#person"
           },
@@ -106,7 +106,7 @@
             "@id": "https://luizcarvalho.com/#person"
           },
           "datePublished": "2026-11-26T17:00:00-03:00",
-          "dateModified": "2026-11-26T17:00:00-03:00",
+          "dateModified": "2026-11-26T17:25:00-03:00",
           "mainEntity": {
             "@id": "https://luizcarvalho.com/blog/defgpt-seminario-ia-dpe-to-pge-to-2026/#post"
           },
@@ -151,22 +151,22 @@
           "isPartOf": {
             "@id": "https://luizcarvalho.com/blog/defgpt-seminario-ia-dpe-to-pge-to-2026/#webpage"
           },
-          "dateModified": "2026-11-26T17:00:00-03:00",
+          "dateModified": "2026-11-26T17:25:00-03:00",
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "O que é o Seminário de IA da DPE-TO e PGE-TO?",
+              "name": "Qual infraestrutura o DefGPT usa na Defensoria Pública do Tocantins?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "É o Seminário Inteligência Artificial e Transformação Digital nas Funções Essenciais à Justiça, realizado em Palmas. Ele ocorre nos dias 26 e 27 de novembro de 2026. A organização é da DPE-TO, via Esdep, em parceria com o Centro de Estudos da PGE-TO."
+                "text": "O DefGPT nasceu rodando em um servidor comum que já existia na DPE-TO, sem GPU, com 32 GB de memória e 128 núcleos. Ele usa modelos abertos e equipe interna, com custo adicional de R$ 0,00. Além disso, nenhum dado de assistido sai da instituição."
               }
             },
             {
               "@type": "Question",
-              "name": "O que foi apresentado sobre o DefGPT no seminário?",
+              "name": "Qual a diferença entre modelo generativo e modelo de decisão no DefGPT?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Apresentamos a evolução da IA na Defensoria desde 2017 e o desenvolvimento do DefGPT junto ao sistema Solar. Além disso, mostramos como trocar geração palavra por palavra por classificação em uma passada reduziu uma análise de 76 para 22 segundos."
+                "text": "O modelo generativo lê e escreve palavra por palavra, como uma redação, levando 76 segundos por processo. Já o modelo de decisão Clef-Flash lê tudo de uma vez e escolhe com probabilidades, como múltipla escolha. Com isso, o tempo caiu para 22 segundos e os acertos subiram de 89% para 97%."
               }
             },
             {
@@ -174,7 +174,7 @@
               "name": "A inteligência artificial substitui a decisão humana na Defensoria?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Não. A IA acelera análises repetitivas e o trabalho pesado de triagem e leitura. No entanto, a responsabilidade pela decisão jurídica e o acolhimento no atendimento ao cidadão permanecem inteiramente humanos."
+                "text": "Não. A IA acelera análises repetitivas e o trabalho pesado de triagem e leitura. Quando o modelo de decisão não tem certeza, o caso vai para revisão humana. Além disso, a responsabilidade pela decisão jurídica e o acolhimento ao cidadão permanecem inteiramente humanos."
               }
             },
             {
@@ -182,7 +182,7 @@
               "name": "Onde conhecer mais sobre o DefGPT?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A apresentação oficial do projeto está disponível em defgpt.defensoria.to.def.br/about. O DefGPT conquistou o 1º lugar no CNTI-Def 2025 e é coordenado pela equipe de Tecnologia da Informação da DPE-TO."
+                "text": "A apresentação oficial do projeto está disponível em defgpt.defensoria.to.def.br/about. O DefGPT conquistou o 1º lugar no CNTI.Def 2025 e o Prêmio J.Ex 2025, e já soma mais de mil alterações no repositório."
               }
             }
           ]
@@ -204,14 +204,14 @@
             </nav>
             <span class="kicker">Eventos</span>
             <h1 class="title">DefGPT no seminário da DPE-TO e PGE-TO: <span class="accent">IA real no setor público</span></h1>
-            <p class="lead">Do primeiro chatbot em 2017 à troca do padrão de inferência que reduziu uma análise de 76
-                para 22 segundos. Este é o relato da apresentação feita com Lucas Abreu em Palmas.</p>
+            <p class="lead">Servidor comum sem GPU, custo adicional zero, 5× de eficiência no atendimento e o salto dos
+                modelos de decisão (89% para 97% de acertos). Os bastidores da palestra com Lucas Abreu em Palmas.</p>
             <p class="article-meta">
                 <span>Por <a href="/about.html">Luiz Carvalho</a></span>
                 <span class="sep">·</span>
                 <time datetime="2026-11-26">26 de novembro de 2026</time>
                 <span class="sep">·</span>
-                <span>Leitura de 4 minutos</span>
+                <span>Leitura de 5 minutos</span>
             </p>
         </div>
     </header>
@@ -226,19 +226,20 @@
                         <h3>O que foi apresentado sobre o DefGPT no seminário da DPE-TO e PGE-TO?</h3>
                         <p>O Seminário Inteligência Artificial e Transformação Digital nas Funções Essenciais à Justiça
                             acontece em Palmas, no Tocantins. A programação ocorre nos dias 26 e 27 de novembro de 2026.
-                            O evento é promovido pela Defensoria Pública do Estado do Tocantins (DPE-TO), por meio da
-                            Esdep, em parceria com a Procuradoria-Geral do Estado (PGE-TO). Na tarde de quinta-feira, 26
-                            de novembro, eu e Lucas Magno Oliveira Abreu apresentamos o DefGPT e o sistema Solar.
-                            Mostramos como a IA evoluiu na Defensoria desde 2017 até a plataforma premiada em 1º lugar
-                            no CNTI-Def 2025. Além disso, detalhamos como mudar o padrão de inferência reduziu uma
-                            análise de sentença de 76 segundos para 22 segundos. Por fim, o seminário reúne debates
-                            sobre segurança de dados, normatização, gestão e letramento tecnológico no serviço público.
-                            Este relato traz os bastidores técnicos da apresentação, os números reais do projeto e o
-                            papel humano nas decisões jurídicas.</p>
+                            O evento é promovido pela Defensoria Pública do Estado do Tocantins (DPE-TO), via Esdep, em
+                            parceria com a Procuradoria-Geral do Estado (PGE-TO). Na tarde de quinta-feira, 26 de
+                            novembro, eu e Lucas Magno Oliveira Abreu apresentamos o DefGPT e o sistema Solar. Mostramos
+                            como a IA evoluiu na Defensoria desde 2017 até rodar em servidor comum sem GPU, com custo
+                            adicional zero. Além disso, detalhamos o salto dos modelos de decisão com o Clef-Flash. Nos
+                            mesmos 94 processos em produção, os acertos subiram de 89% para 97%. Também caíram os
+                            alarmes falsos, de 10 para 3, e o tempo por processo caiu de 76 para 22 segundos. Por fim, o
+                            seminário debate segurança de dados, normatização e letramento tecnológico no serviço
+                            público.</p>
                     </div>
 
                     <p>Falar de Inteligência Artificial no serviço público é fácil quando o tema fica no discurso. No
-                        entanto, colocar uma plataforma em produção exige resolver gargalos técnicos bem concretos.</p>
+                        entanto, colocar uma plataforma em produção exige responder duas perguntas antes de qualquer
+                        código: segurança dos dados e orçamento.</p>
 
                     <figure>
                         <img src="img/capa.jpg"
@@ -248,51 +249,87 @@
                             atendimento da DPE-TO, em Palmas.</figcaption>
                     </figure>
 
-                    <h2>Uma trajetória que não começou ontem</h2>
+                    <h2>E se a IA morasse aqui dentro?</h2>
 
-                    <p>Muita gente acha que IA no setor público começou com a onda recente de modelos generativos. Por
-                        isso, abri a apresentação mostrando a linha do tempo real da tecnologia na DPE-TO.</p>
+                    <p>Em abril de 2024, o ponto de partida foi direto. Dado de assistido não pode sair da Defensoria, e
+                        não havia orçamento para licenças milionárias. Por isso, a arquitetura nasceu dentro de casa.</p>
 
-                    <p>Primeiro, em 2017, entraram em operação o Susie Bot e o Luna Chatbot. Em seguida, em 2020, veio o
-                        Hermes, seguido pelo Apollo. Essa base abriu caminho para o DefGPT, apresentado hoje junto ao
-                        Sistema de Solução Avançada em Atendimento de Referência (Solar), com Lucas Magno Oliveira
-                        Abreu.</p>
+                    <p>O DefGPT entrou em operação em um servidor comum que já existia na instituição: sem GPU, com 32 GB
+                        de memória e 128 núcleos. Ele usa modelos abertos e equipe interna, com custo adicional de R$
+                        0,00. Além disso, o projeto se apoia em uma caminhada iniciada em 2017. Ela começou com Susie
+                        Bot e Luna Chatbot, passou pelo Hermes (2020) e pelo Apollo (2021).</p>
 
-                    <p>Além disso, os resultados do DefGPT já tinham mostrado escala antes mesmo deste seminário. Em um
-                        caso real, 22 mil processos levariam 2,1 anos à mão. O sistema analisou tudo em 11 dias, com
-                        economia estimada de R$ 3,9 milhões. Esse trabalho rendeu o 1º lugar no CNTI-Def 2025.</p>
+                    <p>Hoje, o DefGPT conversa com vários sistemas da casa, como Solar, Luna, DOL, SAJ, SIGAD e
+                        ProcAPI. O projeto já soma mais de mil alterações no repositório. Ele venceu o 1º lugar no
+                        CNTI.Def (Foz do Iguaçu, jun 2025) e o Prêmio J.Ex 2025 (Brasília, nov 2025).</p>
 
-                    <h2>De 76 segundos para 22 segundos: 5x mais eficiência</h2>
+                    <h2>Os dois casos que tiraram a IA do papel</h2>
 
-                    <p>Um dos pontos técnicos que mais gerou conversa no auditório foi a diferença entre usar um modelo
-                        para gerar texto e usá-lo para decidir. Por exemplo, imagine verificar em uma sentença se houve
-                        condenação em honorários advocatícios.</p>
+                    <p>Primeiro, em maio de 2024, entrou no ar o ChatSummarizator. Ele recebe conversas de WhatsApp
+                        cheias de áudios, fotos e mensagens soltas e gera anotações estruturadas com etiquetas direto no
+                        Solar. O ganho no atendimento chegou a 5× em eficiência.</p>
+
+                    <p>Em seguida, atacamos o maior gargalo: a fila de análise de honorários no Solar. Ela cresceu de
+                        59.908 processos em julho de 2024 para 69.110 em novembro de 2024 e 94.717 em julho de 2025. Um
+                        analista consegue 55 processos por dia. Ou seja, a fila enchia mais rápido do que saía.</p>
 
                     <ol class="steps">
-                        <li><strong>Antes (generativo, palavra por palavra):</strong> o modelo lê a sentença e redige
-                            uma explicação completa, token por token. No exemplo mostrado em palco, essa abordagem levou
-                            76 segundos.</li>
-                        <li><strong>Agora (decisão em uma passada):</strong> o modelo lê tudo de uma vez e escolhe entre
-                            as classes possíveis com probabilidade explícita (95% possui, 3% não possui, 2% não dá para
-                            saber). O tempo caiu para 22 segundos.</li>
+                        <li><strong>Busca no ProcAPI:</strong> o número do processo volta com a lista de eventos.</li>
+                        <li><strong>Filtro por regra:</strong> confere sentença, trânsito em julgado, ausência de
+                            recurso e prazo de 5 anos. Dos ~64 mil processados, a maioria se resolve aqui.</li>
+                        <li><strong>Leitura pela IA:</strong> o modelo analisa apenas o trecho final da sentença dos ~22
+                            mil processos restantes.</li>
+                        <li><strong>Retorno ao sistema:</strong> o resultado volta gravado direto no ProcAPI.</li>
                     </ol>
 
+                    <p>Com isso, saltamos de 55 para 3.000 processos por dia (54× mais rápido). Analisar 22 mil
+                        processos caiu de 1,5 ano à mão para 14 dias com o DefGPT, um ganho de 97,33%. O retorno
+                        estimado é de ~R$ 1,5 milhão nos 22 mil processos e ~R$ 7 milhões na fila inteira.</p>
+
+                    <h2>O próximo salto: modelos de decisão (Clef-Flash)</h2>
+
+                    <p>O bloco final da palestra mostrou uma mudança técnica que já estamos rodando em produção. Nem
+                        todo problema jurídico pede uma IA generativa escrevendo uma redação palavra por palavra. Quando
+                        a tarefa é de múltipla escolha, um modelo de decisão funciona muito melhor.</p>
+
+                    <figure>
+                        <img src="img/slide-32-decisao.jpg"
+                            alt="Slide mostrando o modelo de decisão Clef-Flash lendo a sentença de uma vez e classificando em 22 segundos com 95% de probabilidade"
+                            width="1920" height="1080">
+                        <figcaption>Modelo de decisão (Clef-Flash 9B): lê a sentença em uma passada só e devolve
+                            probabilidades explícitas em 22 segundos.</figcaption>
+                    </figure>
+
+                    <p>Adotamos o Clef-Flash 9B (família System One, aberto pela Cloudflare em outubro de 2026). Em vez
+                        de gerar texto longo, ele lê a sentença inteira de uma vez e devolve probabilidades: possui, não
+                        possui ou não dá para saber. Quando o grau de certeza é baixo, como 52%, o processo vai para uma
+                        pessoa revisar.</p>
+
+                    <figure>
+                        <img src="img/slide-34-acuracia.jpg"
+                            alt="Gráfico comparativo nos mesmos 94 processos reais em produção: acertos de 89% para 97%, alarmes falsos de 10 para 3 e tempo de 76 segundos para 22 segundos"
+                            width="1920" height="1080">
+                        <figcaption>Comparação em produção nos mesmos 94 processos: mais acertos, menos alarmes falsos e
+                            3× mais velocidade.</figcaption>
+                    </figure>
+
                     <div class="callout">
-                        <h3>Nem todo problema precisa de texto longo</h3>
-                        <p>Portanto, o ganho de cinco vezes em eficiência não veio de prometer uma IA mágica. Ele veio
-                            de escolher o método certo para a tarefa certa, com resposta mais rápida e mais previsível
-                            para a equipe.</p>
+                        <h3>Melhor "não sei" do que errar com convicção</h3>
+                        <p>Portanto, o ganho não é só velocidade. Nos mesmos 94 processos em produção, os acertos
+                            subiram de 89% para 97%. Também caíram os alarmes falsos (10 para 3) e o tempo (76 s para 22
+                            s). A capacidade saltou para mais de 10 mil processos por dia, derrubando os 22 mil
+                            processos de 14 dias para 2,2 dias.</p>
                     </div>
 
-                    <p>Também mostramos o uso prático na ponta do atendimento. Em cenários reais, cidadãos chegam pelo
-                        WhatsApp com mensagens simples e fotos de documentos, como pedidos de revisão de pensão. A
-                        tecnologia ajuda a organizar e acelerar essa etapa, sem tirar a escuta humana.</p>
+                    <p>Também testamos essa abordagem de forma experimental no Odin, para leitura de portarias do SEI.
+                        Nos testes com o modelo carregado, o tempo caiu da mediana de 100 segundos em produção para
+                        cerca de 3 segundos.</p>
 
-                    <h2>Segurança, normatização e o papel humano</h2>
+                    <h2>Governança, segurança e o papel humano</h2>
 
-                    <p>O seminário foi desenhado justamente para equilibrar entrega técnica e governança. Na abertura, o
-                        defensor público-geral Pedro Alexandre Conceição Aires Gonçalves destacou o paradoxo da IA:
-                        quanto mais se usam ferramentas automatizadas, mais evidente fica a necessidade de acolhimento
+                    <p>O seminário reuniu DPE-TO e PGE-TO justamente para equilibrar entrega técnica, segurança de dados
+                        e normatização. Na abertura, o defensor público-geral Pedro Alexandre Conceição Aires Gonçalves
+                        lembrou que, quanto mais robôs são usados, mais evidente fica a necessidade de acolhimento
                         humano.</p>
 
                     <p>Da mesma forma, o procurador-geral do Estado, Jax James Garcia Pontes, reforçou o papel humano.
@@ -315,20 +352,20 @@
 
                     <dl class="faq-list">
                         <div>
-                            <dt>O que é o Seminário de IA da DPE-TO e PGE-TO?</dt>
-                            <dd>É o Seminário Inteligência Artificial e Transformação Digital nas Funções Essenciais à Justiça, realizado em Palmas. Ele ocorre nos dias 26 e 27 de novembro de 2026. A organização é da DPE-TO, via Esdep, em parceria com o Centro de Estudos da PGE-TO.</dd>
+                            <dt>Qual infraestrutura o DefGPT usa na Defensoria Pública do Tocantins?</dt>
+                            <dd>O DefGPT nasceu rodando em um servidor comum que já existia na DPE-TO, sem GPU, com 32 GB de memória e 128 núcleos. Ele usa modelos abertos e equipe interna, com custo adicional de R$ 0,00. Além disso, nenhum dado de assistido sai da instituição.</dd>
                         </div>
                         <div>
-                            <dt>O que foi apresentado sobre o DefGPT no seminário?</dt>
-                            <dd>Apresentamos a evolução da IA na Defensoria desde 2017 e o desenvolvimento do DefGPT junto ao sistema Solar. Além disso, mostramos como trocar geração palavra por palavra por classificação em uma passada reduziu uma análise de 76 para 22 segundos.</dd>
+                            <dt>Qual a diferença entre modelo generativo e modelo de decisão no DefGPT?</dt>
+                            <dd>O modelo generativo lê e escreve palavra por palavra, como uma redação, levando 76 segundos por processo. Já o modelo de decisão Clef-Flash lê tudo de uma vez e escolhe com probabilidades, como múltipla escolha. Com isso, o tempo caiu para 22 segundos e os acertos subiram de 89% para 97%.</dd>
                         </div>
                         <div>
                             <dt>A inteligência artificial substitui a decisão humana na Defensoria?</dt>
-                            <dd>Não. A IA acelera análises repetitivas e o trabalho pesado de triagem e leitura. No entanto, a responsabilidade pela decisão jurídica e o acolhimento no atendimento ao cidadão permanecem inteiramente humanos.</dd>
+                            <dd>Não. A IA acelera análises repetitivas e o trabalho pesado de triagem e leitura. Quando o modelo de decisão não tem certeza, o caso vai para revisão humana. Além disso, a responsabilidade pela decisão jurídica e o acolhimento ao cidadão permanecem inteiramente humanos.</dd>
                         </div>
                         <div>
                             <dt>Onde conhecer mais sobre o DefGPT?</dt>
-                            <dd>A apresentação oficial do projeto está disponível em defgpt.defensoria.to.def.br/about. O DefGPT conquistou o 1º lugar no CNTI-Def 2025 e é coordenado pela equipe de Tecnologia da Informação da DPE-TO.</dd>
+                            <dd>A apresentação oficial do projeto está disponível em defgpt.defensoria.to.def.br/about. O DefGPT conquistou o 1º lugar no CNTI.Def 2025 e o Prêmio J.Ex 2025, e já soma mais de mil alterações no repositório.</dd>
                         </div>
                     </dl>
 
